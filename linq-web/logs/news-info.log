@@ -1,0 +1,39 @@
+2020-08-27 19:38:48.800 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 14630 (started by jay in /Users/jay/Desktop/Vue项目集合/万邦课设/后端/linq/linq-web)
+2020-08-27 19:38:48.803 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-08-27 19:38:52.945 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-08-27 19:38:53.727 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-08-27 19:38:56.593 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-27 19:38:58.131 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-08-27 19:38:58.153 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-08-27 19:38:58.204 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-08-27 19:38:58.372 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-08-27 19:38:58.445 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 10.345 seconds (JVM running for 12.226)
+2020-08-27 19:38:58.825 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-08-27 19:38:58.828 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-08-27 19:38:58.835 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-08-27 19:43:10.644 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 14665 (started by jay in /Users/jay/Desktop/Vue项目集合/万邦课设/后端/linq/linq-web)
+2020-08-27 19:43:10.651 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-08-27 19:43:14.053 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-08-27 19:43:14.604 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-08-27 19:43:16.248 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-27 19:43:17.546 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-08-27 19:43:17.568 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-08-27 19:43:17.630 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-08-27 19:43:17.804 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-08-27 19:43:17.876 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 8.22 seconds (JVM running for 9.842)
+2020-08-27 19:43:18.149 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-08-27 19:43:18.151 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-08-27 19:43:18.159 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-08-27 19:49:34.458 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 14721 (started by jay in /Users/jay/Desktop/Vue项目集合/万邦课设/后端/linq/linq-web)
+2020-08-27 19:49:34.461 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-08-27 19:49:37.285 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-08-27 19:49:37.840 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-08-27 19:49:39.513 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-27 19:49:40.715 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-08-27 19:49:40.735 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-08-27 19:49:40.795 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-08-27 19:49:40.978 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-08-27 19:49:41.054 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 7.398 seconds (JVM running for 8.922)
+2020-08-27 19:49:42.366 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-08-27 19:49:42.368 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-08-27 19:49:42.377 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
