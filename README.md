@@ -1,8 +1,10 @@
 # vue_security_新闻发布后台管理系统
 
 #### 介绍
-基于springboot和security+jwt+redis+mybatis-plus等
-
+后端采用了Spring Boot + Spring Security</br>
+缓存是使用 Redis</br>
+文件上传 FastDFS</br>
+持久层操作 Mybtatis Plus</br>
 #### 软件架构
 软件架构说明
 
