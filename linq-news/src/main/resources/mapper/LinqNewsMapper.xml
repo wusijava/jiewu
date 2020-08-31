@@ -5,7 +5,7 @@
         <!--@mbg.generated-->
         <!--@Table linq_news-->
         <id column="news_id" jdbcType="BIGINT" property="newsId"/>
-        <result column="user_id"  jdbcType="BIGINT" property="userId"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
         <result column="news_type_id" jdbcType="BIGINT" property="newsTypeId"/>
         <result column="news_title" jdbcType="LONGVARCHAR" property="newsTitle"/>
         <result column="news_content" jdbcType="LONGVARCHAR" property="newsContent"/>
@@ -17,6 +17,7 @@
         <result column="visits" jdbcType="BIGINT" property="visits"/>
         <result column="comments" jdbcType="BIGINT" property="comments"/>
         <result column="collects" jdbcType="BIGINT" property="collects"/>
+        <result column="news_source" jdbcType="VARCHAR" property="newsSource"/>
         <result column="status" jdbcType="CHAR" property="status"/>
         <result column="del_flag" jdbcType="CHAR" property="delFlag"/>
         <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
@@ -38,7 +39,7 @@
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         news_id,user_id,news_type_id, news_title, news_content, news_attr, news_image, order_num,
-        is_public, thumbs, visits, comments, collects, `status`, del_flag, create_by, create_time,
+        is_public, thumbs, visits, comments, collects, news_source,`status`, del_flag, create_by, create_time,
         update_by, update_time, remark
     </sql>
     <sql id="findNewsVo">
@@ -55,6 +56,7 @@
                n.visits,
                n.comments,
                n.collects,
+               n.news_source,
                n.`status`,
                n.del_flag,
                n.create_by,
@@ -101,9 +103,9 @@
         </if>
         <if test="news.endTime != null and news.endTime != ''">
             <!-- 结束时间检索 -->
-            AND date_format (n.create_time,'%y%m%d' ) &lt;= date_format( #{news.endTime},'%y%m%d' )
+            AND date_format( n.create_time,'%y%m%d')&lt;=date_format( #{news.endTime}, '%y%m%d')
         </if>
-        order by  n.order_num
+        order by n.order_num
     </select>
     <!--
         /**
@@ -118,8 +120,8 @@
     <select id="findPageByUserId" resultMap="BaseResultMap">
         <include refid="findNewsVo"/>
         left join sys_user su on n.user_id = su.user_id
-            where n.del_flag = '0'
-             and su.user_id = #{userId}
+                where n.del_flag = '0'
+                  and su.user_id = #{userId}
         <if test="news.newsTypeId != null">
             and n.news_type_id = #{news.newsTypeId}
         </if>
@@ -141,8 +143,8 @@
         </if>
         <if test="news.endTime != null and news.endTime != ''">
             <!-- 结束时间检索 -->
-            AND date_format (n.create_time,'%y%m%d' ) &lt;= date_format( #{news.endTime},'%y%m%d' )
+            AND date_format( n.create_time,'%y%m%d')&lt;=date_format( #{news.endTime}, '%y%m%d')
         </if>
-        order by  n.order_num
+        order by n.order_num
     </select>
 </mapper>

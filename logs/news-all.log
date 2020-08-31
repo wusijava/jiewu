@@ -2091,3 +2091,92 @@ io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period
 2020-08-31 09:09:15.113 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
 2020-08-31 09:09:15.114 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
 2020-08-31 09:09:15.118 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-08-31 11:00:32.849 INFO  [restartedMain]com.linq.AppRun.logStarting:55 -Starting AppRun on JaydeMacBook-Pro.local with PID 9926 (/Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web/target/classes started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq)
+2020-08-31 11:00:32.852 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-08-31 11:00:32.852 INFO  [restartedMain]com.linq.AppRun.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-08-31 11:00:35.761 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9000"]
+2020-08-31 11:00:35.762 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-08-31 11:00:35.762 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 11:00:35.884 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-08-31 11:00:36.409 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-08-31 11:00:36.646 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-08-31 11:00:37.103 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-08-31 11:00:41.990 INFO  [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-31 11:00:42.899 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9000"]
+2020-08-31 11:00:42.970 INFO  [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-08-31 11:00:43.005 INFO  [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-08-31 11:00:43.122 INFO  [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-08-31 11:00:43.451 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-08-31 11:00:43.457 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-08-31 11:00:43.479 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-08-31 11:00:43.502 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-08-31 11:00:43.512 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-08-31 11:00:43.514 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-08-31 11:00:43.525 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-08-31 11:00:43.539 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-08-31 11:00:43.542 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-08-31 11:00:43.547 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-08-31 11:00:43.552 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-08-31 11:00:43.559 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-08-31 11:00:43.566 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-08-31 11:00:43.570 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-08-31 11:00:43.574 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-08-31 11:00:43.581 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-08-31 11:00:43.586 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-08-31 11:00:43.595 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-08-31 11:00:43.605 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-08-31 11:00:43.606 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-08-31 11:00:43.614 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-08-31 11:00:43.615 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-08-31 11:00:43.626 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-08-31 11:00:43.635 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-08-31 11:00:43.637 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-08-31 11:00:43.649 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-08-31 11:00:43.655 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-08-31 11:00:43.659 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-08-31 11:00:43.670 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-08-31 11:00:43.673 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-08-31 11:00:43.677 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-08-31 11:00:43.679 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-08-31 11:00:43.680 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-08-31 11:00:43.684 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-08-31 11:00:43.690 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-08-31 11:00:43.693 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-08-31 11:00:43.695 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-08-31 11:00:43.704 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-08-31 11:00:43.705 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-08-31 11:00:43.711 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-08-31 11:00:43.718 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-08-31 11:00:43.720 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-08-31 11:00:43.725 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-08-31 11:00:43.727 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-08-31 11:00:43.730 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-08-31 11:00:43.735 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-08-31 11:00:43.737 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-08-31 11:00:43.752 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-08-31 11:00:43.753 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-08-31 11:00:43.758 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-08-31 11:00:43.763 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-08-31 11:00:43.771 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-08-31 11:00:43.772 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-08-31 11:00:43.774 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-08-31 11:00:43.776 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-08-31 11:00:43.779 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-08-31 11:00:43.780 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-08-31 11:00:43.781 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-08-31 11:00:43.797 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-08-31 11:00:43.799 INFO  [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-08-31 11:00:43.821 INFO  [restartedMain]com.linq.AppRun.logStarted:61 -Started AppRun in 11.922 seconds (JVM running for 12.657)
+2020-08-31 11:01:19.686 INFO  [http-nio-9000-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 11:01:26.143 INFO  [schedule-pool-1]com.linq.framework.manager.factory.AsyncFactory.run:66 -[127.0.0.1] 本机地址[admin][Success][登录成功]
+2020-08-31 11:01:27.024 INFO  [http-nio-9000-exec-6]com.linq.common.config.mp.MetaHandler.updateFill:47 -正在调用该update填充字段方法
+2020-08-31 11:01:27.025 INFO  [http-nio-9000-exec-6]com.linq.common.config.mp.MetaHandler.updateFill:50 -调用该update填充字段方法结束
+2020-08-31 11:02:01.791 INFO  [http-nio-9000-exec-17]com.linq.common.config.mp.MetaHandler.updateFill:47 -正在调用该update填充字段方法
+2020-08-31 11:02:01.791 INFO  [http-nio-9000-exec-17]com.linq.common.config.mp.MetaHandler.updateFill:50 -调用该update填充字段方法结束
+2020-08-31 11:02:07.326 INFO  [http-nio-9000-exec-19]com.linq.common.config.mp.MetaHandler.updateFill:47 -正在调用该update填充字段方法
+2020-08-31 11:02:07.326 INFO  [http-nio-9000-exec-19]com.linq.common.config.mp.MetaHandler.updateFill:50 -调用该update填充字段方法结束
+2020-08-31 11:02:10.995 INFO  [http-nio-9000-exec-20]com.linq.common.config.mp.MetaHandler.updateFill:47 -正在调用该update填充字段方法
+2020-08-31 11:02:10.996 INFO  [http-nio-9000-exec-20]com.linq.common.config.mp.MetaHandler.updateFill:50 -调用该update填充字段方法结束
+2020-08-31 11:11:13.802 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-08-31 11:11:13.828 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-08-31 11:11:13.832 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed

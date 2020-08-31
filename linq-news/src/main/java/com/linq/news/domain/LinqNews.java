@@ -104,6 +104,11 @@ public class LinqNews extends BaseEntity implements Serializable {
      */
     @TableField(value = "collects")
     private Long collects;
+    /**
+     * 新闻来源
+     */
+    @TableField(value = "news_source")
+    private String newsSource;
 
     /**
      * 审核状态（0.审核中 1.审核成功 2.审核失败）
