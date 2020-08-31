@@ -42,6 +42,7 @@
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
         <fastdfs.version>1.27.0.0</fastdfs.version>
         <swagger.version>2.9.2</swagger.version>
+        <webmagic.version>0.7.3</webmagic.version>
     </properties>
     <dependencies>
         <!--lombok插件-->
@@ -159,7 +160,7 @@
             <dependency>
                 <groupId>com.github.whvcse</groupId>
                 <artifactId>easy-captcha</artifactId>
-                <version>1.6.2</version>
+                <version>${easy-captcha.version}</version>
             </dependency>
             <!--fastdfs-->
             <dependency>
@@ -167,7 +168,6 @@
                 <artifactId>fastdfs-client-java</artifactId>
                 <version>${fastdfs.version}</version>
             </dependency>
-
 
             <!-- swagger2-->
             <dependency>
@@ -205,6 +205,45 @@
                 <artifactId>linq-common</artifactId>
                 <version>${linq.version}</version>
             </dependency>
+            <!--爬虫 WebMagic-->
+            <!--WebMagic核心包-->
+            <dependency>
+                <groupId>us.codecraft</groupId>
+                <artifactId>webmagic-core</artifactId>
+                <version>${webmagic.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!--WebMagic扩展-->
+            <dependency>
+                <groupId>us.codecraft</groupId>
+                <artifactId>webmagic-extension</artifactId>
+                <version>${webmagic.version}</version>
+            </dependency>
+            <!--ElasticSearch 全局检索-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!--simhash-->
+            <dependency>
+                <groupId>com.lou</groupId>
+                <artifactId>simhasher</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.lucene</groupId>
+                        <artifactId>lucene-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

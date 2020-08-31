@@ -62,6 +62,7 @@
                n.visits,
                n.comments,
                n.collects,
+               n.news_source,
                n.`status`,
                n.del_flag,
                n.create_by,
