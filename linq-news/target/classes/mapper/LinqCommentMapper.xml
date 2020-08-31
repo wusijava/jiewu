@@ -85,8 +85,10 @@
     <select id="findPage" resultMap="BaseResultMap">
         <include refid="findCommentVo"/>
         where c.del_flag = '0'
-        <if test="comment.news.newsTitle != null and comment.news.newsTitle !=''">
-            and n.news_title like '%${comment.news.newsTitle.}%'
+        <if test="comment.news!=null ">
+            <if test="comment.news.newsTitle != null and comment.news.newsTitle !=''">
+                and n.news_title like '%${comment.news.newsTitle.}%'
+            </if>
         </if>
         <if test="comment.beginTime != null and comment.beginTime != ''">
             <!-- 开始时间检索 -->

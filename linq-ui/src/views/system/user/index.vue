@@ -71,6 +71,7 @@
           <el-table-column label="用户名称" align="center" prop="username" :show-overflow-tooltip="true"/>
           <el-table-column label="头像" align="center" prop="avatar" width="60px">
             <template slot-scope="scope">
+              <span v-if="scope.row.avatar===''">无</span>
               <img :src="getAvatarUrl(scope.row.avatar)" alt="" class="img-mini">
             </template>
           </el-table-column>
@@ -222,7 +223,7 @@ import {
   addUser,
   updateUser,
   resetUserPwd,
-  changeUserStatus,
+  changeUserStatus
 } from '@/api/system/user'
 import { treeSelect } from '@/api/system/dept'
 import TreeSelect from '@riophae/vue-treeselect'
@@ -231,7 +232,7 @@ import '@riophae/vue-treeselect/dist/vue-treeselect.css'
 export default {
   name: 'User',
   components: { TreeSelect },
-  data () {
+  data() {
     return {
       tableHeight: window.innerHeight - 340,
       // 遮罩层
@@ -338,17 +339,17 @@ export default {
   },
   watch: {
     // 根据名称筛选部门树
-    deptName (val) {
+    deptName(val) {
       this.$refs.tree.filter(val)
     }
   },
-  mounted () {
+  mounted() {
     //后面的50：根据需求空出的高度，自行调整
     this.$nextTick(() => {
       this.tableHeight = window.innerHeight - 340
     })
   },
-  created () {
+  created() {
     this.getList()
     this.getTreeSelect()
     // 获取数据字典
@@ -364,11 +365,11 @@ export default {
   },
   methods: {
     // 获取头像地址
-    getAvatarUrl (avatar) {
+    getAvatarUrl(avatar) {
       return process.env.VUE_APP_BASE_API + avatar
     },
     /** 查询用户列表 */
-    getList () {
+    getList() {
       this.loading = true
       listUser(this.pageNum, this.pageSize, this.addDateRange(this.queryParams, this.dateRange)).then(response => {
           // console.log(response)
@@ -379,43 +380,43 @@ export default {
       )
     },
     /** 查询部门下拉树结构 */
-    getTreeSelect () {
+    getTreeSelect() {
       treeSelect().then(response => {
         this.deptOptions = response.data
       })
     },
     // 筛选节点
-    filterNode (value, data) {
+    filterNode(value, data) {
       if (!value) return true
       return data.label.indexOf(value) !== -1
     },
     // 节点单击事件
-    handleNodeClick (data) {
+    handleNodeClick(data) {
       this.queryParams.deptId = data.id
       this.getList()
     },
     // 用户状态修改
-    handleStatusChange (row) {
+    handleStatusChange(row) {
       let text = row.status === '0' ? '启用' : '停用'
       this.$confirm('确认要"' + text + '""' + row.username + '"用户吗?', '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).then(function () {
+      }).then(function() {
         return changeUserStatus(row.userId, row.status)
       }).then(() => {
         this.msgSuccess(text + '成功')
-      }).catch(function () {
+      }).catch(function() {
         row.status = row.status === '0' ? '1' : '0'
       })
     },
     // 取消按钮
-    cancel () {
+    cancel() {
       this.open = false
       this.reset()
     },
     // 表单重置
-    reset () {
+    reset() {
       this.form = {
         userId: undefined,
         deptId: undefined,
@@ -432,24 +433,24 @@ export default {
       this.resetForm('form')
     },
     /** 搜索按钮操作 */
-    handleQuery () {
+    handleQuery() {
       this.queryParams.page = 1
       this.getList()
     },
     /** 重置按钮操作 */
-    resetQuery () {
+    resetQuery() {
       this.dateRange = []
       this.resetForm('queryForm')
       this.handleQuery()
     },
     // 多选框选中数据
-    handleSelectionChange (selection) {
+    handleSelectionChange(selection) {
       this.ids = selection.map(item => item.userId)
       this.single = selection.length !== 1
       this.multiple = !selection.length
     },
     /** 新增按钮操作 */
-    handleAdd () {
+    handleAdd() {
       this.reset()
       this.getTreeSelect()
       getUser().then(response => {
@@ -463,7 +464,7 @@ export default {
       })
     },
     /** 修改按钮操作 */
-    handleUpdate (row) {
+    handleUpdate(row) {
       this.reset()
       this.getTreeSelect()
       console.log(row)
@@ -480,7 +481,7 @@ export default {
       })
     },
     /** 重置密码按钮操作 */
-    handleResetPwd (row) {
+    handleResetPwd(row) {
       this.$prompt('请输入"' + row.username + '"的新密码', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消'
@@ -494,7 +495,7 @@ export default {
       })
     },
     /** 提交按钮 */
-    submitForm: function () {
+    submitForm: function() {
       this.$refs['form'].validate(valid => {
         if (valid) {
           if (this.form.userId !== undefined) {
@@ -518,20 +519,20 @@ export default {
       })
     },
     /** 删除按钮操作 */
-    handleDelete (row) {
+    handleDelete(row) {
       const userIds = row.userId || this.ids
       this.$confirm('是否确认删除用户编号为"' + userIds + '"的数据项?', '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).then(function () {
+      }).then(function() {
         return delUser(userIds)
       }).then(() => {
         this.getList()
         this.msgSuccess('删除成功')
-      }).catch(function () {
+      }).catch(function() {
       })
-    },
+    }
   }
 }
 </script>

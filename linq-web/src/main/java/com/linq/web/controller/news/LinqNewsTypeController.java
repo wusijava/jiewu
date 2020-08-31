@@ -40,6 +40,7 @@ public class LinqNewsTypeController extends BaseController {
     @GetMapping("/list")
     public Result<List<LinqNewsType>> optionSelect() {
         return ResultUtils.success(newsTypeService.list(new LambdaQueryWrapper<LinqNewsType>()
+                                                                .select(LinqNewsType::getNewsTypeId, LinqNewsType::getNewsTypeName, LinqNewsType::getStatus)
                                                                 .eq(LinqNewsType::getDelFlag, UserConstants.NORMAL)
         ));
     }

@@ -89,4 +89,15 @@ public class UserConstants {
      */
     public final static String UNIQUE = "0";
     public final static String NOT_UNIQUE = "1";
+
+    /**
+     * 新闻审核
+     * 0: 正在审核中
+     * 1: 审核通过 | 成功
+     * 2: 审核未通过 | 失败
+     */
+    public final static String PASSING = "0";
+    public final static String PASSED = "1";
+    public final static String NOT_PASS = "2";
+
 }

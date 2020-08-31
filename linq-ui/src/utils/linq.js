@@ -33,7 +33,7 @@ export function parseTime (time, pattern) {
     s: date.getSeconds(),
     a: date.getDay()
   }
-  const time_str = format.replace(/{(y|m|d|h|i|s|a)+}/g, (result, key) => {
+  return format.replace(/{(y|m|d|h|i|s|a)+}/g, (result, key) => {
     let value = formatObj[key]
     // Note: getDay() returns 0 on Sunday
     if (key === 'a') {
@@ -44,7 +44,6 @@ export function parseTime (time, pattern) {
     }
     return value || 0
   })
-  return time_str
 }
 
 // 表单重置
@@ -56,7 +55,7 @@ export function resetForm (refName) {
 
 // 添加日期范围
 export function addDateRange (params, dateRange) {
-  var search = params
+  const search = params
   search.beginTime = ''
   search.endTime = ''
   if (null != dateRange && '' !== dateRange) {

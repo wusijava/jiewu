@@ -52,7 +52,11 @@
     <el-table v-loading="loading" :data="typeList" @selection-change="handleSelectionChange" size="mini" :height="tableHeight">
       <el-table-column type="selection" width="55" align="center"/>
       <el-table-column label="新闻类别编号" align="center" prop="newsTypeId"/>
-      <el-table-column label="类别名称" align="center" prop="newsTypeName"/>
+      <el-table-column label="类别名称" align="center" prop="newsTypeName">
+        <template slot-scope="scope">
+          <span style="font-weight: bolder">{{ scope.row.newsTypeName }}</span>
+        </template>
+      </el-table-column>
       <el-table-column label="类别状态" align="center" prop="status" :formatter="statusFormat"/>
       <el-table-column label="备注" align="center" prop="remark" :show-overflow-tooltip="true"/>
       <el-table-column label="创建时间" align="center" prop="createTime" width="180">

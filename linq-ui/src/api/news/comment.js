@@ -3,16 +3,16 @@ import request from '@/utils/request'
 const BASE_API = '/news/comment'
 
 // 查询新闻评论列表
-export function listComment (query) {
+export function listComment(page, size, query) {
   return request({
-    url: '/news/comment/list',
+    url: `${BASE_API}/list/${page}/${size}`,
     method: 'get',
     params: query
   })
 }
 
 // 查询新闻评论详细
-export function getComment (commentId) {
+export function getComment(commentId) {
   return request({
     url: '/news/comment/' + commentId,
     method: 'get'
@@ -20,7 +20,7 @@ export function getComment (commentId) {
 }
 
 // 新增新闻评论
-export function addComment (data) {
+export function addComment(data) {
   return request({
     url: '/news/comment',
     method: 'post',
@@ -29,7 +29,7 @@ export function addComment (data) {
 }
 
 // 修改新闻评论
-export function updateComment (data) {
+export function updateComment(data) {
   return request({
     url: '/news/comment',
     method: 'put',
@@ -38,7 +38,7 @@ export function updateComment (data) {
 }
 
 // 删除新闻评论
-export function delComment (commentId) {
+export function delComment(commentId) {
   return request({
     url: '/news/comment/' + commentId,
     method: 'delete'
@@ -46,7 +46,7 @@ export function delComment (commentId) {
 }
 
 // 导出新闻评论
-export function exportComment (query) {
+export function exportComment(query) {
   return request({
     url: '/news/comment/export',
     method: 'get',

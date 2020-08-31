@@ -1,5 +1,6 @@
 package com.linq.web.controller.news;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.linq.common.constant.UserConstants;
@@ -14,6 +15,7 @@ import com.linq.common.result.ResultUtils;
 import com.linq.common.utils.ServletUtils;
 import com.linq.framework.security.service.TokenService;
 import com.linq.news.domain.LinqNews;
+import com.linq.news.domain.LinqNewsType;
 import com.linq.news.service.LinqNewsService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -37,6 +39,7 @@ public class LinkNewsController extends BaseController {
     private LinqNewsService newsService;
     @Autowired
     private TokenService tokenService;
+
 
     /**
      * 查询新闻列表
@@ -134,5 +137,19 @@ public class LinkNewsController extends BaseController {
     public Result<String> changeStatus(@RequestBody LinqNews news) {
         System.err.println("审核新闻修改LinqNews->" + news);
         return toResult(newsService.changeStatus(news));
+    }
+
+    /**
+     * 获取所有新闻下拉列表
+     */
+    @ApiOperation(value = "获取所有新闻下拉列表", notes = "获取所有新闻下拉列表详情")
+    @GetMapping("/list")
+    public Result<List<LinqNews>> optionSelect() {
+        // select news_id,news_title from linq_news where del_flag='0' and status = '1'
+        return ResultUtils.success(newsService.list(new LambdaQueryWrapper<LinqNews>()
+                                                            .select(LinqNews::getNewsId, LinqNews::getNewsTitle)
+                                                            .eq(LinqNews::getDelFlag, UserConstants.NORMAL)
+                                                            .eq(LinqNews::getStatus, UserConstants.PASSED)
+        ));
     }
 }
