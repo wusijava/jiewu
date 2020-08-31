@@ -1,10 +1,14 @@
 package com.linq.news.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.linq.common.core.domain.model.BaseEntity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -21,11 +25,11 @@ import javax.validation.constraints.Size;
 
 /**
  * 新闻表
+ * 这个需要用到爬虫 所以特殊处理
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
 @TableName(value = "linq_news")
-public class LinqNews extends BaseEntity implements Serializable {
+public class LinqNews implements Serializable {
     /**
      * 新闻id
      */
@@ -123,6 +127,67 @@ public class LinqNews extends BaseEntity implements Serializable {
     @TableField(value = "del_flag")
     private String delFlag;
 
+
+    /**
+     * 创建者
+     */
+    @TableField(value = "create_by")
+    private String createBy;
+
+    /**
+     * 创建时间
+     */
+    @TableField(value = "create_time")
+    private Date createTime;
+
+    /**
+     * 更新者
+     */
+    @TableField(value = "update_by")
+    private String updateBy;
+
+    /**
+     * 更新时间
+     */
+    @TableField(value = "update_time")
+    private Date updateTime;
+
+    /**
+     * 备注
+     */
+    @TableField(value = "remark")
+    private String remark;
+
+    /////////////////////////////////// 附加  ///////////////////////////////////
+
+    /**
+     * 开始时间
+     */
+    @TableField(exist = false)
+    @JsonIgnore
+    private String beginTime;
+
+    /**
+     * 结束时间
+     */
+    @TableField(exist = false)
+    @JsonIgnore
+    private String endTime;
+
+    /**
+     * 请求参数
+     */
+    @TableField(exist = false)
+    private Map<String, Object> params;
+
+    public Map<String, Object> getParams() {
+        if (params == null) {
+            params = new HashMap<>();
+        }
+        return params;
+    }
+
+    /////////////////////////////////// 附加  ///////////////////////////////////
 
     /////////////////////////////////// 附加  ///////////////////////////////////
 

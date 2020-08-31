@@ -1,9 +1,11 @@
 package com.linq.news.service.impl;
 
+import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.linq.common.constant.UserConstants;
+import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.utils.SecurityUtils;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNewsType;
@@ -12,6 +14,7 @@ import org.springframework.security.core.token.TokenService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -39,7 +42,7 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public IPage<LinqNews> findPageByUserId(Page<LinqNews> linqNewsPage, LinqNews news, Long userId) {
-        return baseMapper.findPageByUserId(linqNewsPage, news,userId);
+        return baseMapper.findPageByUserId(linqNewsPage, news, userId);
     }
 
     /**
@@ -75,8 +78,16 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean insertLinqNews(LinqNews linqNews) {
-        // 设置作者id
-        linqNews.setUserId(SecurityUtils.getLoginUser().getUser().getUserId());
+        // 爬虫获取
+        if (SysUser.isAdmin(linqNews.getUserId())) {
+            linqNews.setCreateBy("admin");
+        }else {
+            linqNews.setCreateBy(SecurityUtils.getLoginUser().getUser().getUsername());
+            // 设置作者id
+            linqNews.setUserId(SecurityUtils.getLoginUser().getUser().getUserId());
+        }
+        linqNews.setCreateTime(new Date());
+        linqNews.setUpdateTime(new Date());
         return saveOrUpdate(linqNews);
     }
 
@@ -89,6 +100,8 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean updateLinqNews(LinqNews linqNews) {
+        linqNews.setUpdateTime(new Date());
+        linqNews.setUpdateBy(SecurityUtils.getLoginUser().getUser().getUsername());
         return saveOrUpdate(linqNews);
     }
 
@@ -132,6 +145,8 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean changeIsPublic(LinqNews news) {
+        news.setUpdateTime(new Date());
+        news.setUpdateBy(SecurityUtils.getLoginUser().getUser().getUsername());
         return saveOrUpdate(news);
     }
 

@@ -62,3 +62,8 @@ logging:
   level:
     com.linq: debug
     org.springframework: warn
+
+# 爬虫地址
+spider:
+  peNewsUrl: http://sports.sina.com.cn/nba/ # 体育新闻
+  entertainmentNewsUrl: https://ent.sina.com.cn/star/ # 娱乐星闻

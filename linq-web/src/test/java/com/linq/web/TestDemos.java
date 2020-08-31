@@ -1,20 +1,23 @@
 package com.linq.web;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.extension.api.R;
 import com.linq.common.constant.Constants;
 import com.linq.common.core.domain.TreeSelect;
 import com.linq.common.core.domain.entity.SysDept;
 import com.linq.common.core.redis.RedisService;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.framework.web.domain.Server;
+import com.linq.news.task.SinaNewsProcessor;
+import com.linq.news.task.config.SpiderProperties;
 import com.linq.system.service.SysDeptService;
 import com.linq.system.service.SysRoleService;
 import com.linq.system.service.SysUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import us.codecraft.webmagic.Spider;
+import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
+import us.codecraft.webmagic.scheduler.QueueScheduler;
 
 import java.util.List;
 
@@ -34,6 +37,8 @@ public class TestDemos {
     private SysUserService userService;
     @Autowired
     private SysRoleService roleService;
+    @Autowired
+    private SpiderProperties spiderProperties;
 
     @Test
     public void testSet() {
@@ -61,6 +66,7 @@ public class TestDemos {
     public void testfindRoleAll() {
         System.err.println(roleService.findRoleAll());
     }
+
     @Test
     public void testfindServer() {
         Server server = new Server();
@@ -70,5 +76,14 @@ public class TestDemos {
             e.printStackTrace();
         }
         System.err.println(server);
+    }
+
+    @Test
+    public void testSpider() {
+        Spider.create(new SinaNewsProcessor())
+                .addUrl(spiderProperties.getPeNewsUrl())
+                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
+                .thread(4)
+                .run();
     }
 }
