@@ -51,7 +51,7 @@ public class LinqNews implements Serializable {
      * 新闻标题
      */
     @NotBlank(message = "新闻标题不能为空")
-    @Size(min = 0, max = 30, message = "新闻标题长度不能超过30个字符")
+    @Size(min = 0, max = 50, message = "新闻标题长度不能超过50个字符")
     @TableField(value = "news_title")
     private String newsTitle;
 

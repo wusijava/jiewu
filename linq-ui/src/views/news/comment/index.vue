@@ -1,9 +1,10 @@
 <template>
   <div class="app-container">
-    <el-form :model="queryParams" ref="queryForm" :inline="true" label-width="68px">
-      <el-form-item label="新闻id" prop="newsId">
-        <el-select v-model="queryParams.newsId" placeholder="请选择新闻id" clearable size="small">
-          <el-option label="请选择字典生成" value=""/>
+    <el-form :model="queryParams" ref="queryForm" :inline="true" label-width="120px">
+      <el-form-item label="新闻标题" prop="newsId">
+        <el-select v-model="queryParams.newsId" placeholder="请选择新闻标题" clearable size="mini">
+          <el-option v-for="item in newsOptions" :key="item.newsId" :label="item.newsTitle"
+                     :value="item.newsId"/>
         </el-select>
       </el-form-item>
       <el-form-item label="创建时间">
@@ -38,9 +39,12 @@
 
     <el-table v-loading="loading" :data="commentList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center"/>
-      <el-table-column label="新闻评论id" align="center" prop="commentId"/>
-      <el-table-column label="新闻id" align="center" prop="newsId"/>
-      <el-table-column label="新闻评论内容" align="center" prop="commentContent"/>
+      <el-table-column label="新闻评论编号" align="center" prop="commentId"/>
+      <el-table-column label="新闻标题" align="center" prop="news.newsTitle">
+        <template slot-scope="scope">
+          {{ scope.row.news.newsTitle }}
+        </template>
+      </el-table-column>
       <el-table-column label="点赞数" align="center" prop="thumbs"/>
       <el-table-column label="创建者" align="center" prop="createBy"/>
       <el-table-column label="创建时间" align="center" prop="createTime" width="180">
@@ -51,21 +55,17 @@
       <el-table-column label="备注" align="center" prop="remark"/>
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button
-            size="mini"
-            type="text"
-            icon="el-icon-edit"
-            @click="handleUpdate(scope.row)"
-            v-hasPermi="['news:comment:edit']"
-          >修改
+          <el-button size="mini" type="text" icon="el-icon-view" @click="handleRead(scope.row)"
+                     v-hasPermi="['news:comment:edit']">
+            查看
           </el-button>
-          <el-button
-            size="mini"
-            type="text"
-            icon="el-icon-delete"
-            @click="handleDelete(scope.row)"
-            v-hasPermi="['news:comment:remove']"
-          >删除
+          <el-button size="mini" type="text" icon="el-icon-edit" @click="handleUpdate(scope.row)"
+                     v-hasPermi="['news:comment:edit']">
+            修改
+          </el-button>
+          <el-button size="mini" type="text" icon="el-icon-delete" @click="handleDelete(scope.row)"
+                     v-hasPermi="['news:comment:remove']">
+            删除
           </el-button>
         </template>
       </el-table-column>
@@ -75,21 +75,39 @@
     <pagination v-show="total>0" :total="total" :page.sync="pageNum" :limit.sync="pageSize" @pagination="getList"/>
 
     <!-- 添加或修改新闻评论对话框 -->
-    <el-dialog :title="title" :visible.sync="open" width="500px" append-to-body>
-      <el-form ref="form" :model="form" :rules="rules" label-width="80px">
-        <el-form-item label="新闻id">
-          <el-select v-model="form.newsId" placeholder="请选择新闻id">
-            <el-option label="请选择字典生成" value=""/>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="新闻评论内容" prop="commentContent">
-          <el-input v-model="form.commentContent" placeholder="请输入新闻评论内容"/>
-        </el-form-item>
-        <el-form-item label="点赞数" prop="thumbs">
-          <el-input v-model="form.thumbs" placeholder="请输入点赞数"/>
-        </el-form-item>
+    <el-dialog :title="title" :visible.sync="open" width="1000px" append-to-body>
+      <el-card shadow="always" v-if="dialogFlag === 1" :class="dialogFlag ===1?'dialog-mid':''">
+        <div v-html="form.commentContent"/>
+      </el-card>
+      <!-- dialogFlag===undefined时候显示 -->
+      <el-form ref="form" :model="form" :rules="rules" label-width="120px" v-if="dialogFlag === undefined">
+        <el-row>
+          <el-col :span="12">
+            <el-form-item label="新闻id" prop="newsId">
+              <el-select v-model="form.newsId" placeholder="请选择新闻标题">
+                <el-option v-for="item in newsOptions" :key="item.newsId" :label="item.newsTitle"
+                           :value="item.newsId"/>
+              </el-select>
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="点赞数" prop="thumbs">
+              <el-input-number v-model="form.thumbs" placeholder="请输入点赞数"/>
+            </el-form-item>
+          </el-col>
+          <el-col :span="24">
+            <el-form-item label="新闻评论内容" prop="commentContent" required>
+              <Editor v-model="form.commentContent"/>
+            </el-form-item>
+          </el-col>
+          <el-col :span="24" style="padding-top: 30px">
+            <el-form-item label="备注">
+              <el-input v-model="form.remark" type="textarea" placeholder="请输入内容"/>
+            </el-form-item>
+          </el-col>
+        </el-row>
       </el-form>
-      <div slot="footer" class="dialog-footer">
+      <div slot="footer" class="dialog-footer" v-if="dialogFlag === undefined">
         <el-button type="primary" @click="submitForm">确 定</el-button>
         <el-button @click="cancel">取 消</el-button>
       </div>
@@ -99,11 +117,20 @@
 
 <script>
 import { listComment, getComment, delComment, addComment, updateComment, exportComment } from '@/api/news/comment'
+import { optionSelect } from '@/api/news/news'
+import Editor from '@/components/Editor'
 
 export default {
   name: 'Comment',
+  components: {
+    Editor
+  },
   data() {
     return {
+      // 弹框标识 1 代表查看
+      dialogFlag: undefined,
+      // 新闻标题选择列表
+      newsOptions: [],
       // 日期范围
       dateRange: [],
       // 遮罩层
@@ -134,15 +161,42 @@ export default {
       // 表单校验
       rules: {
         newsId: [
-          { required: true, message: '新闻id不能为空', trigger: 'blur' }
+          { required: true, message: '新闻标题不能为空', trigger: 'blur' }
+        ],
+        commentContent: [
+          { required: true, message: '评论内容不能为空', trigger: 'blur' }
+        ],
+        thumbs: [
+          { required: true, message: '点赞数不能为空', trigger: 'blur' }
         ]
+
       }
     }
   },
   created() {
+    // 获取下拉列表
+    this.getOptionSelect()
     this.getList()
   },
   methods: {
+    /** 浏览新闻信息 **/
+    handleRead(row) {
+      this.dialogFlag = 1
+      this.title = `查看评论内容`
+      getComment(row.commentId).then(res => {
+        if (res.flag) {
+          this.form = res.data
+          this.open = true
+        }
+      })
+    },
+    /** 查询新闻标题列表 */
+    getOptionSelect() {
+      optionSelect().then(response => {
+        // console.log(response)
+        this.newsOptions = response.data
+      })
+    },
     /** 查询新闻评论列表 */
     getList() {
       this.loading = true
@@ -164,18 +218,12 @@ export default {
         newsId: undefined,
         commentContent: undefined,
         thumbs: undefined,
-        delFlag: undefined,
-        createBy: undefined,
-        createTime: undefined,
-        updateBy: undefined,
-        updateTime: undefined,
         remark: undefined
       }
       this.resetForm('form')
     },
     /** 搜索按钮操作 */
     handleQuery() {
-      this.queryParams.pageNum = 1
       this.getList()
     },
     /** 重置按钮操作 */
@@ -186,17 +234,19 @@ export default {
     // 多选框选中数据
     handleSelectionChange(selection) {
       this.ids = selection.map(item => item.commentId)
-      this.single = selection.length != 1
+      this.single = selection.length !== 1
       this.multiple = !selection.length
     },
     /** 新增按钮操作 */
     handleAdd() {
+      this.dialogFlag = undefined
       this.reset()
       this.open = true
       this.title = '添加新闻评论'
     },
     /** 修改按钮操作 */
     handleUpdate(row) {
+      this.dialogFlag = undefined
       this.reset()
       const commentId = row.commentId || this.ids
       getComment(commentId).then(response => {
@@ -209,7 +259,7 @@ export default {
     submitForm: function() {
       this.$refs['form'].validate(valid => {
         if (valid) {
-          if (this.form.commentId != undefined) {
+          if (this.form.commentId !== undefined) {
             updateComment(this.form).then(response => {
               if (response.code === 200) {
                 this.msgSuccess('修改成功')

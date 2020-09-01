@@ -192,7 +192,6 @@ export default {
     },
     /** 搜索按钮操作 */
     handleQuery () {
-      this.queryParams.pageNum = 1
       this.getList()
     },
     /** 重置按钮操作 */

@@ -47,3 +47,26 @@
 2020-09-01 16:44:12.175 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
 2020-09-01 17:21:35.770 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
 2020-09-01 17:21:38.481 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 18:28:33.414 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 18:28:37.284 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 18:32:53.069 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 18:32:58.274 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 19:36:24.259 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 19:36:26.758 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 19:53:31.829 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 19:53:35.927 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 19:55:19.500 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 19:55:22.968 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 19:57:20.127 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 19:57:25.014 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:01:27.088 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 20:01:31.074 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:02:03.091 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 20:02:06.713 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:04:06.225 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 20:04:07.427 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:08:35.553 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 20:08:40.553 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:16:51.604 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-09-01 20:16:52.442 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-01 20:17:32.169 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE

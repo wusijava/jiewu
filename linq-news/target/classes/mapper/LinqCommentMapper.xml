@@ -32,13 +32,18 @@
         <result column="visits" jdbcType="BIGINT" property="visits"/>
         <result column="comments" jdbcType="BIGINT" property="comments"/>
         <result column="collects" jdbcType="BIGINT" property="collects"/>
+        <result column="news_source" jdbcType="VARCHAR" property="newsSource"/>
+        <result column="news_source_author" jdbcType="VARCHAR" property="newsSourceAuthor"/>
         <result column="status" jdbcType="CHAR" property="status"/>
     </resultMap>
+
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         comment_id, news_id, comment_content, thumbs, del_flag, create_by, create_time, update_by,
         update_time, remark
     </sql>
+
+
     <sql id="findCommentVo">
         select c.comment_id,
                c.news_id,
@@ -63,7 +68,7 @@
                n.comments,
                n.collects,
                n.news_source,
-               n.news_souce_author,
+               n.news_source_author,
                n.`status`,
                n.del_flag,
                n.create_by,
@@ -87,18 +92,16 @@
     <select id="findPage" resultMap="BaseResultMap">
         <include refid="findCommentVo"/>
         where c.del_flag = '0'
-        <if test="comment.news!=null ">
-            <if test="comment.news.newsTitle != null and comment.news.newsTitle !=''">
-                and n.news_title like '%${comment.news.newsTitle.}%'
-            </if>
+        <if test="comment.newsId != null">
+            and c.news_id = #{comment.newsId}
         </if>
         <if test="comment.beginTime != null and comment.beginTime != ''">
             <!-- 开始时间检索 -->
-            AND date_format(n.create_time, '%y%m%d') &gt;= date_format(#{comment.beginTime}, '%y%m%d')
+            AND date_format(c.create_time, '%y%m%d') &gt;= date_format(#{comment.beginTime}, '%y%m%d')
         </if>
         <if test="comment.endTime != null and comment.endTime != ''">
             <!-- 结束时间检索 -->
-            AND date_format (n.create_time,'%y%m%d' ) &lt;= date_format( #{comment.endTime},'%y%m%d' )
+            AND date_format(c.create_time, '%y%m%d') &lt;= date_format(#{comment.endTime}, '%y%m%d')
         </if>
         order by c.comment_id
     </select>

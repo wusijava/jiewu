@@ -257,7 +257,6 @@ export default {
     },
     /** 搜索按钮操作 */
     handleQuery () {
-      this.queryParams.pageNum = 1
       this.getList()
     },
     /** 重置按钮操作 */
@@ -331,7 +330,7 @@ export default {
 </script>
 <style lang="scss">
 .link-url {
-  color: #7a6df0;
+  color: #606a7d;
   text-decoration: none;
   font-weight: bolder;
 }

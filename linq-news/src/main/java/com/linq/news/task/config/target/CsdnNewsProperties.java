@@ -27,15 +27,15 @@ public class CsdnNewsProperties {
     public static final String detailSelectCssSelector = "div.main_father.clearfix.d-flex.justify-content-center";
     // 标题css选择器
     public static final String newsTitleCssSelector = "#articleContentId";
-    // 原创作者
+    // 原创作者选择器
     public static final String newsSourceAuthorSelector = "#uid > span.name";
-    // 点赞数
+    // 点赞数选择器
     public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(3) > dt > span";
-    // 浏览量
+    // 浏览量选择器
     public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(4) > dt > span";
-    // 评论数
+    // 评论数选择器
     public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4) > dt > span";
-    // 收藏数
+    // 收藏数选择器
     public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5) > dt > span";
     // 类型id
     public static final Long newsTypeId = 18L;

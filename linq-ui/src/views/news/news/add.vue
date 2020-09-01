@@ -7,7 +7,7 @@
       </el-select>
     </el-form-item>
     <el-form-item label="新闻标题" prop="newsTitle">
-      <el-input v-model="form.newsTitle" placeholder="请输入新闻标题" :maxlength="30" show-word-limit clearable
+      <el-input v-model="form.newsTitle" placeholder="请输入新闻标题" :maxlength="50" show-word-limit clearable
                 prefix-icon='el-icon-tickets' :style="{width: '80%'}"></el-input>
     </el-form-item>
     <el-form-item label="新闻封面" prop="newsImage">
@@ -25,7 +25,7 @@
       </el-radio-group>
     </el-form-item>
     <el-form-item label="显示顺序" prop="orderNum">
-      <el-input-number v-model="form.orderNum" placeholder="显示顺序"></el-input-number>
+      <el-input-number v-model="form.orderNum" placeholder="显示顺序"/>
     </el-form-item>
     <el-form-item label="新闻属性" prop="newsAttr">
       <el-radio-group v-model="form.newsAttr" size="medium">

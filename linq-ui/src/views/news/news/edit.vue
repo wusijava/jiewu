@@ -7,7 +7,7 @@
       </el-select>
     </el-form-item>
     <el-form-item label="新闻标题" prop="newsTitle">
-      <el-input v-model="form.newsTitle" placeholder="请输入新闻标题" :maxlength="30" show-word-limit clearable
+      <el-input v-model="form.newsTitle" placeholder="请输入新闻标题" :maxlength="50" show-word-limit clearable
                 prefix-icon='el-icon-tickets' :style="{width: '80%'}"></el-input>
     </el-form-item>
     <el-form-item label="新闻封面" prop="newsImage">
