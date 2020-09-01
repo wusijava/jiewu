@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * @Author: 林义清
  * @Date: 2020/9/1 10:53 上午
- * @Description: Csdn爬取配置
+ * @Description: Csdn爬取配置 注意详细页面css选择范围尽量大点 否则找不到
  * @Version: 1.0.0
  */
 @Data
@@ -23,7 +23,8 @@ public class CsdnNewsProperties {
     // 详情页目标链接地址css选择器
     public static final String targetUrlCssSelector = ".clearfix";
     // 获取所有详情页列表css选择器
-    public static final String detailSelectCssSelector = ".baidu_pl";
+    //    public static final String detailSelectCssSelector = ".baidu_pl";
+    public static final String detailSelectCssSelector = "div.main_father.clearfix.d-flex.justify-content-center";
     // 标题css选择器
     public static final String newsTitleCssSelector = "#articleContentId";
     // 原创作者
@@ -41,7 +42,7 @@ public class CsdnNewsProperties {
     // 文章内容css选择器
     public static final String newsContentCssSelector = "#article_content";
     // 文章封面css选择器
-    public static final String newsImageCssSelector = "#asideProfile > div.profile-intro.d-flex > div.avatar-box.d-flex.justify-content-center.flex-column > a > img.avatar_pic";
+    public static final String newsImageCssSelector = "img.avatar_pic";
     // key值
     public static final String fieldKey = "csdnNews";
 

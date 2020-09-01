@@ -107,7 +107,7 @@
             <!-- 结束时间检索 -->
             AND date_format( n.create_time,'%y%m%d')&lt;=date_format( #{news.endTime}, '%y%m%d')
         </if>
-        order by n.order_num and n.news_id
+        order by n.order_num,n.news_id desc
     </select>
     <!--
         /**
@@ -147,6 +147,6 @@
             <!-- 结束时间检索 -->
             AND date_format( n.create_time,'%y%m%d')&lt;=date_format( #{news.endTime}, '%y%m%d')
         </if>
-        order by n.order_num and n.news_id
+        order by n.order_num,n.news_id desc
     </select>
 </mapper>

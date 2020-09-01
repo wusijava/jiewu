@@ -165,6 +165,22 @@
       <el-card shadow="hover">
         <div v-html="form.newsContent"/>
       </el-card>
+      <el-card shadow="always">
+        <div class="ub main-justify">
+          <el-badge :value="form.thumbs">
+            <el-button size="mini" round>点赞数</el-button>
+          </el-badge>
+          <el-badge :value="form.collects" type="primary">
+            <el-button size="mini" round>收藏数</el-button>
+          </el-badge>
+          <el-badge :value="form.visits" type="info">
+            <el-button size="mini" round>浏览量</el-button>
+          </el-badge>
+          <el-badge :value="form.comments" type="success">
+            <el-button size="mini" round>评论数</el-button>
+          </el-badge>
+        </div>
+      </el-card>
       <el-card v-if="dialogFlag===1" shadow="hover" style="margin-top: 20px">
         <el-form ref="form" :model="form" size="small" label-width="100px">
           <el-form-item label="审核新闻" prop="status">
@@ -176,6 +192,7 @@
           </el-form-item>
         </el-form>
       </el-card>
+
       <div slot="footer" v-if="dialogFlag===1">
         <el-button @click="close">取消</el-button>
         <el-button type="primary" @click="handelConfirm">确定</el-button>

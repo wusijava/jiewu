@@ -64,8 +64,8 @@ public class SinaPeNewsProcessor implements PageProcessor {
                         news.setNewsContent(selectable.$(PeNewsProperties.newsContentCssSelector).toString());
                         // 设置新闻封面
                         Selectable src = selectable.$(PeNewsProperties.newsImageCssSelector,"src");
-                        log.info("src->{}", src);
-                        if (StringUtils.isNotNull(src)) {
+                        log.info("src->>>>>>{}", src);
+                        if (StringUtils.isNotEmpty(src.toString())) {
                             news.setNewsImage(src.toString());
                         }
                         // 设置新闻属性 热点区新闻 2
@@ -95,7 +95,9 @@ public class SinaPeNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(cron = "0 0/30 8,9,10 * * ?")
+//    @Scheduled(cron = "0 0/20 8,9,10 * * ?")
+//    @Scheduled(cron = "0 0/10 15,16,17 * * ?")
+    @Scheduled(cron = "0 0/20 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式

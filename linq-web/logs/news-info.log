@@ -3495,3 +3495,1044 @@
 2020-09-01 14:58:07.760 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
 2020-09-01 14:58:07.765 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
 2020-09-01 14:58:07.775 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-09-01 16:25:10.910 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 22257 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-01 16:25:10.914 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-01 16:25:15.859 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-01 16:25:17.233 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-09-01 16:25:22.644 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-01 16:25:25.403 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-01 16:25:25.425 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-01 16:25:25.510 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-01 16:25:25.827 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-01 16:25:25.829 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-01 16:25:25.837 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-01 16:25:25.853 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-01 16:25:25.864 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-01 16:25:25.867 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-01 16:25:25.878 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-01 16:25:25.890 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-01 16:25:25.894 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-01 16:25:25.899 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-01 16:25:25.902 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-01 16:25:25.910 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-01 16:25:25.915 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-01 16:25:25.920 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-01 16:25:25.923 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-01 16:25:25.929 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-01 16:25:25.934 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-01 16:25:25.943 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-01 16:25:25.954 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-01 16:25:25.956 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-01 16:25:25.967 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-01 16:25:25.968 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-01 16:25:25.980 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-01 16:25:25.988 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-01 16:25:25.991 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-01 16:25:26.022 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-01 16:25:26.032 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-01 16:25:26.038 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-01 16:25:26.050 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-01 16:25:26.058 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-01 16:25:26.067 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-01 16:25:26.072 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-01 16:25:26.075 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-01 16:25:26.092 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-01 16:25:26.111 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-01 16:25:26.116 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-01 16:25:26.120 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-01 16:25:26.141 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-01 16:25:26.143 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-01 16:25:26.150 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-01 16:25:26.160 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-01 16:25:26.162 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-01 16:25:26.167 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-01 16:25:26.169 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-01 16:25:26.173 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-01 16:25:26.179 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-01 16:25:26.181 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-01 16:25:26.200 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-01 16:25:26.204 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-01 16:25:26.209 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-01 16:25:26.219 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-01 16:25:26.231 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-01 16:25:26.234 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-01 16:25:26.238 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-01 16:25:26.243 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-01 16:25:26.246 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-01 16:25:26.248 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-01 16:25:26.250 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-01 16:25:26.315 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-01 16:25:26.318 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-01 16:25:26.389 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 16.439 seconds (JVM running for 19.022)
+2020-09-01 16:25:26.864 INFO  [main]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:25:27.812 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:25:27.812 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:25:27.812 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:25:27.812 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:25:27.812 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:25:27.941 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:25:27.974 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:25:28.034 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:25:28.172 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:25:28.607 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:25:48.610 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868
+2020-09-01 16:25:48.715 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/IT_flying625/article/details/101288908
+2020-09-01 16:25:48.722 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:25:48.748 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://help.github.com/cn/articles/setting-repository-visibility?tdsourcetag=s_pctim_aiomsg#in-this-guide
+2020-09-01 16:25:48.758 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:25:48.774 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868/article/details/108306822
+2020-09-01 16:25:48.781 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/xinshuzhan/article/details/108317995
+2020-09-01 16:25:48.802 INFO  [pool-3-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_41185868/article/details/108306822#%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E8%AE%A9%E7%BB%8F%E5%85%B8%E5%9B%BE%E7%89%87%E6%A0%B9%E6%8D%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A8%E4%BD%9C%E5%97%A8%E8%B5%B7%E6%9D%A5(%E5%B0%86%E4%B8%80%E5%BC%A0%E9%9D%99%E6%80%81%E4%BA%BA%E5%83%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E4%B8%BA%E5%B8%A6%E8%A1%A8%E6%83%85%E5%8A%A8%E4%BD%9C%E8%A7%86%E9%A2%91)
+2020-09-01 16:25:48.812 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:25:48.827 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:25:48.832 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:25:48.892 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/IT_flying625
+2020-09-01 16:25:48.931 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868/article/details/108306822#commentBox
+2020-09-01 16:25:48.950 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_41185868/article/details/108306822#%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E8%AE%A9%E7%BB%8F%E5%85%B8%E5%9B%BE%E7%89%87%E6%A0%B9%E6%8D%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A8%E4%BD%9C%E5%97%A8%E8%B5%B7%E6%9D%A5(%E5%B0%86%E4%B8%80%E5%BC%A0%E9%9D%99%E6%80%81%E4%BA%BA%E5%83%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E4%B8%BA%E5%B8%A6%E8%A1%A8%E6%83%85%E5%8A%A8%E4%BD%9C%E8%A7%86%E9%A2%91)
+2020-09-01 16:25:49.014 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/xinshuzhan
+2020-09-01 16:25:49.080 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/IT_flying625/article/details/101288908#commentBox
+2020-09-01 16:25:49.108 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://help.github.com/cn/articles/setting-repository-visibility?tdsourcetag=s_pctim_aiomsg#in-this-guide
+2020-09-01 16:25:49.153 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR/article/details/108299720
+2020-09-01 16:25:49.197 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/CUFEECR/article/details/108299720#_1
+2020-09-01 16:25:49.280 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/xinshuzhan/article/details/108317995#commentBox
+2020-09-01 16:25:49.301 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:25:49.310 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR
+2020-09-01 16:25:49.559 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/YeShenLiaoSuiFeng/article/details/101240396
+2020-09-01 16:25:49.583 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:25:49.734 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:25:50.056 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_39972971/article/details/108307428
+2020-09-01 16:25:50.084 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:25:50.250 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR/article/details/108299720#commentBox
+2020-09-01 16:25:50.279 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/CUFEECR/article/details/108299720#_1
+2020-09-01 16:25:50.580 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_39972971
+2020-09-01 16:26:00.004 INFO  [schedule-pool-1]com.linq.news.task.processor.CsdnNewsProcessor.runSpiderProcess:104 -正在进行爬取中........
+2020-09-01 16:26:00.005 INFO  [schedule-pool-1]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:26:00.442 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:26:00.454 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.468 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:26:00.468 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:26:00.483 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.487 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.487 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:26:00.491 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:26:00.504 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.507 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.539 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:26:00.548 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.565 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:26:00.573 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.598 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:26:00.606 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.794 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_45820444
+2020-09-01 16:26:00.799 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.863 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_45820444/article/details/108304317
+2020-09-01 16:26:00.876 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:26:00.942 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16804847/article/details/108315987
+2020-09-01 16:26:00.952 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16804847
+2020-09-01 16:26:00.956 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:00.957 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:26:01.039 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:26:01.048 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:01.086 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Allen_6
+2020-09-01 16:26:01.090 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:01.170 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:26:01.179 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:01.202 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Allen_6/article/details/108298043
+2020-09-01 16:26:01.214 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/Allen_6/article/details/108298043#_2
+2020-09-01 16:26:01.219 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:26:53.300 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi
+2020-09-01 16:26:53.301 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:26:53.302 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:26:53.303 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi/article/details/108293517#commentBox
+2020-09-01 16:26:53.310 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Allen_6/article/details/108298043#commentBox
+2020-09-01 16:26:53.310 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:26:53.313 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:55.435 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:26:55.442 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:55.445 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi/article/details/108293517
+2020-09-01 16:26:55.450 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:26:55.455 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:57.882 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:57.882 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/Allen_6/article/details/108298043#_2
+2020-09-01 16:26:57.882 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:57.889 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:26:57.895 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:26:57.890 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:26:57.924 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:26:58.768 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:00.086 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zcp528
+2020-09-01 16:27:00.090 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zcp528/article/details/108314660
+2020-09-01 16:27:02.331 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:02.333 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/S11035762/article/details/108325835
+2020-09-01 16:27:02.339 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->http://www.511yj.com/wordpress-pre-populate.html
+2020-09-01 16:27:02.377 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:02.384 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:27:02.384 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:04.340 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:04.341 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/S11035762/article/details/108325835#commentBox
+2020-09-01 16:27:04.342 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_42285889/article/details/108294837
+2020-09-01 16:27:04.342 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/S11035762
+2020-09-01 16:27:04.344 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:04.349 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878/article/details/108283241
+2020-09-01 16:27:04.350 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42227482
+2020-09-01 16:27:04.353 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.357 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/YeShenLiaoSuiFeng
+2020-09-01 16:27:04.367 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878
+2020-09-01 16:27:04.368 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42227482/article/details/108314335
+2020-09-01 16:27:04.368 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/harvic880925/article/details/108292599
+2020-09-01 16:27:04.370 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878/article/details/108283241#commentBox
+2020-09-01 16:27:04.375 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/YeShenLiaoSuiFeng/article/details/101240396#commentBox
+2020-09-01 16:27:04.376 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/harvic880925
+2020-09-01 16:27:04.381 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_39972971/article/details/108307428#commentBox
+2020-09-01 16:27:04.402 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.404 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:27:04.404 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:04.422 INFO  [pool-3-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:27:04.426 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.433 INFO  [pool-3-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.437 INFO  [pool-3-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.439 INFO  [pool-3-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:27:04.442 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.454 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:27:04.471 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/harvic880925/article/details/102850436
+2020-09-01 16:27:04.489 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-01 16:27:04.492 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-09-01 16:27:04.499 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-09-01 16:27:04.585 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45466204
+2020-09-01 16:27:04.587 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:27:04.596 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_42285889/article/details/108294837#commentBox
+2020-09-01 16:27:04.606 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:27:04.616 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/harvic880925/article/details/108292599#commentBox
+2020-09-01 16:27:04.617 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ThinkWon/article/details/101312918
+2020-09-01 16:27:04.628 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/harvic880925/article/details/102850436
+2020-09-01 16:27:04.628 INFO  [pool-3-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/ThinkWon/article/details/101312918#_3
+2020-09-01 16:27:14.175 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 22278 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-01 16:27:14.178 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-01 16:27:24.203 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 22285 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-01 16:27:24.209 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-01 16:27:30.264 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-01 16:27:31.296 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-09-01 16:27:35.761 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-01 16:27:37.839 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-01 16:27:37.856 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-01 16:27:37.930 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-01 16:27:38.184 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-01 16:27:38.186 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-01 16:27:38.195 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-01 16:27:38.212 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-01 16:27:38.218 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-01 16:27:38.220 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-01 16:27:38.228 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-01 16:27:38.236 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-01 16:27:38.238 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-01 16:27:38.242 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-01 16:27:38.243 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-01 16:27:38.247 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-01 16:27:38.252 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-01 16:27:38.255 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-01 16:27:38.257 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-01 16:27:38.262 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-01 16:27:38.265 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-01 16:27:38.271 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-01 16:27:38.277 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-01 16:27:38.279 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-01 16:27:38.286 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-01 16:27:38.288 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-01 16:27:38.297 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-01 16:27:38.304 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-01 16:27:38.306 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-01 16:27:38.321 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-01 16:27:38.330 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-01 16:27:38.333 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-01 16:27:38.340 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-01 16:27:38.343 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-01 16:27:38.349 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-01 16:27:38.352 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-01 16:27:38.356 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-01 16:27:38.366 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-01 16:27:38.384 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-01 16:27:38.387 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-01 16:27:38.393 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-01 16:27:38.414 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-01 16:27:38.416 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-01 16:27:38.430 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-01 16:27:38.446 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-01 16:27:38.451 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-01 16:27:38.461 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-01 16:27:38.464 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-01 16:27:38.468 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-01 16:27:38.479 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-01 16:27:38.483 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-01 16:27:38.512 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-01 16:27:38.515 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-01 16:27:38.518 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-01 16:27:38.528 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-01 16:27:38.539 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-01 16:27:38.541 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-01 16:27:38.543 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-01 16:27:38.548 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-01 16:27:38.550 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-01 16:27:38.552 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-01 16:27:38.556 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-01 16:27:38.585 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-01 16:27:38.588 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-01 16:27:38.654 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 15.78 seconds (JVM running for 18.594)
+2020-09-01 16:27:39.033 INFO  [main]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:27:39.739 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:27:39.739 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:27:39.739 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:27:39.739 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:27:39.859 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:27:39.907 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:27:40.606 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:27:40.613 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:27:40.615 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:27:40.979 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:28:00.006 INFO  [schedule-pool-1]com.linq.news.task.processor.CsdnNewsProcessor.runSpiderProcess:104 -正在进行爬取中........
+2020-09-01 16:28:00.008 INFO  [schedule-pool-1]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:28:00.283 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu/article/details/108307271
+2020-09-01 16:28:00.303 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:00.448 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:28:00.462 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:00.470 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:28:00.514 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:28:00.523 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:28:00.536 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:00.629 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:28:00.638 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:00.684 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:28:00.691 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868/article/details/108306822
+2020-09-01 16:28:00.714 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_41185868/article/details/108306822#%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E8%AE%A9%E7%BB%8F%E5%85%B8%E5%9B%BE%E7%89%87%E6%A0%B9%E6%8D%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A8%E4%BD%9C%E5%97%A8%E8%B5%B7%E6%9D%A5(%E5%B0%86%E4%B8%80%E5%BC%A0%E9%9D%99%E6%80%81%E4%BA%BA%E5%83%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E4%B8%BA%E5%B8%A6%E8%A1%A8%E6%83%85%E5%8A%A8%E4%BD%9C%E8%A7%86%E9%A2%91)
+2020-09-01 16:28:00.800 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:28:00.825 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868/article/details/108306822#commentBox
+2020-09-01 16:28:00.833 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu
+2020-09-01 16:28:00.836 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_41185868/article/details/108306822#%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E8%AE%A9%E7%BB%8F%E5%85%B8%E5%9B%BE%E7%89%87%E6%A0%B9%E6%8D%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A8%E4%BD%9C%E5%97%A8%E8%B5%B7%E6%9D%A5(%E5%B0%86%E4%B8%80%E5%BC%A0%E9%9D%99%E6%80%81%E4%BA%BA%E5%83%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E4%B8%BA%E5%B8%A6%E8%A1%A8%E6%83%85%E5%8A%A8%E4%BD%9C%E8%A7%86%E9%A2%91)
+2020-09-01 16:28:00.856 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868
+2020-09-01 16:28:00.970 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc/article/details/108252571
+2020-09-01 16:28:00.980 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://jingyan.baidu.com/article/25648fc14849779191fd00fd.html
+2020-09-01 16:28:00.998 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu/article/details/108307271#commentBox
+2020-09-01 16:28:01.010 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:01.118 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR/article/details/108299720
+2020-09-01 16:28:01.130 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc
+2020-09-01 16:28:01.142 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:28:01.145 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/CUFEECR/article/details/108299720#_1
+2020-09-01 16:28:01.150 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:28:01.157 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.164 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:28:01.168 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.182 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.187 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:28:01.207 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.209 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:28:01.220 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.229 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR
+2020-09-01 16:28:01.279 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc/article/details/108252571#commentBox
+2020-09-01 16:28:01.286 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://jingyan.baidu.com/article/25648fc14849779191fd00fd.html
+2020-09-01 16:28:01.343 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:28:01.431 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/CUFEECR/article/details/108299720#commentBox
+2020-09-01 16:28:01.452 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:28:01.460 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/CUFEECR/article/details/108299720#_1
+2020-09-01 16:28:01.464 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.471 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:28:01.473 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dQCFKyQDXYm3F8rB0
+2020-09-01 16:28:01.480 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:28:01.481 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.482 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.490 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.564 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/108313356#commentBox
+2020-09-01 16:28:01.578 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/csdnnews/article/details/108233776
+2020-09-01 16:28:01.590 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/108313356
+2020-09-01 16:28:01.602 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/csdnnews/article/details/108233776
+2020-09-01 16:28:01.637 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44064233/article/details/108326975
+2020-09-01 16:28:01.644 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:01.648 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:01.649 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.686 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44064233/article/details/108326975#commentBox
+2020-09-01 16:28:01.694 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:01.695 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/BEYONDMA
+2020-09-01 16:28:01.697 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:01.698 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.700 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.731 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44064233
+2020-09-01 16:28:01.733 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.759 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:28:01.770 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.770 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/BEYONDMA/article/details/108297525
+2020-09-01 16:28:01.775 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/BEYONDMA/article/details/108297525#commentBox
+2020-09-01 16:28:01.781 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dialogueeeee/article/details/108310936
+2020-09-01 16:28:01.792 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->http://www.neurolink.company/
+2020-09-01 16:28:01.795 INFO  [pool-4-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/dialogueeeee/article/details/108310936#_3
+2020-09-01 16:28:01.797 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->http://www.neurolink.company/
+2020-09-01 16:28:01.797 INFO  [pool-4-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:01.798 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.810 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hxj0323/article/details/108304576
+2020-09-01 16:28:01.826 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/hxj0323/article/details/108304576#_3
+2020-09-01 16:28:01.832 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:01.832 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094/article/details/108303488
+2020-09-01 16:28:01.833 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.838 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hxj0323
+2020-09-01 16:28:01.841 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.850 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/u013591094/article/details/108303488#1__1
+2020-09-01 16:28:01.873 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:28:01.878 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Hongke_IIOT/article/details/108315340
+2020-09-01 16:28:01.878 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dialogueeeee
+2020-09-01 16:28:01.880 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.881 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.885 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:01.948 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Hongke_IIOT
+2020-09-01 16:28:01.951 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:01.981 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44895651/article/details/108246269#commentBox
+2020-09-01 16:28:01.991 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:01.998 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44895651/article/details/108246269
+2020-09-01 16:28:02.011 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.049 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44895651
+2020-09-01 16:28:02.055 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.077 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/yaojiawan/article/details/108323435
+2020-09-01 16:28:02.130 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/csdnnews
+2020-09-01 16:28:02.136 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.140 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:02.169 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/yaojiawan
+2020-09-01 16:28:02.170 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/19865
+2020-09-01 16:28:02.174 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.209 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/xyfx_fhw/article/details/108303810
+2020-09-01 16:28:02.218 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/xyfx_fhw/article/details/108303810#LED_6_1
+2020-09-01 16:28:02.229 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44464229/article/details/108301294
+2020-09-01 16:28:02.236 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.238 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.239 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.268 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/xyfx_fhw
+2020-09-01 16:28:02.271 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.317 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_44464229
+2020-09-01 16:28:02.318 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.319 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/csdnnews/article/details/108313737#commentBox
+2020-09-01 16:28:02.332 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:02.343 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nokiaguy/article/details/108319907
+2020-09-01 16:28:02.361 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://dotnet.microsoft.com/download/dotnet/5.0
+2020-09-01 16:28:02.380 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:28:02.388 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.393 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:28:02.402 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.418 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Aviciit/article/details/108307604
+2020-09-01 16:28:02.431 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.435 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.435 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.439 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/HikD_bn/article/details/108315350
+2020-09-01 16:28:02.447 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.449 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.450 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.465 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Aviciit
+2020-09-01 16:28:02.467 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.477 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/csdnnews/article/details/108313737
+2020-09-01 16:28:02.484 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/HikD_bn/article/details/108315350#commentBox
+2020-09-01 16:28:02.485 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:02.490 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.492 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.493 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.499 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nokiaguy
+2020-09-01 16:28:02.504 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/HikD_bn
+2020-09-01 16:28:02.506 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.507 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.543 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_20550447/article/details/108304841
+2020-09-01 16:28:02.549 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_20550447/article/details/108304841#_5
+2020-09-01 16:28:02.551 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.552 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.564 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zhonglinzhang/article/details/108324566
+2020-09-01 16:28:02.574 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:02.602 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_20550447
+2020-09-01 16:28:02.604 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.677 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42126140
+2020-09-01 16:28:02.680 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.703 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zhonglinzhang
+2020-09-01 16:28:02.710 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.710 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hxj0323/article/details/108296539
+2020-09-01 16:28:02.723 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/hxj0323/article/details/108296539#_3
+2020-09-01 16:28:02.729 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.729 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.748 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/codedog111
+2020-09-01 16:28:02.750 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.799 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42126140/article/details/108319350
+2020-09-01 16:28:02.807 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:02.809 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.810 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.858 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/codedog111/article/details/108302433
+2020-09-01 16:28:02.863 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:02.864 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:02.865 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:02.907 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/chilinghuoyu
+2020-09-01 16:28:02.908 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.012 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/chilinghuoyu/article/details/108305267
+2020-09-01 16:28:03.018 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:03.020 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:03.021 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.096 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_16643223
+2020-09-01 16:28:03.101 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.213 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_16643223/article/details/108032651
+2020-09-01 16:28:03.233 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/sinat_16643223/article/details/107511110
+2020-09-01 16:28:03.360 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/blogdevteam/
+2020-09-01 16:28:03.361 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/experts/rule.html
+2020-09-01 16:28:03.361 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.368 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.564 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/21aspnet
+2020-09-01 16:28:03.573 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.690 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/blogdevteam/article/details/103478461#博客专家
+2020-09-01 16:28:03.705 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/blogdevteam/article/details/103478461#%E5%8D%9A%E5%AE%A2%E7%A7%AF%E5%88%86%E8%A7%84%E5%88%99
+2020-09-01 16:28:03.731 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/tianxiaode
+2020-09-01 16:28:03.737 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:03.846 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/UbuntuTouch
+2020-09-01 16:28:03.851 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.059 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://mp.csdn.net/console/move?utm_source=blog
+2020-09-01 16:28:04.060 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.307 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://bss.csdn.net/cview/reg/?project_id=4335&identy_id=2152
+2020-09-01 16:28:04.308 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.524 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/rank/writing_rank
+2020-09-01 16:28:04.526 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.571 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41185868
+2020-09-01 16:28:04.577 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.724 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_35190492
+2020-09-01 16:28:04.728 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.803 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/dataiyangu
+2020-09-01 16:28:04.809 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.887 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_36556893
+2020-09-01 16:28:04.891 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:04.985 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/eastmount
+2020-09-01 16:28:04.991 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.051 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/tefuirnever
+2020-09-01 16:28:05.055 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.160 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/thinkwon
+2020-09-01 16:28:05.163 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.204 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_40693171
+2020-09-01 16:28:05.209 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.327 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qing_gee
+2020-09-01 16:28:05.331 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.377 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_17623363
+2020-09-01 16:28:05.381 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.512 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/30337
+2020-09-01 16:28:05.512 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.564 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/26941
+2020-09-01 16:28:05.565 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.577 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/30332
+2020-09-01 16:28:05.578 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.611 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/25274
+2020-09-01 16:28:05.612 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.630 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/26991
+2020-09-01 16:28:05.631 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.660 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/26947
+2020-09-01 16:28:05.661 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.684 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/17890
+2020-09-01 16:28:05.684 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.715 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/27175
+2020-09-01 16:28:05.716 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.741 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/25511
+2020-09-01 16:28:05.741 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.770 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/24584
+2020-09-01 16:28:05.770 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.795 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/17877
+2020-09-01 16:28:05.796 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.839 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/18297
+2020-09-01 16:28:05.840 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.851 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/27176
+2020-09-01 16:28:05.852 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.901 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/24399
+2020-09-01 16:28:05.902 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.907 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/26247
+2020-09-01 16:28:05.909 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:05.965 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://live.csdn.net/v/25904
+2020-09-01 16:28:05.966 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:06.309 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/k_ksy/article/details/106233645
+2020-09-01 16:28:06.311 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/rxh811/article/details/106223630
+2020-09-01 16:28:06.327 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/k_ksy/article/details/106233645#stm32f103c8t6_2
+2020-09-01 16:28:06.327 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/rxh811/article/details/106223630#_1
+2020-09-01 16:28:06.713 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_36458870/article/details/100035630
+2020-09-01 16:28:06.720 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/bits_stdc/article/details/105978657
+2020-09-01 16:28:06.728 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/sinat_36458870/article/details/100035630#_3
+2020-09-01 16:28:06.730 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/bits_stdc/article/details/105978657#_2
+2020-09-01 16:28:06.981 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/tangthh123/article/details/106176769
+2020-09-01 16:28:06.991 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->http://lbsyun.baidu.com/index.php?title=webapi/ip-api
+2020-09-01 16:28:07.084 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_45963535/article/details/106200278
+2020-09-01 16:28:07.093 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://v.youku.com/v_show/id_XNTg2NzQyNTM2.html
+2020-09-01 16:28:07.133 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/devcloud
+2020-09-01 16:28:07.136 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.272 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/MeituanTech
+2020-09-01 16:28:07.276 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.309 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/alitech2017
+2020-09-01 16:28:07.313 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.434 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/SequoiaDB_Official
+2020-09-01 16:28:07.436 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.489 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/GUDUzhongliang
+2020-09-01 16:28:07.495 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.591 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_45449540
+2020-09-01 16:28:07.593 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.733 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi
+2020-09-01 16:28:07.735 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:07.793 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi/article/details/108328810
+2020-09-01 16:28:07.801 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/gitchatxiaomi/article/details/108328810#nginx_8
+2020-09-01 16:28:07.825 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/gitchatxiaomi/article/details/108328810#commentBox
+2020-09-01 16:28:07.833 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/gitchatxiaomi/article/details/108328810#nginx_8
+2020-09-01 16:28:07.989 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16146103
+2020-09-01 16:28:07.993 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:08.071 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16146103/article/details/108111101
+2020-09-01 16:28:08.078 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_16146103
+2020-09-01 16:28:08.128 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16146103/article/details/108111101#commentBox
+2020-09-01 16:28:08.136 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_16146103
+2020-09-01 16:28:08.302 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44895397
+2020-09-01 16:28:08.304 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:08.321 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44895397/article/details/108156360
+2020-09-01 16:28:08.327 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_44895397
+2020-09-01 16:28:08.393 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44895397/article/details/108156360#commentBox
+2020-09-01 16:28:08.401 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_44895397
+2020-09-01 16:28:08.548 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_14996421
+2020-09-01 16:28:08.551 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:08.627 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_14996421/article/details/108290552#commentBox
+2020-09-01 16:28:08.632 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:08.637 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_14996421/article/details/108290552
+2020-09-01 16:28:08.643 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:08.821 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46510245
+2020-09-01 16:28:08.823 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:08.926 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46510245/article/details/108315064
+2020-09-01 16:28:08.934 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:09.083 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hihell
+2020-09-01 16:28:09.086 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:09.116 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hihell/article/details/108303283
+2020-09-01 16:28:09.122 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/hihell/article/details/108303283#_9
+2020-09-01 16:28:09.163 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hihell/article/details/108303283#commentBox
+2020-09-01 16:28:09.169 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/hihell/article/details/108303283#_9
+2020-09-01 16:28:09.312 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44172732
+2020-09-01 16:28:09.316 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:09.455 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44172732/article/details/108323246
+2020-09-01 16:28:09.467 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_44172732/article/details/108323246#_6
+2020-09-01 16:28:09.559 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44172732/article/details/108323246#commentBox
+2020-09-01 16:28:09.568 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_44172732/article/details/108323246#_6
+2020-09-01 16:28:09.746 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa
+2020-09-01 16:28:09.748 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:09.761 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa/article/details/108319628
+2020-09-01 16:28:09.769 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://core.dpdk.org/supported/
+2020-09-01 16:28:09.835 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa/article/details/108319628#commentBox
+2020-09-01 16:28:09.844 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://core.dpdk.org/supported/
+2020-09-01 16:28:09.985 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46692956
+2020-09-01 16:28:09.987 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:10.059 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46692956/article/details/108302152
+2020-09-01 16:28:10.064 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:10.247 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_34168515
+2020-09-01 16:28:10.251 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:10.298 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_34168515/article/details/108315484
+2020-09-01 16:28:10.309 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_34168515/article/details/108315484#Glossary_of_terms__1
+2020-09-01 16:28:10.312 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:10.313 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:10.344 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_34168515/article/details/108315484#commentBox
+2020-09-01 16:28:10.352 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_34168515/article/details/108315484#Glossary_of_terms__1
+2020-09-01 16:28:10.355 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:10.356 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:20.641 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094
+2020-09-01 16:28:20.745 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42429718
+2020-09-01 16:28:20.946 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094/article/details/108303488#commentBox
+2020-09-01 16:28:20.955 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/u013591094/article/details/108303488#1__1
+2020-09-01 16:28:21.004 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java/article/details/108305113
+2020-09-01 16:28:21.012 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/guorui_java/article/details/106467812
+2020-09-01 16:28:21.026 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42227482/article/details/108314335
+2020-09-01 16:28:21.046 INFO  [pool-3-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:21.055 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42227482
+2020-09-01 16:28:21.145 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878/article/details/108283241
+2020-09-01 16:28:21.155 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:21.159 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:21.170 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878
+2020-09-01 16:28:21.175 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java
+2020-09-01 16:28:21.268 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java/article/details/108305113#commentBox
+2020-09-01 16:28:21.274 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/guorui_java/article/details/106467812
+2020-09-01 16:28:21.409 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_45931878/article/details/108283241#commentBox
+2020-09-01 16:28:21.418 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:21.421 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:21.558 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012829124/article/details/108306434
+2020-09-01 16:28:21.572 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:21.823 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012829124
+2020-09-01 16:28:21.972 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hanhanwanghaha/article/details/108303001
+2020-09-01 16:28:21.979 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/hanhanwanghaha/article/details/108253704
+2020-09-01 16:28:22.117 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_19734597
+2020-09-01 16:28:22.122 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.147 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/hanhanwanghaha
+2020-09-01 16:28:22.190 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_19734597/article/details/108309535
+2020-09-01 16:28:22.201 INFO  [pool-4-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://github.com/containernetworking/plugins/releases
+2020-09-01 16:28:22.329 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_41421986
+2020-09-01 16:28:22.330 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.379 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_41421986/article/details/108310468
+2020-09-01 16:28:22.385 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:22.525 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/DreamsArchitects
+2020-09-01 16:28:22.527 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.579 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_45796388/article/details/108315895
+2020-09-01 16:28:22.584 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:22.585 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:22.647 INFO  [pool-4-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/DreamsArchitects/article/details/108308319
+2020-09-01 16:28:22.654 INFO  [pool-4-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/DreamsArchitects/article/details/108308319#ERLANG_1
+2020-09-01 16:28:22.655 INFO  [pool-4-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:22.656 INFO  [pool-4-thread-1]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.694 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_43916997
+2020-09-01 16:28:22.695 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.731 INFO  [pool-4-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/DreamsArchitects/article/details/108308319#commentBox
+2020-09-01 16:28:22.737 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/DreamsArchitects/article/details/108308319#ERLANG_1
+2020-09-01 16:28:22.738 INFO  [pool-4-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:22.739 INFO  [pool-4-thread-6]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:22.771 INFO  [pool-4-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_43916997/article/details/108302663
+2020-09-01 16:28:22.777 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:22.778 INFO  [pool-4-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:22.778 INFO  [pool-4-thread-9]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.002 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16146103/article/details/108095536
+2020-09-01 16:28:23.012 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_16146103/article/details/108095536#commentBox
+2020-09-01 16:28:23.019 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_16146103
+2020-09-01 16:28:23.026 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/qq_16146103
+2020-09-01 16:28:23.128 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/UbuntuTouch/article/details/108315145
+2020-09-01 16:28:23.134 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+2020-09-01 16:28:23.149 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/IT_ZRS
+2020-09-01 16:28:23.150 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.273 INFO  [pool-4-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/IT_ZRS/article/details/108308034
+2020-09-01 16:28:23.279 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/IT_ZRS/article/details/108308034#_1
+2020-09-01 16:28:23.280 INFO  [pool-4-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:23.281 INFO  [pool-4-thread-3]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.305 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012039040
+2020-09-01 16:28:23.309 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.311 INFO  [pool-4-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq482929763/article/details/108314512
+2020-09-01 16:28:23.317 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:23.318 INFO  [pool-4-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:23.319 INFO  [pool-4-thread-4]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.324 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012039040/article/details/108289541
+2020-09-01 16:28:23.330 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:23.404 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012039040/article/details/108289541#commentBox
+2020-09-01 16:28:23.406 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq482929763
+2020-09-01 16:28:23.408 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.410 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:23.541 INFO  [pool-4-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Lin_p/article/details/108320604
+2020-09-01 16:28:23.542 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Lin_p
+2020-09-01 16:28:23.543 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.547 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://www.elastic.co/cn/downloads/elasticsearch
+2020-09-01 16:28:23.548 INFO  [pool-4-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:23.549 INFO  [pool-4-thread-10]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.610 INFO  [pool-4-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Lin_p/article/details/108320604#commentBox
+2020-09-01 16:28:23.614 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://www.elastic.co/cn/downloads/elasticsearch
+2020-09-01 16:28:23.615 INFO  [pool-4-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:23.616 INFO  [pool-4-thread-2]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:23.774 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46692956/article/details/108302178
+2020-09-01 16:28:23.779 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:24.138 INFO  [pool-4-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Stevenwuxu/article/details/108313814
+2020-09-01 16:28:24.144 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:24.147 INFO  [pool-4-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:24.147 INFO  [pool-4-thread-5]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:30.450 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Stevenwuxu
+2020-09-01 16:28:30.451 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:30.786 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/riba2534/article/details/108305323
+2020-09-01 16:28:30.787 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/riba2534
+2020-09-01 16:28:30.791 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:30.798 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:31.046 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jziwjxjd
+2020-09-01 16:28:31.049 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:31.050 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jziwjxjd/article/details/108313775
+2020-09-01 16:28:31.058 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:31.156 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jziwjxjd/article/details/108313775#commentBox
+2020-09-01 16:28:31.163 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->null
+2020-09-01 16:28:31.457 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ljw_study_in_CSDN
+2020-09-01 16:28:31.459 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:31.502 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ljw_study_in_CSDN/article/details/108304794
+2020-09-01 16:28:31.513 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->https://blog.csdn.net/ljw_study_in_CSDN/article/details/108304794#T3httpstianchialiyuncomoj1516546996850340476745683722506852_1
+2020-09-01 16:28:31.763 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ljfirst
+2020-09-01 16:28:31.765 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:31.769 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ljfirst/article/details/108328921
+2020-09-01 16:28:31.775 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:31.894 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/ljfirst/article/details/108328921#commentBox
+2020-09-01 16:28:31.900 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:32.102 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/csdnnews/article/details/108321136
+2020-09-01 16:28:32.109 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:32.134 INFO  [pool-4-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46427179/article/details/108325750
+2020-09-01 16:28:32.141 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:32.144 INFO  [pool-4-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:32.144 INFO  [pool-4-thread-7]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:32.246 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46427179
+2020-09-01 16:28:32.247 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:32.340 INFO  [pool-4-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/m0_46427179/article/details/108325750#commentBox
+2020-09-01 16:28:32.347 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:50 -正在使用的详情页链接->
+2020-09-01 16:28:32.350 INFO  [pool-4-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:73 -src->>>>>>>>null
+2020-09-01 16:28:32.350 INFO  [pool-4-thread-8]com.linq.news.task.pipeline.NewsPipeline.process:33 -获取封装好的news->>>>>>>>null
+2020-09-01 16:28:36.250 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-01 16:28:36.254 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-09-01 16:28:36.260 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-09-01 16:32:20.307 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 22326 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-01 16:32:20.312 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-01 16:32:25.781 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-01 16:32:26.975 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-09-01 16:32:31.011 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-01 16:32:33.317 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-01 16:32:33.337 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-01 16:32:33.405 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-01 16:32:33.659 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-01 16:32:33.661 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-01 16:32:33.668 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-01 16:32:33.681 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-01 16:32:33.688 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-01 16:32:33.690 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-01 16:32:33.695 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-01 16:32:33.704 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-01 16:32:33.706 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-01 16:32:33.709 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-01 16:32:33.711 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-01 16:32:33.714 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-01 16:32:33.720 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-01 16:32:33.723 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-01 16:32:33.724 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-01 16:32:33.730 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-01 16:32:33.734 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-01 16:32:33.740 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-01 16:32:33.747 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-01 16:32:33.749 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-01 16:32:33.755 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-01 16:32:33.757 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-01 16:32:33.766 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-01 16:32:33.773 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-01 16:32:33.775 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-01 16:32:33.791 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-01 16:32:33.799 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-01 16:32:33.802 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-01 16:32:33.808 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-01 16:32:33.810 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-01 16:32:33.815 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-01 16:32:33.816 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-01 16:32:33.818 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-01 16:32:33.822 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-01 16:32:33.829 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-01 16:32:33.831 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-01 16:32:33.834 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-01 16:32:33.842 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-01 16:32:33.844 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-01 16:32:33.849 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-01 16:32:33.855 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-01 16:32:33.857 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-01 16:32:33.862 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-01 16:32:33.863 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-01 16:32:33.867 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-01 16:32:33.874 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-01 16:32:33.877 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-01 16:32:33.900 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-01 16:32:33.902 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-01 16:32:33.905 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-01 16:32:33.913 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-01 16:32:33.929 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-01 16:32:33.931 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-01 16:32:33.934 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-01 16:32:33.937 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-01 16:32:33.939 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-01 16:32:33.942 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-01 16:32:33.944 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-01 16:32:33.963 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-01 16:32:33.964 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-01 16:32:34.003 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 14.648 seconds (JVM running for 17.561)
+2020-09-01 16:32:34.295 INFO  [main]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:32:35.121 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:32:35.121 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:32:35.256 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:32:35.262 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:32:36.043 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:32:36.044 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:32:36.045 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:32:36.051 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:32:36.052 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:32:36.063 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:32:55.752 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:32:56.420 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc/article/details/108252571
+2020-09-01 16:32:56.441 INFO  [pool-3-thread-5]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://jingyan.baidu.com/article/25648fc14849779191fd00fd.html
+2020-09-01 16:32:56.442 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu/article/details/108307271
+2020-09-01 16:32:56.469 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:32:56.576 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_28929579/article/details/94745421
+2020-09-01 16:32:56.589 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:32:56.595 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:32:56.603 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc
+2020-09-01 16:32:56.651 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu/article/details/108307271#commentBox
+2020-09-01 16:32:56.660 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_28929579
+2020-09-01 16:32:56.669 INFO  [pool-3-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:32:56.688 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:32:56.698 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:32:56.711 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_28929579/article/details/94745421#commentBox
+2020-09-01 16:32:56.715 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/banzhuanhu
+2020-09-01 16:32:56.721 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:32:56.730 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:32:56.818 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/jgdabc/article/details/108252571#commentBox
+2020-09-01 16:32:56.829 INFO  [pool-3-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://jingyan.baidu.com/article/25648fc14849779191fd00fd.html
+2020-09-01 16:32:57.113 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_24036979/article/details/101308486
+2020-09-01 16:32:57.127 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:32:57.135 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094/article/details/108303488
+2020-09-01 16:32:57.148 INFO  [pool-3-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/u013591094/article/details/108303488#1__1
+2020-09-01 16:32:57.271 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_24036979
+2020-09-01 16:32:57.296 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094
+2020-09-01 16:33:16.179 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Cai1010110/article/details/101306206
+2020-09-01 16:33:16.186 INFO  [pool-3-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:16.326 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u013591094/article/details/108303488#commentBox
+2020-09-01 16:33:16.335 INFO  [pool-3-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/u013591094/article/details/108303488#1__1
+2020-09-01 16:33:16.742 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Cai1010110
+2020-09-01 16:33:16.819 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Cai1010110/article/details/101306206#commentBox
+2020-09-01 16:33:16.826 INFO  [pool-3-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:16.899 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java
+2020-09-01 16:33:17.012 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java/article/details/108305113#commentBox
+2020-09-01 16:33:17.020 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/guorui_java/article/details/106467812
+2020-09-01 16:33:17.077 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41770175
+2020-09-01 16:33:17.084 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/guorui_java/article/details/108305113
+2020-09-01 16:33:17.091 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/guorui_java/article/details/106467812
+2020-09-01 16:33:17.177 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41770175/article/details/101277851
+2020-09-01 16:33:17.184 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:17.227 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_41770175/article/details/101277851#commentBox
+2020-09-01 16:33:17.240 INFO  [pool-3-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:17.312 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012829124
+2020-09-01 16:33:17.397 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_38657051/article/details/101061005
+2020-09-01 16:33:17.408 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/weixin_38657051/article/details/101061005#JenkinsAnsibleGitlab_2
+2020-09-01 16:33:17.422 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/u012829124/article/details/108306434
+2020-09-01 16:33:17.439 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:17.440 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_38657051
+2020-09-01 16:33:17.454 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_38657051/article/details/101061005#commentBox
+2020-09-01 16:33:17.466 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_47723732
+2020-09-01 16:33:17.469 INFO  [pool-3-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/weixin_38657051/article/details/101061005#JenkinsAnsibleGitlab_2
+2020-09-01 16:33:17.566 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_47723732/article/details/108314431
+2020-09-01 16:33:17.580 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:17.709 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/bylfsj
+2020-09-01 16:33:17.718 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/bylfsj/article/details/101227210
+2020-09-01 16:33:17.730 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:17.730 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_50333224
+2020-09-01 16:33:17.792 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_50333224/article/details/108303537
+2020-09-01 16:33:17.844 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/bylfsj/article/details/101227210#commentBox
+2020-09-01 16:33:17.845 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->http://zhouhelong.cn/2
+2020-09-01 16:33:17.847 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:75 -src->>>>>>>><html>
+ <head></head>
+ <body>
+  https://profile.csdnimg.cn/D/D/1/3_sinat_50333224
+ </body>
+</html>
+2020-09-01 16:33:17.854 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:17.951 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/sinat_50333224/article/details/108303537#commentBox
+2020-09-01 16:33:17.957 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->http://zhouhelong.cn/2
+2020-09-01 16:33:17.958 INFO  [pool-3-thread-10]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:75 -src->>>>>>>><html>
+ <head></head>
+ <body>
+  https://profile.csdnimg.cn/D/D/1/3_sinat_50333224
+ </body>
+</html>
+2020-09-01 16:33:37.111 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/eyeofeagle/article/details/101273223
+2020-09-01 16:33:37.121 INFO  [pool-3-thread-2]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/eyeofeagle/article/details/101273223#_1
+2020-09-01 16:33:37.134 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/eyeofeagle
+2020-09-01 16:33:37.283 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa
+2020-09-01 16:33:37.343 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa/article/details/108319628
+2020-09-01 16:33:37.362 INFO  [pool-3-thread-3]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://core.dpdk.org/supported/
+2020-09-01 16:33:37.524 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Charliewolf
+2020-09-01 16:33:37.583 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Rong_Toa/article/details/108319628#commentBox
+2020-09-01 16:33:37.589 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_43901550/article/details/105349894
+2020-09-01 16:33:37.602 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:37.603 INFO  [pool-3-thread-8]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://core.dpdk.org/supported/
+2020-09-01 16:33:37.636 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Charliewolf/article/details/101273248
+2020-09-01 16:33:37.643 INFO  [pool-3-thread-7]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:37.741 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_43901550
+2020-09-01 16:33:37.820 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42096901
+2020-09-01 16:33:37.832 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_42096901/article/details/101288346
+2020-09-01 16:33:37.843 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->http://stackoverflow.com/questions/21244481/error-using-insmod-could-not-insert-module-hello-world-ko-invalid-module-forma
+2020-09-01 16:33:37.844 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/weixin_43901550/article/details/105349894#commentBox
+2020-09-01 16:33:37.853 INFO  [pool-3-thread-6]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->
+2020-09-01 16:33:38.009 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zhonglinzhang
+2020-09-01 16:33:38.022 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/allway2
+2020-09-01 16:33:38.077 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/zhonglinzhang/article/details/108324566
+2020-09-01 16:33:38.087 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-01 16:33:38.087 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->null
+2020-09-01 16:33:38.092 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-09-01 16:33:38.107 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed
+2020-09-01 16:35:47.002 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 22361 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-01 16:35:47.005 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-01 16:35:51.127 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-01 16:35:51.784 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:1010 -{dataSource-1} inited
+2020-09-01 16:35:56.461 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-01 16:35:58.552 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-01 16:35:58.576 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-01 16:35:58.650 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-01 16:35:58.913 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-01 16:35:58.915 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-01 16:35:58.921 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-01 16:35:58.931 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-01 16:35:58.937 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-01 16:35:58.939 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-01 16:35:58.944 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-01 16:35:58.951 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-01 16:35:58.953 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-01 16:35:58.957 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-01 16:35:58.958 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-01 16:35:58.962 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-01 16:35:58.966 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-01 16:35:58.969 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-01 16:35:58.971 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-01 16:35:58.975 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-01 16:35:58.979 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-01 16:35:58.986 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-01 16:35:58.995 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-01 16:35:58.997 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-01 16:35:59.003 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-01 16:35:59.005 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-01 16:35:59.015 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-01 16:35:59.021 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-01 16:35:59.022 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-01 16:35:59.034 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-01 16:35:59.040 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-01 16:35:59.043 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-01 16:35:59.048 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-01 16:35:59.050 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-01 16:35:59.054 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-01 16:35:59.055 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-01 16:35:59.057 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-01 16:35:59.061 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-01 16:35:59.066 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-01 16:35:59.068 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-01 16:35:59.070 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-01 16:35:59.078 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-01 16:35:59.080 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-01 16:35:59.085 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-01 16:35:59.091 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-01 16:35:59.092 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-01 16:35:59.097 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-01 16:35:59.098 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-01 16:35:59.102 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-01 16:35:59.107 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-01 16:35:59.108 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-01 16:35:59.130 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-01 16:35:59.132 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-01 16:35:59.135 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-01 16:35:59.141 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-01 16:35:59.154 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-01 16:35:59.156 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-01 16:35:59.163 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-01 16:35:59.166 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-01 16:35:59.169 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-01 16:35:59.171 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-01 16:35:59.173 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-01 16:35:59.196 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-01 16:35:59.198 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-01 16:35:59.242 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 13.287 seconds (JVM running for 15.565)
+2020-09-01 16:35:59.513 INFO  [main]us.codecraft.webmagic.Spider.run:306 -Spider blog.csdn.net started!
+2020-09-01 16:36:00.182 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/sec
+2020-09-01 16:36:00.333 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/game
+2020-09-01 16:36:00.357 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/java
+2020-09-01 16:36:00.359 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/5g
+2020-09-01 16:36:00.360 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/db
+2020-09-01 16:36:00.363 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/python
+2020-09-01 16:36:00.382 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/mobile
+2020-09-01 16:36:00.643 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/ops
+2020-09-01 16:36:01.364 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/web
+2020-09-01 16:36:01.405 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/arch
+2020-09-01 16:36:20.733 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/kobeyu652453/article/details/108296741
+2020-09-01 16:36:20.758 INFO  [pool-3-thread-1]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/kobeyu652453
+2020-09-01 16:36:20.853 INFO  [pool-3-thread-6]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/kobeyu652453
+2020-09-01 16:36:20.944 INFO  [pool-3-thread-1]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44757034
+2020-09-01 16:36:20.969 INFO  [pool-3-thread-7]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/iot
+2020-09-01 16:36:20.970 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44757034/article/details/108200903
+2020-09-01 16:36:21.004 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/qq_44757034
+2020-09-01 16:36:21.015 INFO  [pool-3-thread-5]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/avi
+2020-09-01 16:36:21.130 INFO  [pool-3-thread-2]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/other
+2020-09-01 16:36:21.172 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_44757034/article/details/108200903#commentBox
+2020-09-01 16:36:21.185 INFO  [pool-3-thread-8]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/fund
+2020-09-01 16:36:21.203 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/qq_44757034
+2020-09-01 16:36:21.333 INFO  [pool-3-thread-9]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Fanghen/article/details/108315723
+2020-09-01 16:36:21.351 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/Fanghen
+2020-09-01 16:36:21.364 INFO  [pool-3-thread-9]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:74 -src->>>>>>>>https://profile.csdnimg.cn/5/A/9/3_fanghen
+2020-09-01 16:36:21.502 INFO  [pool-3-thread-3]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/Fanghen
+2020-09-01 16:36:21.614 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_33589510/article/details/108297734
+2020-09-01 16:36:21.633 INFO  [pool-3-thread-4]com.linq.news.task.processor.CsdnNewsProcessor.lambda$process$0:51 -正在使用的详情页链接->https://blog.csdn.net/qq_33589510
+2020-09-01 16:36:21.936 INFO  [pool-3-thread-4]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/qq_33589510
+2020-09-01 16:36:21.945 INFO  [pool-3-thread-10]us.codecraft.webmagic.downloader.HttpClientDownloader.download:88 -downloading page success https://blog.csdn.net/nav/engineering
+2020-09-01 16:36:34.411 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-01 16:36:34.415 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2003 -{dataSource-1} closing ...
+2020-09-01 16:36:34.420 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2075 -{dataSource-1} closed

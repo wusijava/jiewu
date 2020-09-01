@@ -48,6 +48,6 @@
                 and email like concat('%', #{link.email}, '%')
             </if>
         </where>
-        order by order_num and  linq_id
+        order by order_num, linq_id
     </select>
 </mapper>
