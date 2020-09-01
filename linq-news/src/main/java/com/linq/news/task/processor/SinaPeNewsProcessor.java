@@ -1,9 +1,10 @@
-package com.linq.news.task;
+package com.linq.news.task.processor;
 
 import com.linq.common.exception.CustomException;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNews;
-import com.linq.news.task.config.SpiderProperties;
+import com.linq.news.task.config.target.PeNewsProperties;
+import com.linq.news.task.pipeline.NewsPipeline;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +32,7 @@ import java.util.Objects;
 @Component
 public class SinaPeNewsProcessor implements PageProcessor {
     @Autowired
-    private SpiderProperties spiderProperties;
-    @Autowired
-    private SinaPipeline sinaPipeline;
+    private NewsPipeline pipeline;
 
     /**
      * 解析页面
@@ -44,10 +43,10 @@ public class SinaPeNewsProcessor implements PageProcessor {
             LinqNews news = new LinqNews();
             Html html = page.getHtml();
             // 拿到新浪nba专栏所有a标签请求连接并且发送请求 获取到的详情页连接
-            List<String> urls = page.getHtml().$("div.news-list-b").links().regex(".*shtml$").all();
+            List<String> urls = page.getHtml().$(PeNewsProperties.targetUrlCssSelector).links().all();
             page.addTargetRequests(urls);
             // 获取所有详情页列表---- 文本内容
-            List<Selectable> selectableList = page.getHtml().$(".main-content.w1240").nodes();
+            List<Selectable> selectableList = page.getHtml().$(PeNewsProperties.detailSelectCssSelector).nodes();
             // log.info("从详情页面获取数据列表->{}", selectableList);
             // 遍历详情页列表 解析出每一个信息 存到  LinqNews
             selectableList.stream().filter(Objects::nonNull)
@@ -58,13 +57,13 @@ public class SinaPeNewsProcessor implements PageProcessor {
                         // 设置新闻来源
                         news.setNewsSource(selectable.links().toString());
                         // 设置新闻标题 selectable.$(".main-title").toString()
-                        news.setNewsTitle(Jsoup.parse(html.$(".main-title").toString()).text());
+                        news.setNewsTitle(Jsoup.parse(html.$(PeNewsProperties.newsTitleCssSelector).toString()).text());
                         // 体育新闻类型 id=4
-                        news.setNewsTypeId(4L);
+                        news.setNewsTypeId(PeNewsProperties.newsTypeId);
                         // 设置新闻内容
-                        news.setNewsContent(selectable.$("#artibody").toString());
+                        news.setNewsContent(selectable.$(PeNewsProperties.newsContentCssSelector).toString());
                         // 设置新闻封面
-                        Selectable src = selectable.$(".img_wrapper > img", "src");
+                        Selectable src = selectable.$(PeNewsProperties.newsImageCssSelector,"src");
                         log.info("src->{}", src);
                         if (StringUtils.isNotNull(src)) {
                             news.setNewsImage(src.toString());
@@ -75,9 +74,9 @@ public class SinaPeNewsProcessor implements PageProcessor {
 
             // log.info("爬取下来的newsList->{}", newsList);
             // 把结果保存起来
-            page.putField("news", news);
+            page.putField(PeNewsProperties.fieldKey, news);
         } catch (Exception e) {
-            throw new CustomException("新浪爬取新闻解析错误");
+            throw new CustomException("爬取新闻解析错误");
         }
 
     }
@@ -95,22 +94,22 @@ public class SinaPeNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
+    //@Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
-                // 配置代理模式
-                //        HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
-                //        httpClientDownloader.setProxyProvider(SimpleProxyProvider.from(
-                //                new Proxy("124.93.201.59", 42672),
-                //                new Proxy("222.90.110.194", 8080),
-                //                new Proxy("120.236.130.132", 8060)
-                //        ));
+        // 配置代理模式
+        //        HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
+        //        httpClientDownloader.setProxyProvider(SimpleProxyProvider.from(
+        //                new Proxy("124.93.201.59", 42672),
+        //                new Proxy("222.90.110.194", 8080),
+        //                new Proxy("120.236.130.132", 8060)
+        //        ));
         Spider.create(new SinaPeNewsProcessor())
-                 //.setDownloader(httpClientDownloader) //设置代理
-                .addUrl(spiderProperties.getPeNewsUrl())
+                //.setDownloader(httpClientDownloader) //设置代理
+                .addUrl(PeNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
                 .thread(4)
-                .addPipeline(sinaPipeline)
+                .addPipeline(pipeline)
                 .run();
     }
 }

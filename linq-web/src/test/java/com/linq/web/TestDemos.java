@@ -7,8 +7,13 @@ import com.linq.common.core.domain.entity.SysDept;
 import com.linq.common.core.redis.RedisService;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.framework.web.domain.Server;
-import com.linq.news.task.SinaPeNewsProcessor;
-import com.linq.news.task.config.SpiderProperties;
+
+import com.linq.news.task.config.target.CsdnNewsProperties;
+import com.linq.news.task.config.target.EntertainmentNewsProperties;
+import com.linq.news.task.config.target.PeNewsProperties;
+import com.linq.news.task.processor.CsdnNewsProcessor;
+import com.linq.news.task.processor.SinaEntertainmentNewsProcessor;
+import com.linq.news.task.processor.SinaPeNewsProcessor;
 import com.linq.system.service.SysDeptService;
 import com.linq.system.service.SysRoleService;
 import com.linq.system.service.SysUserService;
@@ -19,7 +24,9 @@ import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
 import us.codecraft.webmagic.scheduler.QueueScheduler;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Author: 林义清
@@ -37,8 +44,30 @@ public class TestDemos {
     private SysUserService userService;
     @Autowired
     private SysRoleService roleService;
-    @Autowired
-    private SpiderProperties spiderProperties;
+
+    /**
+     * 拼接初始化的URL
+     */
+    public List<String> getInitCrawlerUrlList() {
+        List<String> initCrawlerUrlList = null;
+        // 前缀
+        if (StringUtils.isNotEmpty(CsdnNewsProperties.urlPrefix)) {
+            String[] initCrawlerUrlArray = CsdnNewsProperties.urlSuffix.split(",");
+            if (initCrawlerUrlArray.length > 0) {
+                for (int i = 0; i < initCrawlerUrlArray.length; i++) {
+                    String initUrl = initCrawlerUrlArray[i];
+                    if (StringUtils.isNotEmpty(initUrl)) {
+                        if (!initUrl.toLowerCase().startsWith("http")) {
+                            initUrl = CsdnNewsProperties.urlPrefix + initUrl;
+                            initCrawlerUrlArray[i] = initUrl;
+                        }
+                    }
+                }
+            }
+            initCrawlerUrlList = Arrays.stream(initCrawlerUrlArray).filter(StringUtils::isNotEmpty).collect(Collectors.toList());
+        }
+        return initCrawlerUrlList;
+    }
 
     @Test
     public void testSet() {
@@ -79,11 +108,32 @@ public class TestDemos {
     }
 
     @Test
-    public void testSpider() {
+    public void testSinaPeNewsSpider() {
         Spider.create(new SinaPeNewsProcessor())
-                .addUrl(spiderProperties.getPeNewsUrl())
+                .addUrl(PeNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
                 .thread(4)
                 .run();
     }
+
+    @Test
+    public void testCsdnNewsSpider() {
+        Spider.create(new CsdnNewsProcessor())
+                //.setDownloader(httpClientDownloader) //设置代理
+                .addUrl(getInitCrawlerUrlList().toArray(new String[0])) // 爬取地址
+                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
+                .thread(4)
+                .run();
+    }
+
+    @Test
+    public void testEntertainmentSpider() {
+        Spider.create(new SinaEntertainmentNewsProcessor())
+                //.setDownloader(httpClientDownloader) //设置代理
+                .addUrl(EntertainmentNewsProperties.url) // 爬取地址
+                .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
+                .thread(4)
+                .run();
+    }
+
 }

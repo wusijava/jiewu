@@ -1,4 +1,4 @@
-package com.linq.news.task;
+package com.linq.news.task.pipeline;
 
 import com.linq.common.constant.UserConstants;
 import com.linq.common.utils.string.StringUtils;
@@ -18,14 +18,14 @@ import us.codecraft.webmagic.pipeline.Pipeline;
  * @Version: 1.0.0
  */
 @Component
-public class SinaPipeline implements Pipeline {
+public class NewsPipeline implements Pipeline {
     @Autowired
     private LinqNewsService newsService;
 
     @Override
     public void process(ResultItems resultItems, Task task) {
         // 获取封装好的news
-        LinqNews news = resultItems.get("news");
+        LinqNews news = resultItems.get("peNews");
         System.err.println("获取封装好的news->" + news);
         if (StringUtils.isNotNull(news)) {
             if (UserConstants.UNIQUE.equals(newsService.checkNewsTitleUnique(news))) {
