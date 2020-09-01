@@ -95,7 +95,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
 //    @Scheduled(cron = "0 0/10 15,16,17 * * ?")
-    @Scheduled(cron = "0 0/20 15,16,17 * * ?")
+    @Scheduled(cron = "0 0/40 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -109,7 +109,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(EntertainmentNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(10)
+                .thread(6)
                 .addPipeline(pipeline)
                 .run();
     }

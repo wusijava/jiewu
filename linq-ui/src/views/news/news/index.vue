@@ -153,6 +153,10 @@
       <el-card shadow="always">
         <div style="font-size: 20px;font-weight: bolder;margin-top: 5px">新闻标题: {{ form.newsTitle }}</div>
         <div style="font-size: 10px;font-weight: bolder;margin-top: 5px">编辑人: {{ form.createBy }}</div>
+        <div style="font-size: 10px;font-weight: bolder;margin-top: 5px;color: #1482f0"
+             v-if="form.newsSourceAuthor !==''||form.newsSourceAuthor!==null">
+          原创作者: {{ form.newsSourceAuthor }}
+        </div>
         <div v-if="form.newsSource !== null">
           <a class="link-url" :href="form.newsSource" style="font-size: 10px;font-weight: bolder;margin-top: 5px"
              target="_blank">

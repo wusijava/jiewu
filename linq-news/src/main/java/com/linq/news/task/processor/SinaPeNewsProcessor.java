@@ -97,7 +97,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
     //fixedDelay每隔多久执行方法
 //    @Scheduled(cron = "0 0/20 8,9,10 * * ?")
 //    @Scheduled(cron = "0 0/10 15,16,17 * * ?")
-    @Scheduled(cron = "0 0/20 15,16,17 * * ?")
+    @Scheduled(cron = "0 0/40 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -111,7 +111,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(PeNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(10)
+                .thread(6)
                 .addPipeline(pipeline)
                 .run();
     }

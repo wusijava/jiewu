@@ -100,7 +100,7 @@ public class CsdnNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(cron = "0 0/20 15,16,17 * * ?")
+    @Scheduled(cron = "0 0/40 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -115,7 +115,7 @@ public class CsdnNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(CsdnNewsProperties.getInitUrlList().toArray(new String[0])) // 爬取地址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(10)
+                .thread(6)
                 .addPipeline(pipeline)
                 .run();
     }
