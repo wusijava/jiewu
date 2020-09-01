@@ -45,30 +45,6 @@ public class TestDemos {
     @Autowired
     private SysRoleService roleService;
 
-    /**
-     * 拼接初始化的URL
-     */
-    public List<String> getInitCrawlerUrlList() {
-        List<String> initCrawlerUrlList = null;
-        // 前缀
-        if (StringUtils.isNotEmpty(CsdnNewsProperties.urlPrefix)) {
-            String[] initCrawlerUrlArray = CsdnNewsProperties.urlSuffix.split(",");
-            if (initCrawlerUrlArray.length > 0) {
-                for (int i = 0; i < initCrawlerUrlArray.length; i++) {
-                    String initUrl = initCrawlerUrlArray[i];
-                    if (StringUtils.isNotEmpty(initUrl)) {
-                        if (!initUrl.toLowerCase().startsWith("http")) {
-                            initUrl = CsdnNewsProperties.urlPrefix + initUrl;
-                            initCrawlerUrlArray[i] = initUrl;
-                        }
-                    }
-                }
-            }
-            initCrawlerUrlList = Arrays.stream(initCrawlerUrlArray).filter(StringUtils::isNotEmpty).collect(Collectors.toList());
-        }
-        return initCrawlerUrlList;
-    }
-
     @Test
     public void testSet() {
         Object cacheObject = redisService.getCacheObject(Constants.LOGIN_TOKEN_KEY + "6c637b64-a130-40dd-ab67-75d7ab0840ab");
@@ -120,9 +96,9 @@ public class TestDemos {
     public void testCsdnNewsSpider() {
         Spider.create(new CsdnNewsProcessor())
                 //.setDownloader(httpClientDownloader) //设置代理
-                .addUrl(getInitCrawlerUrlList().toArray(new String[0])) // 爬取地址
+                .addUrl(CsdnNewsProperties.getInitUrlList().toArray(new String[0])) // 爬取地址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(4)
+                .thread(10)
                 .run();
     }
 

@@ -75,6 +75,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
             // log.info("爬取下来的newsList->{}", newsList);
             // 把结果保存起来
             page.putField(PeNewsProperties.fieldKey, news);
+
         } catch (Exception e) {
             throw new CustomException("爬取新闻解析错误");
         }
@@ -94,7 +95,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    //@Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
+    @Scheduled(cron = "0 0/30 8,9,10 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -108,7 +109,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(PeNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(4)
+                .thread(10)
                 .addPipeline(pipeline)
                 .run();
     }

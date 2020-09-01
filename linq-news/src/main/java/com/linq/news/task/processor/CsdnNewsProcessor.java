@@ -8,6 +8,7 @@ import com.linq.news.task.pipeline.NewsPipeline;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -18,10 +19,8 @@ import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * @Author: 林义清
@@ -55,6 +54,16 @@ public class CsdnNewsProcessor implements PageProcessor {
                         news.setNewsSource(selectable.links().toString());
                         // 设置新闻标题 selectable.$(".main-title").toString()
                         news.setNewsTitle(Jsoup.parse(html.$(CsdnNewsProperties.newsTitleCssSelector).toString()).text());
+                        // 设置原创作者
+                        news.setNewsSourceAuthor(Jsoup.parse(html.$(CsdnNewsProperties.newsSourceAuthorSelector).toString()).text());
+                        // 点赞数
+                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector).toString()).text()));
+                        // 浏览量
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector).toString()).text()));
+                        // 评论数
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector).toString()).text()));
+                        // 收藏数
+                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector).toString()).text()));
                         // 技术博客周刊 id=18
                         news.setNewsTypeId(CsdnNewsProperties.newsTypeId);
                         // 设置新闻内容
@@ -86,34 +95,11 @@ public class CsdnNewsProcessor implements PageProcessor {
                 .setRetryTimes(3); //设置重试的次数;;
     }
 
-    /**
-     * 拼接初始化的URL
-     */
-    public List<String> getInitCrawlerUrlList() {
-        List<String> initCrawlerUrlList = null;
-        // 前缀
-        if (StringUtils.isNotEmpty(CsdnNewsProperties.urlPrefix)) {
-            String[] initCrawlerUrlArray = CsdnNewsProperties.urlSuffix.split(",");
-            if (initCrawlerUrlArray.length > 0) {
-                for (int i = 0; i < initCrawlerUrlArray.length; i++) {
-                    String initUrl = initCrawlerUrlArray[i];
-                    if (StringUtils.isNotEmpty(initUrl)) {
-                        if (!initUrl.toLowerCase().startsWith("http")) {
-                            initUrl = CsdnNewsProperties.urlPrefix + initUrl;
-                            initCrawlerUrlArray[i] = initUrl;
-                        }
-                    }
-                }
-            }
-            initCrawlerUrlList = Arrays.stream(initCrawlerUrlArray).filter(StringUtils::isNotEmpty).collect(Collectors.toList());
-        }
-        return initCrawlerUrlList;
-    }
 
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    //    @Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
+    @Scheduled(cron = "0 0/30 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -126,9 +112,9 @@ public class CsdnNewsProcessor implements PageProcessor {
 
         Spider.create(new CsdnNewsProcessor())
                 //.setDownloader(httpClientDownloader) //设置代理
-                .addUrl(String.valueOf(getInitCrawlerUrlList())) // 爬取地址
+                .addUrl(CsdnNewsProperties.getInitUrlList().toArray(new String[0])) // 爬取地址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(4)
+                .thread(10)
                 .addPipeline(pipeline)
                 .run();
     }

@@ -8,6 +8,7 @@ import com.linq.news.task.pipeline.NewsPipeline;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -62,7 +63,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
                         // 设置新闻内容
                         news.setNewsContent(selectable.$(EntertainmentNewsProperties.newsContentCssSelector).toString());
                         // 设置新闻封面
-                        Selectable src = selectable.$(EntertainmentNewsProperties.newsImageCssSelector,"src");
+                        Selectable src = selectable.$(EntertainmentNewsProperties.newsImageCssSelector, "src");
                         log.info("src->{}", src);
                         if (StringUtils.isNotNull(src)) {
                             news.setNewsImage(src.toString());
@@ -93,7 +94,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    // @Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
+    @Scheduled(cron = "0 0/30 15,16,17 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
@@ -107,7 +108,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(EntertainmentNewsProperties.url)
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(4)
+                .thread(10)
                 .addPipeline(pipeline)
                 .run();
     }

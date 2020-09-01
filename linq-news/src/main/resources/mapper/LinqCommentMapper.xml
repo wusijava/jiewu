@@ -63,6 +63,7 @@
                n.comments,
                n.collects,
                n.news_source,
+               n.news_souce_author,
                n.`status`,
                n.del_flag,
                n.create_by,
