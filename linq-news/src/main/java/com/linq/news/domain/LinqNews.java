@@ -26,6 +26,7 @@ import javax.validation.constraints.Size;
 /**
  * 新闻表
  * 这个需要用到爬虫 所以特殊处理
+ * createBy createTime updateBy updateTime 不用mybatis plus 进行自动填充 避免存入数据库失败
  */
 @Data
 @TableName(value = "linq_news")
@@ -127,7 +128,7 @@ public class LinqNews implements Serializable {
     @TableField(value = "del_flag")
     private String delFlag;
 
-
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * 创建者
      */
@@ -158,7 +159,7 @@ public class LinqNews implements Serializable {
     @TableField(value = "remark")
     private String remark;
 
-    /////////////////////////////////// 附加  ///////////////////////////////////
+    /////////////////////////////////// 附加  //////////////////////////////////////////////////////////////////////
 
     /**
      * 开始时间
@@ -186,8 +187,6 @@ public class LinqNews implements Serializable {
         }
         return params;
     }
-
-    /////////////////////////////////// 附加  ///////////////////////////////////
 
     /////////////////////////////////// 附加  ///////////////////////////////////
 

@@ -18,7 +18,6 @@ import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -30,11 +29,12 @@ import java.util.Objects;
  */
 @Slf4j
 @Component
-public class SinaNewsProcessor implements PageProcessor {
+public class SinaPeNewsProcessor implements PageProcessor {
     @Autowired
     private SpiderProperties spiderProperties;
     @Autowired
     private SinaPipeline sinaPipeline;
+
     /**
      * 解析页面
      */
@@ -95,10 +95,18 @@ public class SinaNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(initialDelay = 1000, fixedDelay = 100 * 1000)
-    public void runSpider() {
+    @Scheduled(cron = "0 0/5 8,9,10,11,12 * * ?")
+    public void runSpiderProcess() {
         log.info("正在进行爬取中........");
-        Spider.create(new SinaNewsProcessor())
+                // 配置代理模式
+                //        HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
+                //        httpClientDownloader.setProxyProvider(SimpleProxyProvider.from(
+                //                new Proxy("124.93.201.59", 42672),
+                //                new Proxy("222.90.110.194", 8080),
+                //                new Proxy("120.236.130.132", 8060)
+                //        ));
+        Spider.create(new SinaPeNewsProcessor())
+                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(spiderProperties.getPeNewsUrl())
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
                 .thread(4)

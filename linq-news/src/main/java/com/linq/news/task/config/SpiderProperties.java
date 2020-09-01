@@ -1,9 +1,7 @@
 package com.linq.news.task.config;
 
 import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+
 
 /**
  * @Author: 林义清
@@ -21,4 +19,9 @@ public class SpiderProperties {
      * 娱乐新闻
      */
     private String entertainmentNewsUrl = "";
+    /**
+     * csdn博客
+     */
+    private String csdnUrl = "";
+
 }

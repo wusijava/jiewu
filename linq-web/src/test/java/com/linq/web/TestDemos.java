@@ -7,7 +7,7 @@ import com.linq.common.core.domain.entity.SysDept;
 import com.linq.common.core.redis.RedisService;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.framework.web.domain.Server;
-import com.linq.news.task.SinaNewsProcessor;
+import com.linq.news.task.SinaPeNewsProcessor;
 import com.linq.news.task.config.SpiderProperties;
 import com.linq.system.service.SysDeptService;
 import com.linq.system.service.SysRoleService;
@@ -80,7 +80,7 @@ public class TestDemos {
 
     @Test
     public void testSpider() {
-        Spider.create(new SinaNewsProcessor())
+        Spider.create(new SinaPeNewsProcessor())
                 .addUrl(spiderProperties.getPeNewsUrl())
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
                 .thread(4)

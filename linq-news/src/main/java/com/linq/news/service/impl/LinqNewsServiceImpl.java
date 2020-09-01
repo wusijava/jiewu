@@ -80,12 +80,15 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
     public boolean insertLinqNews(LinqNews linqNews) {
         // 爬虫获取
         if (SysUser.isAdmin(linqNews.getUserId())) {
-            linqNews.setCreateBy("admin");
-        }else {
+            // 设置创建人
+            linqNews.setCreateBy(UserConstants.SYS_ADMIN);
+        } else {
+            // 设置创建人
             linqNews.setCreateBy(SecurityUtils.getLoginUser().getUser().getUsername());
             // 设置作者id
             linqNews.setUserId(SecurityUtils.getLoginUser().getUser().getUserId());
         }
+        // 设置创建时间 和 更新时间
         linqNews.setCreateTime(new Date());
         linqNews.setUpdateTime(new Date());
         return saveOrUpdate(linqNews);
@@ -100,7 +103,9 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean updateLinqNews(LinqNews linqNews) {
+        // 更新时间
         linqNews.setUpdateTime(new Date());
+        // 修改人
         linqNews.setUpdateBy(SecurityUtils.getLoginUser().getUser().getUsername());
         return saveOrUpdate(linqNews);
     }
@@ -145,7 +150,9 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean changeIsPublic(LinqNews news) {
+        // 更新时间
         news.setUpdateTime(new Date());
+        // 修改人
         news.setUpdateBy(SecurityUtils.getLoginUser().getUser().getUsername());
         return saveOrUpdate(news);
     }

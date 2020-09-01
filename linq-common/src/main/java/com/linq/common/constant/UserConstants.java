@@ -8,6 +8,10 @@ public class UserConstants {
      * 平台内系统用户的唯一标志
      */
     public static final String SYS_USER = "SYS_USER";
+    /**
+     * 平台管理员用户名
+     */
+    public static final String SYS_ADMIN = "admin";
 
     /**
      * 正常状态
