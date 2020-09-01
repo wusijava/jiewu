@@ -262,7 +262,7 @@ export default {
           if (this.form.commentId !== undefined) {
             updateComment(this.form).then(response => {
               if (response.code === 200) {
-                this.msgSuccess('修改成功')
+                this.msgNoticeSuccess('修改成功')
                 this.open = false
                 this.getList()
               }
@@ -270,7 +270,7 @@ export default {
           } else {
             addComment(this.form).then(response => {
               if (response.code === 200) {
-                this.msgSuccess('新增成功')
+                this.msgNoticeSuccess('新增成功')
                 this.open = false
                 this.getList()
               }
@@ -290,7 +290,7 @@ export default {
         return delComment(commentIds)
       }).then(() => {
         this.getList()
-        this.msgSuccess('删除成功')
+        this.msgNoticeSuccess('删除成功')
       }).catch(function() {
       })
     },

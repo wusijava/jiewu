@@ -154,7 +154,7 @@ export default {
       // console.log(res)
       if (res.code === 200) {
         const { url } = res.data
-        this.msgSuccess(res.msg)
+        this.msgNoticeSuccess(res.msg)
         this.imageUrl = url
         this.form.newsImage = url
       }
@@ -186,7 +186,7 @@ export default {
         if (valid) {
           addNews(this.form).then(response => {
             if (response.code === 200) {
-              this.msgSuccess('新增成功')
+              this.msgNoticeSuccess('新增成功')
               this.reset()
               // 返回列表页
               this.$router.push({ name: 'News' })

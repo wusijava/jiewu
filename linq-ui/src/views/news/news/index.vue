@@ -440,7 +440,7 @@ export default {
         return delNews(newsIds)
       }).then(() => {
         this.getList()
-        this.msgSuccess('删除成功')
+        this.msgNoticeSuccess('删除成功')
       }).catch(function() {
       })
     }

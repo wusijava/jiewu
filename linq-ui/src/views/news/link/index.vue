@@ -293,7 +293,7 @@ export default {
           if (this.form.linqId !== undefined) {
             updateLink(this.form).then(response => {
               if (response.code === 200) {
-                this.msgSuccess('修改成功')
+                this.msgNoticeSuccess('修改成功')
                 this.open = false
                 this.getList()
               }
@@ -301,7 +301,7 @@ export default {
           } else {
             addLink(this.form).then(response => {
               if (response.code === 200) {
-                this.msgSuccess('新增成功')
+                this.msgNoticeSuccess('新增成功')
                 this.open = false
                 this.getList()
               }
@@ -321,7 +321,7 @@ export default {
         return delLink(linqIds)
       }).then(() => {
         this.getList()
-        this.msgSuccess('删除成功')
+        this.msgNoticeSuccess('删除成功')
       }).catch(function () {
       })
     },
