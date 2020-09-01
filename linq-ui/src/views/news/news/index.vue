@@ -151,20 +151,19 @@
     <!-- 浏览新闻 以及 审核新闻弹框 -->
     <el-dialog :title="title" :visible.sync="open" class="dialog-mid">
       <el-card shadow="always">
-        <div style="font-size: 20px;font-weight: bolder;margin-top: 5px">新闻标题: {{ form.newsTitle }}</div>
-        <div style="font-size: 10px;font-weight: bolder;margin-top: 5px">编辑人: {{ form.createBy }}</div>
-        <div style="font-size: 10px;font-weight: bolder;margin-top: 5px;color: #1482f0"
+        <div class="read-top-title">新闻标题: {{ form.newsTitle }}</div>
+        <div class="read-top-div">编辑人: {{ form.createBy }}</div>
+        <div class="read-top-div" style="color: #2f72cd"
              v-if="form.newsSourceAuthor !==''||form.newsSourceAuthor!==null">
           原创作者: {{ form.newsSourceAuthor }}
         </div>
         <div v-if="form.newsSource !== null">
-          <a class="link-url" :href="form.newsSource" style="font-size: 10px;font-weight: bolder;margin-top: 5px"
-             target="_blank">
+          <a class="link-url read-top-div" :href="form.newsSource" target="_blank">
             新闻来源: {{ form.newsSource }}
           </a>
         </div>
-        <div style="font-size: 10px;font-weight: bolder;margin-top: 5px">本次创作时间: {{ parseTime(form.createTime) }}</div>
-        <div style="font-size: 10px;font-weight: bolder;margin-top: 5px">上次更改时间: {{ parseTime(form.updateTime) }}</div>
+        <div class="read-top-div" style="color: #486db6">本次创作时间: {{ parseTime(form.createTime) }}</div>
+        <div class="read-top-div" style="color: #ff3f42 ">上次更改时间: {{ parseTime(form.updateTime) }}</div>
       </el-card>
       <el-card shadow="hover">
         <div v-html="form.newsContent"/>
@@ -450,12 +449,25 @@ export default {
 </script>
 <style lang="scss">
 .link-url {
-  color: #7a6df0;
+  color: #427bb3;
   text-decoration: none;
   font-weight: bolder;
 }
 
 .link-url:hover {
   color: #1482f0;
+}
+
+// 查看 和 审阅部分样式
+.read-top-title {
+  font-weight: bolder;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.read-top-div {
+  font-weight: bolder;
+  margin-top: 5px;
+  font-size: 10px;
 }
 </style>
