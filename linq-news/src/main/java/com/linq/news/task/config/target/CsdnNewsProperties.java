@@ -30,13 +30,17 @@ public class CsdnNewsProperties {
     // 原创作者选择器
     public static final String newsSourceAuthorSelector = "#uid > span.name";
     // 点赞数选择器
-    public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(3) > dt > span";
+    //    public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(3) > dt > span";
+    public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
     // 浏览量选择器
-    public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(4) > dt > span";
+    //    public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(4) > dt > span";
+    public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(1)";
     // 评论数选择器
-    public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4) > dt > span";
+    //    public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4) > dt > span";
+    public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4)";
     // 收藏数选择器
-    public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5) > dt > span";
+    //    public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5) > dt > span";
+    public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
     // 类型id
     public static final Long newsTypeId = 18L;
     // 文章内容css选择器

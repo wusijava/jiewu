@@ -76,7 +76,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
             // 把结果保存起来
             page.putField(EntertainmentNewsProperties.fieldKey, news);
         } catch (Exception e) {
-            throw new CustomException("爬取新闻解析错误");
+            throw new CustomException("爬取新闻解析错误: " + e.getMessage());
         }
 
     }
@@ -94,8 +94,9 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-//    @Scheduled(cron = "0 0/10 15,16,17 * * ?")
+    // @Scheduled(cron = "0 0/10 15,16,17 * * ?")
     @Scheduled(cron = "0 0/40 15,16,17 * * ?")
+    // @Scheduled(cron = "0 0/2 8,9,10,11,12,13,14,15,16 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式

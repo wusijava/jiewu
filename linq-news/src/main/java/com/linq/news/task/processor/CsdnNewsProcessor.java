@@ -58,13 +58,13 @@ public class CsdnNewsProcessor implements PageProcessor {
                         // 设置原创作者
                         news.setNewsSourceAuthor(Jsoup.parse(html.$(CsdnNewsProperties.newsSourceAuthorSelector).toString()).text());
                         // 点赞数
-                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector).toString()).text()));
+                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector,"title").toString()).text()));
                         // 浏览量
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector).toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector,"title").toString()).text()));
                         // 评论数
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector).toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.commentsSelector,"title").toString()).text()));
                         // 收藏数
-                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector).toString()).text()));
+                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector,"title").toString()).text()));
                         // 技术博客周刊 id=18
                         news.setNewsTypeId(CsdnNewsProperties.newsTypeId);
                         // 设置新闻内容
@@ -82,7 +82,7 @@ public class CsdnNewsProcessor implements PageProcessor {
             // 把结果保存起来
             page.putField(CsdnNewsProperties.fieldKey, news);
         } catch (Exception e) {
-            throw new CustomException("爬取新闻解析错误");
+            throw new CustomException("爬取新闻解析错误: " + e.getMessage());
         }
     }
 
@@ -101,6 +101,7 @@ public class CsdnNewsProcessor implements PageProcessor {
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
     @Scheduled(cron = "0 0/40 15,16,17 * * ?")
+    // @Scheduled(cron = "0 0/2 8,9,10,11,12,13,14,15,16 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式

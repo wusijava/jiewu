@@ -17,7 +17,7 @@ spring:
   messages: # 资源信息
     basename: i18n/messages  # 国际化资源文件路径
   profiles:
-    active: druid,linq
+    active: druid,linq # 子配置文件
   # 文件上传
   servlet:
     multipart:
@@ -58,6 +58,17 @@ spring:
     elasticsearch:
       cluster-name: my-application
       cluster-nodes: 39.108.104.116:9300
+  # 消息中间件 rabbitMQ
+  rabbitmq:
+    virtual-host: / # 配置虚拟机
+    host: 120.79.43.16 # ip
+    port: 5672 # 端口
+    username: admin # 用户名
+    password: 111222 # 密码
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 100
   devtools: # 服务模块
     restart:
       enabled: true       # 热部署开关
