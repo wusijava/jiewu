@@ -14,7 +14,7 @@ export function listComment(page, size, query) {
 // 查询新闻评论详细
 export function getComment(commentId) {
   return request({
-    url: '/news/comment/' + commentId,
+    url: `${BASE_API}/${commentId}`,
     method: 'get'
   })
 }
@@ -22,7 +22,7 @@ export function getComment(commentId) {
 // 新增新闻评论
 export function addComment(data) {
   return request({
-    url: '/news/comment',
+    url:  `${BASE_API}`,
     method: 'post',
     data: data
   })
@@ -31,7 +31,7 @@ export function addComment(data) {
 // 修改新闻评论
 export function updateComment(data) {
   return request({
-    url: '/news/comment',
+    url: `${BASE_API}`,
     method: 'put',
     data: data
   })
@@ -40,16 +40,7 @@ export function updateComment(data) {
 // 删除新闻评论
 export function delComment(commentId) {
   return request({
-    url: '/news/comment/' + commentId,
+    url: `${BASE_API}/${commentId}`,
     method: 'delete'
-  })
-}
-
-// 导出新闻评论
-export function exportComment(query) {
-  return request({
-    url: '/news/comment/export',
-    method: 'get',
-    params: query
   })
 }
