@@ -41,8 +41,7 @@ public class NewsConsumer {
         Long tag = (Long) headers.get(AmqpHeaders.DELIVERY_TAG);
         try {
             log.info("接收到消息的时间----->>> {}\n消费tag->>> {}\n从消息队列中拿到数据----------->>>> {}"
-                    , new Date(), tag, newsMap);
-
+                    , System.currentTimeMillis(), tag, newsMap);
             LinqNews peNews = (LinqNews) newsMap.get("peNews");
             LinqNews entertainmentNews = (LinqNews) newsMap.get("entertainmentNews");
             LinqNews csdnNews = (LinqNews) newsMap.get("csdnNews");

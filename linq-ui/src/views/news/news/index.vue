@@ -163,7 +163,10 @@
           </a>
         </div>
         <div class="read-top-div">本次创作时间: {{ parseTime(form.createTime) }}</div>
-        <div class="read-top-div" >上次更改时间: {{ parseTime(form.updateTime) }}</div>
+        <div class="read-top-div">上次更改时间: {{ parseTime(form.updateTime) }}</div>
+      </el-card>
+      <el-card shadow="hover" v-if="form.newsSourceTags!==''">
+        <el-tag v-for="tag in newsSourceTags" :key="tag" type="primary" style="margin-left: 10px">{{ tag }}</el-tag>
       </el-card>
       <el-card shadow="hover">
         <div v-html="form.newsContent"/>
@@ -267,6 +270,8 @@ export default {
       newsList: [],
       // 新闻类别列表
       newsTypeOptions: [],
+      // 新闻博客标签
+      newsSourceTags: [],
       // 是否公开选择
       isPublicOptions: [
         {
@@ -364,6 +369,8 @@ export default {
       getNews(row.newsId).then(res => {
         if (res.flag) {
           this.form = res.data
+          // 获取博客分类标签
+          this.newsSourceTags = this.form.newsSourceTags.split(',')
           this.open = true
         }
       })
@@ -413,6 +420,8 @@ export default {
       getNews(row.newsId).then(res => {
         if (res.flag) {
           this.form = res.data
+          // 获取博客分类标签
+          this.newsSourceTags = this.form.newsSourceTags.split(',')
           this.open = true
         }
       })
