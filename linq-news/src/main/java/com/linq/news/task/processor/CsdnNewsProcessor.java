@@ -59,21 +59,21 @@ public class CsdnNewsProcessor implements PageProcessor {
                         // 设置新闻标题 selectable.$(".main-title").toString()
                         news.setNewsTitle(Jsoup.parse(html.$(CsdnNewsProperties.newsTitleCssSelector).toString()).text());
                         // 设置原创作者
-                        news.setNewsSourceAuthor(Jsoup.parse(html.$(CsdnNewsProperties.newsSourceAuthorSelector).toString()).text());
+                        news.setNewsSourceAuthor(Jsoup.parse(html.$(CsdnNewsProperties.newsSourceAuthorCssSelector).toString()).text());
                         // 点赞数
-                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector, "title").toString()).text()));
+                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsCssSelector, "title").toString()).text()));
                         // 浏览量
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector, "title").toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsCssSelector, "title").toString()).text()));
                         // 评论数
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.commentsSelector, "title").toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.commentsCssSelector, "title").toString()).text()));
                         // 收藏数
-                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector, "title").toString()).text()));
+                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsCssSelector, "title").toString()).text()));
                         // 技术博客周刊 id=18
                         news.setNewsTypeId(CsdnNewsProperties.newsTypeId);
                         // 存入标签
                         Set<String> tagSet = new HashSet<>(2);
                         // 博客分类标签 拿到所有a标签
-                        Jsoup.parse(html.$(CsdnNewsProperties.newsSourceTagsSelector).toString()).select("a").forEach(a -> {
+                        Jsoup.parse(html.$(CsdnNewsProperties.newsSourceTagsCssSelector).toString()).select("a").forEach(a -> {
                             tagSet.add(a.text());
                         });
                         StringBuilder sb = new StringBuilder();

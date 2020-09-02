@@ -28,23 +28,23 @@ public class CsdnNewsProperties {
     // 标题css选择器
     public static final String newsTitleCssSelector = "#articleContentId";
     // 原创作者选择器
-    public static final String newsSourceAuthorSelector = "#uid > span.name";
+    public static final String newsSourceAuthorCssSelector = "#uid > span.name";
     // 点赞数选择器
     //    public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(3) > dt > span";
-    public static final String thumbsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
+    public static final String thumbsCssSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
     // 浏览量选择器
     //    public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(4) > dt > span";
-    public static final String visitsSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(1)";
+    public static final String visitsCssSelector = "#asideProfile > div:nth-child(2) > dl:nth-child(1)";
     // 评论数选择器
     //    public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4) > dt > span";
-    public static final String commentsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4)";
+    public static final String commentsCssSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(4)";
     // 收藏数选择器
     //    public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5) > dt > span";
-    public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
+    public static final String cllectsCssSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
     // 类型id
     public static final Long newsTypeId = 18L;
     // 博客文章标签
-    public static final String newsSourceTagsSelector = "#mainBox > main > div.blog-content-box > div > div > div.article-info-box > div.blog-tags-box > div.tags-box.artic-tag-box";
+    public static final String newsSourceTagsCssSelector = "#mainBox > main > div.blog-content-box > div > div > div.article-info-box > div.blog-tags-box > div.tags-box.artic-tag-box";
     // 文章内容css选择器
     public static final String newsContentCssSelector = "#article_content";
     // 文章封面css选择器
