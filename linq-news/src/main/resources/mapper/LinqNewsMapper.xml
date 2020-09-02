@@ -19,6 +19,7 @@
         <result column="collects" jdbcType="BIGINT" property="collects"/>
         <result column="news_source" jdbcType="VARCHAR" property="newsSource"/>
         <result column="news_source_author" jdbcType="VARCHAR" property="newsSourceAuthor"/>
+        <result column="news_source_tags" jdbcType="VARCHAR" property="newsSourceTags"/>
         <result column="status" jdbcType="CHAR" property="status"/>
         <result column="del_flag" jdbcType="CHAR" property="delFlag"/>
         <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
@@ -40,7 +41,7 @@
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         news_id,user_id,news_type_id, news_title, news_content, news_attr, news_image, order_num,
-        is_public, thumbs, visits, comments, collects, news_source,news_source_author,`status`, del_flag, create_by, create_time,
+        is_public, thumbs, visits, comments, collects, news_source,news_source_author,news_source_tags,`status`, del_flag, create_by, create_time,
         update_by, update_time, remark
     </sql>
     <sql id="findNewsVo">
@@ -59,6 +60,7 @@
                n.collects,
                n.news_source,
                n.news_source_author,
+               n.news_source_tags,
                n.`status`,
                n.del_flag,
                n.create_by,

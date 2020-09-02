@@ -115,10 +115,16 @@ public class LinqNews implements Serializable {
     @TableField(value = "news_source")
     private String newsSource;
     /**
-     * 新闻来源原创作者
+     * 新闻来源原创作者(博客使用)
      */
     @TableField(value = "news_source_author")
     private String newsSourceAuthor;
+
+    /**
+     * 新闻博客分类标签
+     */
+    @TableField(value = "news_source_tags")
+    private String newsSourceTags;
 
     /**
      * 审核状态（0.审核中 1.审核成功 2.审核失败）

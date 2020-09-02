@@ -34,6 +34,7 @@
         <result column="collects" jdbcType="BIGINT" property="collects"/>
         <result column="news_source" jdbcType="VARCHAR" property="newsSource"/>
         <result column="news_source_author" jdbcType="VARCHAR" property="newsSourceAuthor"/>
+        <result column="news_source_tags" jdbcType="VARCHAR" property="newsSourceTags"/>
         <result column="status" jdbcType="CHAR" property="status"/>
     </resultMap>
 

@@ -1,5 +1,6 @@
 package com.linq.news.task.processor;
 
+import cn.hutool.core.text.StrBuilder;
 import com.linq.common.exception.CustomException;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNews;
@@ -20,8 +21,10 @@ import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * @Author: 林义清
@@ -58,15 +61,27 @@ public class CsdnNewsProcessor implements PageProcessor {
                         // 设置原创作者
                         news.setNewsSourceAuthor(Jsoup.parse(html.$(CsdnNewsProperties.newsSourceAuthorSelector).toString()).text());
                         // 点赞数
-                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector,"title").toString()).text()));
+                        news.setThumbs(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.thumbsSelector, "title").toString()).text()));
                         // 浏览量
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector,"title").toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.visitsSelector, "title").toString()).text()));
                         // 评论数
-                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.commentsSelector,"title").toString()).text()));
+                        news.setVisits(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.commentsSelector, "title").toString()).text()));
                         // 收藏数
-                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector,"title").toString()).text()));
+                        news.setCollects(Long.valueOf(Jsoup.parse(html.$(CsdnNewsProperties.cllectsSelector, "title").toString()).text()));
                         // 技术博客周刊 id=18
                         news.setNewsTypeId(CsdnNewsProperties.newsTypeId);
+                        // 存入标签
+                        Set<String> tagSet = new HashSet<>(2);
+                        // 博客分类标签 拿到所有a标签
+                        Jsoup.parse(html.$(CsdnNewsProperties.newsSourceTagsSelector).toString()).select("a").forEach(a -> {
+                            tagSet.add(a.text());
+                        });
+                        StringBuilder sb = new StringBuilder();
+                        tagSet.forEach(tag -> {
+                            sb.append(tag).append(",");
+                        });
+                        news.setNewsSourceTags(sb.substring(0, sb.toString().length() - 1));
+                        log.info("获取到的标签元素字符串->>>>>>>> " + sb.substring(0, sb.toString().length() - 1));
                         // 设置新闻内容
                         news.setNewsContent(selectable.$(CsdnNewsProperties.newsContentCssSelector).toString());
                         // 设置新闻封面

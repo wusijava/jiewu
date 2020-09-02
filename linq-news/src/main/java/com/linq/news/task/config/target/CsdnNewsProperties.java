@@ -43,6 +43,8 @@ public class CsdnNewsProperties {
     public static final String cllectsSelector = "#asideProfile > div:nth-child(4) > dl:nth-child(5)";
     // 类型id
     public static final Long newsTypeId = 18L;
+    // 博客文章标签
+    public static final String newsSourceTagsSelector = "#mainBox > main > div.blog-content-box > div > div > div.article-info-box > div.blog-tags-box > div.tags-box.artic-tag-box";
     // 文章内容css选择器
     public static final String newsContentCssSelector = "#article_content";
     // 文章封面css选择器
