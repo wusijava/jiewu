@@ -1,0 +1,28 @@
+2020-09-03 19:07:33.201 INFO  [restartedMain]com.linq.AppRun.logStarting:55 -Starting AppRun on JaydeMacBook-Pro.local with PID 9922 (/Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web/target/classes started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq)
+2020-09-03 19:07:33.204 DEBUG [restartedMain]com.linq.AppRun.logStarting:56 -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.8.RELEASE
+2020-09-03 19:07:33.205 INFO  [restartedMain]com.linq.AppRun.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-03 19:07:36.456 WARN  [restartedMain]org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 -Skipping MapperFactoryBean with name 'newsDocumentDao' and 'com.linq.news.mapper.NewsDocumentDao' mapperInterface. Bean already defined with the same name!
+2020-09-03 19:07:37.562 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9000"]
+2020-09-03 19:07:37.563 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-03 19:07:37.564 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 19:07:37.735 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-03 19:07:38.244 DEBUG [restartedMain]c.l.f.security.filter.JwtAuthenticationTokenFilter.init:242 -Filter 'jwtAuthenticationTokenFilter' configured for use
+2020-09-03 19:07:38.437 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-03 19:07:38.510 WARN  [restartedMain]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh:559 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysLogininfoController': Unsatisfied dependency expressed through field 'logininfoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysLogininfoServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysLogininfoMapper' defined in file [/Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-system/target/classes/com/linq/system/mapper/SysLogininfoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource': Unsatisfied dependency expressed through field 'basicProperties'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.xa.properties' to java.util.Map<java.lang.String, java.lang.String>
+2020-09-03 19:07:38.535 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-09-03 19:07:38.562 ERROR [restartedMain]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.xa.properties' to java.util.Map<java.lang.String, java.lang.String>:
+
+    Reason: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+
+Action:
+
+Update your application's configuration
+
