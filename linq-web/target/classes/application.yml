@@ -53,11 +53,6 @@ spring:
         max-active: 8
         # #连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms
-  # elasticsearch 配置
-  data:
-    elasticsearch:
-      cluster-name: my-application
-      cluster-nodes: 39.108.104.116:9300
   # 消息中间件 rabbitMQ
   rabbitmq:
     virtual-host: / # 配置虚拟机
@@ -72,7 +67,10 @@ spring:
   devtools: # 服务模块
     restart:
       enabled: true       # 热部署开关
-
+# elasticsearch 配置 这里是坑 还得装head插件 之前的cluster.name nodes那些都不适用了 会抛出 拒绝连接错误 
+  elasticsearch:
+    rest:
+      uris: ["http://120.79.43.16:9200"]
 # mybatis配置
 mybatis-plus:
   configuration:

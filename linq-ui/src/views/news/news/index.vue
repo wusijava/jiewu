@@ -150,6 +150,7 @@
 
     <!-- 浏览新闻 以及 审核新闻弹框 -->
     <el-dialog :title="title" :visible.sync="open" class="dialog-mid">
+      <!--文章头部-->
       <el-card shadow="always">
         <div class="read-top-title">新闻标题: {{ form.newsTitle }}</div>
         <div class="read-top-div">编辑人: {{ form.createBy }}</div>
@@ -165,8 +166,9 @@
         <div class="read-top-div">本次创作时间: {{ parseTime(form.createTime) }}</div>
         <div class="read-top-div">上次更改时间: {{ parseTime(form.updateTime) }}</div>
       </el-card>
+      <!--文章标签-->
       <el-card shadow="hover" v-if="form.newsSourceTags!==''">
-        <el-tag v-for="tag in newsSourceTags" :key="tag" type="primary" style="margin-left: 10px">{{ tag }}</el-tag>
+       <span class="read-top-div">文章标签:</span> <el-tag v-for="tag in newsSourceTags" :key="tag" type="primary" style="margin-left: 10px">{{ tag }}</el-tag>
       </el-card>
       <el-card shadow="hover">
         <div v-html="form.newsContent"/>

@@ -103,5 +103,20 @@ public class UserConstants {
     public final static String PASSING = "0";
     public final static String PASSED = "1";
     public final static String NOT_PASS = "2";
+    /**
+     * 新闻属性 0.头条区新闻 1.幻灯片区新闻 2.热点区新闻
+     * Headline area news
+     * Slide show news
+     * Hot spot news
+     */
+    public final static String HEADLINE_AREA_NEWS = "头条区新闻";
+    public final static String SLIDE_SHOW_NEWS = "幻灯片区新闻";
+    public final static String HOT_SPOT_NEWS = "热点区新闻";
+    /**
+     * 新闻公开: 0公开 1私有
+     */
+    public final static String PUBLIC = "0";
+    public final static String PRIVATE = "1";
+
 
 }
