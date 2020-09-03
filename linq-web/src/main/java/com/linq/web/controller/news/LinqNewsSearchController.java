@@ -44,7 +44,7 @@ public class LinqNewsSearchController extends BaseController {
     /**
      * 分页关键字模糊查询
      */
-    @ApiOperation(value = "导入新闻数据", notes = "导入新闻数据详情")
+    @ApiOperation(value = "分页关键字模糊查询", notes = "分页关键字模糊查询详情")
     @GetMapping
     public PageResult<List<NewsDocument>> search(@RequestParam(required = false) String keyword,
                                                  @RequestParam(required = false, defaultValue = "1") Integer page,

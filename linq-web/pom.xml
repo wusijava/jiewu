@@ -90,6 +90,11 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
+        <!--thymeleaf默认使用html5规则标签必须闭合等 使用次此包正常解析-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
     </dependencies>
     <!--生成数据库文档插件-->
     <build>
@@ -125,8 +130,8 @@
                     <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
                     <!--jdbc url-->
                     <jdbcUrl>jdbc:mysql://127.0.0.1:3306/linq</jdbcUrl>
-                    <!--生成文件类型-->
-                    <fileType>HTML</fileType>
+                    <!--生成文件类型 MD HTML-->
+                    <fileType>MD</fileType>
                     <!--打开文件输出目录-->
                     <openOutputDir>false</openOutputDir>
                     <!--生成模板-->
