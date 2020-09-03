@@ -58,7 +58,7 @@ public class TokenService {
             // 解析对应的权限以及用户信息
             String uuid = (String) claims.get(Constants.LOGIN_USER_KEY);
             String userKey = getTokenKey(uuid);
-            System.err.println("获取对象: " + redisService.getCacheObject(userKey));
+            // System.err.println("获取对象: " + redisService.getCacheObject(userKey));
             return redisService.getCacheObject(userKey);
         }
         return null;

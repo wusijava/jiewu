@@ -1,14 +1,22 @@
 package com.linq.web.controller.news;
 
 import com.linq.common.core.controller.BaseController;
+import com.linq.common.result.PageResult;
 import com.linq.common.result.Result;
+import com.linq.common.result.ResultUtils;
+import com.linq.news.domain.NewsDocument;
 import com.linq.news.service.NewsDocumentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @Author: 林义清
@@ -27,10 +35,23 @@ public class LinqNewsSearchController extends BaseController {
      * 导入新闻数据
      */
     @ApiOperation(value = "导入新闻数据", notes = "导入新闻数据详情")
+    @PreAuthorize("@ss.hasPermi('news:search:import')")
     @GetMapping("/import")
     public Result<String> importNews() {
-        newsService.importNews();
-        return toResult(true);
+        return toResult(newsService.importNews());
     }
 
+    /**
+     * 分页关键字模糊查询
+     */
+    @ApiOperation(value = "导入新闻数据", notes = "导入新闻数据详情")
+    @GetMapping
+    public PageResult<List<NewsDocument>> search(@RequestParam(required = false) String keyword,
+                                                 @RequestParam(required = false, defaultValue = "1") Integer page,
+                                                 @RequestParam(required = false, defaultValue = "5") Integer size
+
+    ) {
+        Page<NewsDocument> newsDocumentPage = newsService.search(keyword, page, size);
+        return ResultUtils.success(page, size, newsDocumentPage.getTotalElements(), newsDocumentPage.getContent());
+    }
 }
