@@ -67,7 +67,7 @@ spring:
   devtools: # 服务模块
     restart:
       enabled: true       # 热部署开关
-# elasticsearch 配置 这里是坑 还得装head插件 之前的cluster.name nodes那些都不适用了 会抛出 拒绝连接错误 
+# elasticsearch 配置 这里是坑 还得装head插件 之前的cluster.name nodes那些都不适用了 会抛出 拒绝连接错误
   elasticsearch:
     rest:
       uris: ["http://120.79.43.16:9200"]

@@ -5,6 +5,7 @@ import com.linq.common.constant.UserConstants;
 import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.utils.spring.SpringUtils;
 import com.linq.news.domain.LinqNews;
+import com.linq.news.domain.LinqNewsType;
 import com.linq.news.domain.NewsDocument;
 import com.linq.news.mapper.NewsDocumentDao;
 import com.linq.news.service.LinqNewsService;
@@ -52,8 +53,10 @@ public class NewsDocumentServiceImpl implements NewsDocumentService {
             NewsDocument newsDocument = new NewsDocument();
             newsDocument
                     .setNewsId(news.getNewsId()) // 新闻id
-                    .setAuthor(userService.getById(news.getUserId())) //  作者
-                    .setNewsType(newsTypeService.getById(news.getNewsTypeId())) // 新闻类别
+                    .setAuthor(userService.getOne(new LambdaQueryWrapper<SysUser>().eq(SysUser::getUserId, news.getUserId())// 作者
+                                                          .select(SysUser::getUsername, SysUser::getAvatar, SysUser::getPhone, SysUser::getEmail, SysUser::getSex, SysUser::getNickName)))
+                    .setNewsType(newsTypeService.getOne(new LambdaQueryWrapper<LinqNewsType>().eq(LinqNewsType::getNewsTypeId, news.getNewsTypeId()) // 新闻类别
+                                                                .select(LinqNewsType::getNewsTypeId, LinqNewsType::getNewsTypeName)))
                     .setNewsTitle(news.getNewsTitle()) // 新闻标题
                     .setNewsContent(news.getNewsContent()); // 新闻内容
             switch (news.getNewsAttr()) { // 新闻属性

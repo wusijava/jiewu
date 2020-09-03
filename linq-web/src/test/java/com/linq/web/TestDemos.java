@@ -8,6 +8,8 @@ import com.linq.common.core.redis.RedisService;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.framework.web.domain.Server;
 
+import com.linq.news.mapper.NewsDocumentDao;
+import com.linq.news.service.NewsDocumentService;
 import com.linq.news.task.config.target.CsdnNewsProperties;
 import com.linq.news.task.config.target.EntertainmentNewsProperties;
 import com.linq.news.task.config.target.PeNewsProperties;
@@ -44,7 +46,10 @@ public class TestDemos {
     private SysUserService userService;
     @Autowired
     private SysRoleService roleService;
-
+    @Autowired
+    private NewsDocumentDao newsDocumentDao;
+    @Autowired
+    private NewsDocumentService newsDocumentService;
     @Test
     public void testSet() {
         Object cacheObject = redisService.getCacheObject(Constants.LOGIN_TOKEN_KEY + "6c637b64-a130-40dd-ab67-75d7ab0840ab");
@@ -112,4 +117,13 @@ public class TestDemos {
                 .run();
     }
 
+    @Test
+    public void testElasticsearchDeleteAll() {
+        newsDocumentDao.deleteAll();
+    }
+
+    @Test
+    public void testElasticsearchImportALL() {
+        newsDocumentService.importNews();
+    }
 }

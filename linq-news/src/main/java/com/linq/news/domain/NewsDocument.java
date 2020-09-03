@@ -18,16 +18,20 @@ import java.util.Date;
  * analyzer = "ik_smart" 创建索引分词器
  * index = true 添加数据的时候 是否分词
  * store = flase 是否存储
- * Keyword 不分词
+ * Keyword 不分词 分词类型
+ * indexName 索引库名称
+ * type 类型名
+ * shards 分片
  * @Version: 1.0.0
  */
 @ToString
-@Document(indexName = "news", type = "news",shards = 1,replicas = 0)
+@Document(indexName = "news", type = "news", shards = 1, replicas = 0)
 public class NewsDocument {
     /**
      * 新闻id
      */
     @Id
+    @Field(type = FieldType.Long)
     private Long newsId;
     /**
      * 作者
@@ -41,20 +45,20 @@ public class NewsDocument {
     /**
      * 新闻标题
      */
-    @Field(type = FieldType.Text, analyzer = "ik_smart")
+    @Field(type = FieldType.Text, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String newsTitle;
 
     /**
      * 新闻内容
      */
-    @Field(type = FieldType.Text, analyzer = "ik_smart")
+    @Field(type = FieldType.Text, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String newsContent;
 
     /**
      * 新闻属性 0.头条区新闻 1.幻灯片区新闻 2.热点区新闻
      * 这里是文字
      */
-    @Field(type = FieldType.Text, analyzer = "ik_smart")
+    @Field(type = FieldType.Text, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String newsAttr;
 
     /**
@@ -95,7 +99,7 @@ public class NewsDocument {
     /**
      * 新闻博客分类标签
      */
-    @Field(type = FieldType.Text, analyzer = "ik_smart")
+    @Field(type = FieldType.Text, analyzer = "ik_smart", searchAnalyzer = "ik_smart")
     private String newsSourceTags;
 
     /**
