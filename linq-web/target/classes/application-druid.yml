@@ -41,9 +41,6 @@ spring:
         enabled: true
         url-pattern: /druid/*
         reset-enable: true
-    xa:
-      properties:
-        useInfomationSchema；true
 #        # 设置监控页面的登录名和密码
 #        login-username: admin
 #        login-password: admin
