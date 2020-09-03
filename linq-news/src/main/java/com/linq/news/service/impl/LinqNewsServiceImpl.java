@@ -6,9 +6,14 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.linq.common.constant.UserConstants;
 import com.linq.common.core.domain.entity.SysUser;
+import com.linq.common.exception.CustomException;
+import com.linq.common.result.ResultUtils;
 import com.linq.common.utils.SecurityUtils;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNewsType;
+import com.linq.news.domain.NewsDocument;
+import com.linq.news.mapper.NewsDocumentDao;
+import com.linq.news.service.NewsDocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.token.TokenService;
 import org.springframework.stereotype.Service;
@@ -22,6 +27,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.linq.news.domain.LinqNews;
 import com.linq.news.mapper.LinqNewsMapper;
 import com.linq.news.service.LinqNewsService;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: 林义清
@@ -32,6 +38,9 @@ import com.linq.news.service.LinqNewsService;
 
 @Service
 public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> implements LinqNewsService {
+    @Autowired
+    private NewsDocumentService newsDocumentService;
+
     /**
      * 根据用户id查询新闻列表
      *
@@ -78,6 +87,10 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      */
     @Override
     public boolean insertLinqNews(LinqNews linqNews) {
+        // 判断新闻标题是否重复
+        if (UserConstants.NOT_UNIQUE.equals(checkNewsTitleUnique(linqNews))) {
+            throw new CustomException("新增新闻'" + linqNews.getNewsTitle() + "'失败，新闻标题已存在");
+        }
         // 爬虫获取
         if (SysUser.isAdmin(linqNews.getUserId())) {
             // 设置创建人
@@ -117,8 +130,19 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      *
      * @return 结果
      */
+    @Transactional
     @Override
     public boolean deleteLinqNewsByIds(List<Long> newsIds) {
+        /**
+         * 判断全局检索中是否存在 如果存在就将全局检索中的也删除
+         */
+        newsIds.stream().filter(Objects::nonNull)
+                .forEach(newsId -> {
+                    // 查出这个新闻
+                    LinqNews one = getById(newsId);
+                    // 根据id查询 全局检索中是否存在该新闻 存在就删除
+                    checkExistedInESAndRemove(one);
+                });
         return removeByIds(newsIds);
     }
 
@@ -148,8 +172,25 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      *
      * @return 结果
      */
+    @Transactional
     @Override
     public boolean changeIsPublic(LinqNews news) {
+        /**
+         * 查询全局检索中是否存在该新闻
+         * 我们只有 公开的时候才放到全局检索中去 否则 从全局检索中删除
+         * 在这些的前提前必须是 审核通过
+         */
+        switch (news.getIsPublic()) {
+            case "0": // 公开
+                if (news.getStatus().equals(UserConstants.PASSED)) {// 判断是否审核通过
+                    newsDocumentService.saveNews(news);
+                }
+                break;
+            case "1": // 私有
+                // 根据id查询 全局检索中是否存在该新闻 存在就删除
+                checkExistedInESAndRemove(news);
+                break;
+        }
         // 更新时间
         news.setUpdateTime(new Date());
         // 修改人
@@ -164,8 +205,44 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      *
      * @return 结果
      */
+    @Transactional
     @Override
     public boolean changeStatus(LinqNews news) {
+        /**
+         *   都会先查询是全局检索中是否存在这个新闻
+         *   审核通过了: 就增加到全局检索 --> 公开的话才放到全局检索 不公开就放到全局检索
+         *   审核中或者审核失败: 存在就进行删除
+         *
+         */
+        switch (news.getStatus()) {
+            case "1": // 审核通过 就增加到全局检索
+                if (news.getIsPublic().equals(UserConstants.PUBLIC)) {
+                    newsDocumentService.saveNews(news);
+                }
+                break;
+            case "0": // 审核中或者审核失败
+            case "2":
+                // 根据id查询 全局检索中是否存在该新闻 存在就删除
+                checkExistedInESAndRemove(news);
+                break;
+        }
         return saveOrUpdate(news);
     }
+
+
+    /**
+     * 判断ES中是否存在该条新闻 存在就删除
+     *
+     * @param news 新闻
+     */
+    private void checkExistedInESAndRemove(LinqNews news) {
+        // 先识别新闻id是否为空 空 id=-1L
+        Long newsId = StringUtils.isNull(news.getNewsId()) ? -1L : news.getNewsId();
+        NewsDocument newsDocument = newsDocumentService.findNewsById(newsId);
+        // 查到了该新闻
+        if (StringUtils.isNotNull(newsDocument.getNewsId())) {
+            newsDocumentService.deleteByNewsId(newsDocument.getNewsId());
+        }
+    }
+
 }

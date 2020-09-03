@@ -81,10 +81,6 @@ public class LinkNewsController extends BaseController {
     @Log(title = "新闻", businessType = BusinessType.INSERT)
     @PostMapping
     public Result<String> add(@RequestBody LinqNews linqNews) {
-        // 判断新闻标题是否重复
-        if (UserConstants.NOT_UNIQUE.equals(newsService.checkNewsTitleUnique(linqNews))) {
-            return ResultUtils.error("新增新闻'" + linqNews.getNewsTitle() + "'失败，新闻标题已存在");
-        }
         return toResult(newsService.insertLinqNews(linqNews));
     }
 

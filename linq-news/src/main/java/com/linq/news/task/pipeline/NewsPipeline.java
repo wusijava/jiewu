@@ -55,7 +55,7 @@ public class NewsPipeline implements Pipeline {
         }
         // 放入消息队列
         rabbitTemplate.convertAndSend("", RabbitConfig.NEWS_QUEUE, newsMap, message -> {
-            log.info("发送消息时间---->>>>{}",System.currentTimeMillis());
+            log.info("发送消息时间---->>>>{}", System.currentTimeMillis());
             // 设置超时时间  毫秒
             message.getMessageProperties().setExpiration((5 * 60 * 1000) + "");
             return message;

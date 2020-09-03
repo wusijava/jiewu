@@ -1,5 +1,6 @@
 package com.linq.news.task.processor;
 
+import com.linq.common.constant.UserConstants;
 import com.linq.common.exception.CustomException;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNews;
@@ -52,6 +53,8 @@ public class SinaPeNewsProcessor implements PageProcessor {
             selectableList.stream().filter(Objects::nonNull)
                     .forEach(selectable -> {
                         log.info("正在使用的详情页链接->{}", selectable.links().toString());
+                        // 爬下来的默认通过审核
+                        news.setStatus(UserConstants.PASSED);
                         // 设置作者id 管理员 id = 1
                         news.setUserId(1L);
                         // 设置新闻来源

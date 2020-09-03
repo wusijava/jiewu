@@ -112,7 +112,7 @@ public class SwaggerConfig {
                 // 设置标题
                 .title("标题：Linq新闻发布后台管理系统_接口文档")
                 // 描述
-                .description("描述：学习使用")
+                .description("描述：个人使用")
                 // 作者信息
                 .contact(new Contact(linqConfig.getName(), null, null))
                 // 版本

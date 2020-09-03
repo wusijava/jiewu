@@ -144,9 +144,11 @@ public class NewsDocumentServiceImpl implements NewsDocumentService {
      */
     @Override
     public void saveNews(LinqNews news) {
+        // 先识别新闻id是否为空
+        Long newsId = StringUtils.isNull(news.getNewsId()) ? -1L : news.getNewsId();
         NewsDocument info = newsDocumentDao.findByNewsTitle(news.getNewsTitle());
-        if (StringUtils.isNotNull(info)) {
-            throw new CustomException("新增新闻'" + news.getNewsTitle() + "'失败，新闻已存在");
+        if (StringUtils.isNotNull(info) && !Objects.equals(info.getNewsId(), newsId)) {
+            throw new CustomException("新增新闻'" + news.getNewsTitle() + "'失败，新闻标题已存在");
         }
         // 解析LinqNews 构建NewsDocument
         newsDocumentDao.save(convertLinqNewsToNewsDocument(news));

@@ -1,6 +1,7 @@
 package com.linq.news.task.processor;
 
 import cn.hutool.core.text.StrBuilder;
+import com.linq.common.constant.UserConstants;
 import com.linq.common.exception.CustomException;
 import com.linq.common.utils.string.StringUtils;
 import com.linq.news.domain.LinqNews;
@@ -52,6 +53,8 @@ public class CsdnNewsProcessor implements PageProcessor {
             selectableList.stream().filter(Objects::nonNull)
                     .forEach(selectable -> {
                         log.info("正在使用的详情页链接->{}", selectable.links().toString());
+                        // 爬下来的默认通过审核
+                        news.setStatus(UserConstants.PASSED);
                         // 设置作者id 管理员 id = 1
                         news.setUserId(1L);
                         // 设置新闻来源
@@ -118,7 +121,7 @@ public class CsdnNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(cron = "0 0/40 14,15,16,17 * * ?")
+    @Scheduled(cron = "0 0/40 8,9,10 * * ?")
     // @Scheduled(cron = "0 0/2 8,9,10,11,12,13,14,15,16 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");

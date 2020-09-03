@@ -64,6 +64,15 @@ public class NewsConsumer {
             //确认消息已消费
             channel.basicAck(tag, false);
         } catch (Exception e) {
+            /**
+             * TOOD 这里可能有个问题就是当抛出异常 是标题重复造成的话 就会会到消息队列一直等待消费 这里 我们的特殊处理一下手动直接消费---->已处理
+             */
+            if (e.getMessage().contains("新闻标题已存在")) {
+                log.info("因为新闻标题重复,直接消费---->{}", tag);
+                //确认消息已消费
+                channel.basicAck(tag, false);
+                return;
+            }
             channel.basicNack(tag, false, true);
             throw new CustomException("消息队列消费异常" + e.getMessage());
         }
