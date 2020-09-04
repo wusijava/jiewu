@@ -1,0 +1,4 @@
+2020-09-04 14:04:17.568 DEBUG [main]com.linq.web.TestDemos.logStarting:56 -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.8.RELEASE
+2020-09-04 14:09:32.025 DEBUG [main]com.linq.web.TestDemos.logStarting:56 -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.8.RELEASE
+2020-09-04 14:10:04.264 DEBUG [main]com.linq.web.TestDemos.logStarting:56 -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.8.RELEASE
+2020-09-04 14:16:38.488 DEBUG [main]com.linq.web.TestDemos.logStarting:56 -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.8.RELEASE

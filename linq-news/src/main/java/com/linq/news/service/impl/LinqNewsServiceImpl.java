@@ -14,6 +14,7 @@ import com.linq.news.domain.LinqNewsType;
 import com.linq.news.domain.NewsDocument;
 import com.linq.news.mapper.NewsDocumentDao;
 import com.linq.news.service.NewsDocumentService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.token.TokenService;
 import org.springframework.stereotype.Service;
@@ -35,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @Description:
  * @Version: 1.0.0
  */
-
+@Slf4j
 @Service
 public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> implements LinqNewsService {
     @Autowired
@@ -176,6 +177,11 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
     @Override
     public boolean changeIsPublic(LinqNews news) {
         /**
+         * 修复bug  java.lang.NullPointerException: null
+         */
+        // 查询出当前所有信息
+        news = getById(news.getNewsId());
+        /**
          * 查询全局检索中是否存在该新闻
          * 我们只有 公开的时候才放到全局检索中去 否则 从全局检索中删除
          * 在这些的前提前必须是 审核通过
@@ -236,9 +242,9 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
      * @param news 新闻
      */
     private void checkExistedInESAndRemove(LinqNews news) {
-        // 先识别新闻id是否为空 空 id=-1L
-        Long newsId = StringUtils.isNull(news.getNewsId()) ? -1L : news.getNewsId();
-        NewsDocument newsDocument = newsDocumentService.findNewsById(newsId);
+        log.info("判断ES中是否存在该条新闻--->{}", news);
+        // 先识别新闻
+        NewsDocument newsDocument = newsDocumentService.findNewsById(news.getNewsId());
         // 查到了该新闻
         if (StringUtils.isNotNull(newsDocument.getNewsId())) {
             newsDocumentService.deleteByNewsId(newsDocument.getNewsId());
