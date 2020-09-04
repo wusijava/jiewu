@@ -108,11 +108,11 @@
         </if>
         <if test="role.beginTime != null and role.beginTime != ''">
             <!-- 开始时间检索 -->
-            and date_format(r.create_time, '%y%m%d') &gt;= date_format(#{role.beginTime}, '%y%m%d')
+            and date_format(r.create_time, '%y%m%d') >= date_format(#{role.beginTime}, '%y%m%d')
         </if>
         <if test="role.endTime != null and role.endTime != ''">
             <!-- 结束时间检索 -->
-            and date_format(r.create_time, '%y%m%d') &lt;= date_format(#{role.endTime}, '%y%m%d')
+            AND date_format(r.create_time, '%y%m%d')&lt;= date_format(#{role.endTime}, '%y%m%d')
         </if>
         order by r.role_sort
     </select>

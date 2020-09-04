@@ -130,11 +130,11 @@
         </if>
         <if test="user.beginTime != null and user.beginTime != ''">
             <!-- 开始时间检索 -->
-            AND date_format(u.create_time, '%y%m%d') &gt;= date_format(#{user.beginTime}, '%y%m%d')
+            AND date_format(u.create_time, '%y%m%d')&gt;= date_format(#{user.beginTime}, '%y%m%d')
         </if>
         <if test="user.endTime != null and user.endTime != ''">
             <!-- 结束时间检索 -->
-            AND date_format(u.create_time, '%y%m%d') &lt;= date_format(#{user.endTime}, '%y%m%d')
+            AND date_format(u.create_time, '%y%m%d')&lt;= date_format(#{user.endTime}, '%y%m%d')
         </if>
         <if test="user.deptId != null and user.deptId != 0">
             AND (u.dept_id = #{user.deptId} OR

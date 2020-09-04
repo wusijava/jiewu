@@ -18,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="linq" options="" />
       <module name="linq-common" options="-parameters" />
       <module name="linq-framework" options="-parameters" />
       <module name="linq-news" options="-parameters" />

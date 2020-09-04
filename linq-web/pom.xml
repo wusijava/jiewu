@@ -6,10 +6,12 @@
         <artifactId>linq</artifactId>
         <groupId>com.linq</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>linq-web</artifactId>
     <description>web服务入口</description>
+    <packaging>jar</packaging>
     <dependencies>
         <!-- spring-boot-devtools -->
         <dependency>
@@ -27,16 +29,7 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.linq</groupId>
-            <artifactId>linq-framework</artifactId>
-            <version>${linq.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.linq</groupId>
-            <artifactId>linq-news</artifactId>
-            <version>${linq.version}</version>
-        </dependency>
+      <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -71,89 +64,122 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
         </dependency>
-
         <!--防止进入swagger页面报类型转换错误，排除2.9.2中的引用，手动增加1.5.21版本-->
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
             <version>1.5.21</version>
         </dependency>
-
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
             <version>1.5.21</version>
         </dependency>
-
         <!-- swagger2-UI-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
-        <!--thymeleaf默认使用html5规则标签必须闭合等 使用次此包正常解析-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
-        <!--        </dependency>-->
+        <!--framework模块 -->
+        <dependency>
+            <groupId>com.linq</groupId>
+            <artifactId>linq-framework</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--news模块-->
+        <dependency>
+            <groupId>com.linq</groupId>
+            <artifactId>linq-news</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.linq</groupId>
+                    <artifactId>linq-system</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
     <!--生成数据库文档插件-->
+    <!--    <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>cn.smallbun.screw</groupId>
+                    <artifactId>screw-maven-plugin</artifactId>
+                    <version>1.0.5</version>
+                    <dependencies>
+                        &lt;!&ndash; HikariCP &ndash;&gt;
+                        <dependency>
+                            <groupId>com.zaxxer</groupId>
+                            <artifactId>HikariCP</artifactId>
+                            <version>3.4.5</version>
+                        </dependency>
+                        &lt;!&ndash;mysql driver&ndash;&gt;
+                        <dependency>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <version>8.0.20</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        &lt;!&ndash;username&ndash;&gt;
+                        <username>root</username>
+                        &lt;!&ndash;password&ndash;&gt;
+                        <password>lyq@qq.com</password>
+                        &lt;!&ndash;driver&ndash;&gt;
+                        <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
+                        &lt;!&ndash;jdbc url&ndash;&gt;
+                        <jdbcUrl>jdbc:mysql://127.0.0.1:3306/linq</jdbcUrl>
+                        &lt;!&ndash;生成文件类型 MD HTML&ndash;&gt;
+                        <fileType>MD</fileType>
+                        &lt;!&ndash;打开文件输出目录&ndash;&gt;
+                        <openOutputDir>false</openOutputDir>
+                        &lt;!&ndash;生成模板&ndash;&gt;
+                        <produceType>freemarker</produceType>
+                        &lt;!&ndash;文档名称 为空时:将采用[数据库名称-描述-版本号]作为文档名称&ndash;&gt;
+                        &lt;!&ndash;<docName>测试文档名称</docName>&ndash;&gt;
+                        &lt;!&ndash;描述&ndash;&gt;
+                        <description>数据库文档生成</description>
+                        &lt;!&ndash;版本&ndash;&gt;
+                        <version>${linq.version}</version>
+                        &lt;!&ndash;标题&ndash;&gt;
+                        <title>linq数据库文档</title>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>cn.smallbun.screw</groupId>
-                <artifactId>screw-maven-plugin</artifactId>
-                <version>1.0.5</version>
-                <dependencies>
-                    <!-- HikariCP -->
-                    <dependency>
-                        <groupId>com.zaxxer</groupId>
-                        <artifactId>HikariCP</artifactId>
-                        <version>3.4.5</version>
-                    </dependency>
-                    <!--mysql driver-->
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.20</version>
-                    </dependency>
-                </dependencies>
                 <configuration>
-                    <!--username-->
-                    <username>root</username>
-                    <!--password-->
-                    <password>lyq@qq.com</password>
-                    <!--driver-->
-                    <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
-                    <!--jdbc url-->
-                    <jdbcUrl>jdbc:mysql://127.0.0.1:3306/linq</jdbcUrl>
-                    <!--生成文件类型 MD HTML-->
-                    <fileType>MD</fileType>
-                    <!--打开文件输出目录-->
-                    <openOutputDir>false</openOutputDir>
-                    <!--生成模板-->
-                    <produceType>freemarker</produceType>
-                    <!--文档名称 为空时:将采用[数据库名称-描述-版本号]作为文档名称-->
-                    <!--<docName>测试文档名称</docName>-->
-                    <!--描述-->
-                    <description>数据库文档生成</description>
-                    <!--版本-->
-                    <version>${linq.version}</version>
-                    <!--标题-->
-                    <title>linq数据库文档</title>
+                    <!-- 指定该Main Class为全局的唯一入口 -->
+                    <mainClass>com.linq.AppRun</mainClass>
+                    <layout>ZIP</layout>
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
                         </goals>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
+        <finalName>linq</finalName>
     </build>
+
+
 </project>

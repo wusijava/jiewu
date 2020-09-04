@@ -6,16 +6,13 @@
         <artifactId>linq</artifactId>
         <groupId>com.linq</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>linq-news</artifactId>
     <description>news系统模块</description>
     <dependencies>
-        <dependency>
-            <groupId>com.linq</groupId>
-            <artifactId>linq-common</artifactId>
-        </dependency>
+        <!--druid-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
@@ -29,18 +26,6 @@
             <groupId>us.codecraft</groupId>
             <artifactId>webmagic-extension</artifactId>
         </dependency>
-        <!--去重使用-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.lou</groupId>-->
-        <!--            <artifactId>simhasher</artifactId>-->
-        <!--            <version>0.0.1-SNAPSHOT</version>-->
-        <!--            <exclusions>-->
-        <!--                <exclusion>-->
-        <!--                    <groupId>org.apache.lucene</groupId>-->
-        <!--                    <artifactId>lucene-core</artifactId>-->
-        <!--                </exclusion>-->
-        <!--            </exclusions>-->
-        <!--        </dependency>-->
         <!--BloomFilter使用-->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -60,7 +45,7 @@
         <dependency>
             <groupId>com.linq</groupId>
             <artifactId>linq-system</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 </project>

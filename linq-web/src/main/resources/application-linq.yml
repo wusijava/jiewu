@@ -7,7 +7,8 @@ linq:
   # 版权年份
   copyrightYear: 2020
   # 文件路径 示例（ Windows配置D:/linq/uploadPath，Linux配置 /home/linq/uploadPath）
-  profile: /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/uploadPath
+  #  profile: /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/uploadPath
+  profile: /home/linq/uploadPath
   # 获取ip地址开关
   addressEnabled: true
 
@@ -54,7 +55,7 @@ swagger:
   # 是否开启swagger
   enabled: true
   # 请求前缀
-  pathMapping: /dev-api
+  pathMapping: /prod-api
 
 
 # 日志配置

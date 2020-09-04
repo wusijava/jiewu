@@ -57,7 +57,7 @@
             </if>
             <if test="config.beginTime != null and config.beginTime != ''">
                 <!-- 开始时间检索 -->
-                and date_format(create_time, '%y%m%d') &gt;= date_format(#{config.beginTime}, '%y%m%d')
+                and date_format(create_time, '%y%m%d')>= date_format(#{config.beginTime}, '%y%m%d')
             </if>
             <if test="config.endTime != null and config.endTime != ''">
                 <!-- 结束时间检索 -->

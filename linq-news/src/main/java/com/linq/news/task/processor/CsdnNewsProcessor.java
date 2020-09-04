@@ -121,7 +121,7 @@ public class CsdnNewsProcessor implements PageProcessor {
     // 执行爬虫
     //initialDelay当任务启动后，等等多久执行方法
     //fixedDelay每隔多久执行方法
-    @Scheduled(cron = "0 0/40 8,9,10 * * ?")
+    @Scheduled(cron = "0 0/30 8,9,10,11,12 * * ?")
     // @Scheduled(cron = "0 0/2 8,9,10,11,12,13,14,15,16 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
