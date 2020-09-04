@@ -154,7 +154,7 @@
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
         </dependency>
-        <!--解决 java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter-->
+        <!--解决 打包时候 抛出java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter-->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
