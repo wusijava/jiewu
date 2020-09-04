@@ -43,8 +43,6 @@
         comment_id, news_id, comment_content, thumbs, del_flag, create_by, create_time, update_by,
         update_time, remark
     </sql>
-
-
     <sql id="findCommentVo">
         select c.comment_id,
                c.news_id,
@@ -104,6 +102,6 @@
             <!-- 结束时间检索 -->
             AND date_format(c.create_time, '%y%m%d') &lt;= date_format(#{comment.endTime}, '%y%m%d')
         </if>
-        order by c.comment_id
+        order by c.comment_id desc
     </select>
 </mapper>

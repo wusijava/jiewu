@@ -2,7 +2,7 @@ package com.linq.system.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.linq.common.core.domain.entity.SysMenu;
-import io.lettuce.core.dynamic.annotation.Param;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 

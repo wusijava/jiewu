@@ -71,7 +71,7 @@ export default {
           }
         }
       },
-      uploadImgUrl: process.env.VUE_APP_BASE_API + process.env.VUE_APP_COMMON_UPLOAD,// 上传的图片服务器地址
+      uploadImgUrl: process.env.VUE_APP_BASE_API + process.env.VUE_APP_COMMON_FAST_UPLOAD, // 上传的图片服务器地址
       headers: {
         Authorization: 'Bearer ' + getToken()
       }

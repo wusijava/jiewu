@@ -17,7 +17,8 @@ import java.util.Set;
  * @author ruoyi
  */
 @Service("ss")
-public class PermissionService {
+public class
+PermissionService {
     /**
      * 所有权限标识
      */

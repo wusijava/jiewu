@@ -3,7 +3,6 @@ package com.linq.system.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.linq.system.domain.SysUserRole;
 
-import java.util.List;
 
 /**
  * @Author: 林义清

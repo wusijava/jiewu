@@ -30,7 +30,7 @@ public class LinqCommentServiceImpl extends ServiceImpl<LinqCommentMapper, LinqC
      */
     @Override
     public IPage<LinqComment> findPage(Page<LinqComment> linqCommentPage, LinqComment linqComment) {
-        return baseMapper.findPage(linqCommentPage,linqComment);
+         return baseMapper.findPage(linqCommentPage,linqComment);
     }
 
     /**

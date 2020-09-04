@@ -138,14 +138,14 @@
     <select id="findMenuList" resultMap="BaseResultMap">
         <include refid="findMenuVo"/>
         <where>
-            <if test="menuName != null and menuName != ''">
-                AND menu_name like '%${menuName}%'
+            <if test="menu.menuName != null and menu.menuName != ''">
+                AND menu_name like '%${menu.menuName}%'
             </if>
-            <if test="visible != null and visible != ''">
-                AND visible = #{visible}
+            <if test="menu.visible != null and menu.visible != ''">
+                AND visible = #{menu.visible}
             </if>
-            <if test="status != null and status != ''">
-                AND status = #{status}
+            <if test="menu.status != null and menu.status != ''">
+                AND status = #{menu.status}
             </if>
         </where>
         order by parent_id, order_num
@@ -178,15 +178,15 @@
                      left join sys_role_menu rm on m.menu_id = rm.menu_id
                      left join sys_user_role ur on rm.role_id = ur.role_id
                      left join sys_role ro on ur.role_id = ro.role_id
-                where ur.user_id = #{params.userId}
-        <if test="menuName != null and menuName != ''">
-            AND m.menu_name like '%${menuName}%'
+                where ur.user_id = #{menu.params.userId}
+        <if test="menu.menuName != null and menu.menuName != ''">
+            AND m.menu_name like '%${menu.menuName}%'
         </if>
-        <if test="visible != null and visible != ''">
-            AND m.visible = #{visible}
+        <if test="menu.visible != null and menu.visible != ''">
+            AND m.visible = #{menu.visible}
         </if>
-        <if test="status != null and status != ''">
-            AND m.status = #{status}
+        <if test="menu.status != null and menu.status != ''">
+            AND m.status = #{menu.status}
         </if>
         order by m.parent_id, m.order_num
     </select>
