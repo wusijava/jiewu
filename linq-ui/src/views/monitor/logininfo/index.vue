@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import { list, delLogininfor, cleanLogininfor } from '@/api/monitor/logininfo'
+import { list, delLogininfo, cleanLogininfo } from '@/api/monitor/logininfo'
 
 export default {
   name: 'Logininfor',
@@ -149,7 +149,7 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(function () {
-        return delLogininfor(infoIds)
+        return delLogininfo(infoIds)
       }).then(() => {
         this.getList()
         this.msgSuccess('删除成功')
@@ -163,7 +163,7 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(function () {
-        return cleanLogininfor()
+        return cleanLogininfo()
       }).then(() => {
         this.getList()
         this.msgSuccess('清空成功')

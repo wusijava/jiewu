@@ -12,7 +12,7 @@ export function list (page, size, query) {
 }
 
 // 删除登录日志
-export function delLogininfor (infoId) {
+export function delLogininfo (infoId) {
   return request({
     url: `${BASE_URI}/${infoId}`,
     method: 'delete'
@@ -20,7 +20,7 @@ export function delLogininfor (infoId) {
 }
 
 // 清空登录日志
-export function cleanLogininfor () {
+export function cleanLogininfo () {
   return request({
     url: `${BASE_URI}/clean`,
     method: 'delete'
