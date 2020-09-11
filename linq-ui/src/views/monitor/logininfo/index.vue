@@ -28,12 +28,12 @@
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button type="danger" icon="el-icon-delete" size="mini" :disabled="multiple" @click="handleDelete"
-                   v-hasPermi="['monitor:logininfor:remove']">删除
+                   v-hasPermi="['monitor:logininfo:remove']">删除
         </el-button>
       </el-col>
       <el-col :span="1.5">
         <el-button type="danger" icon="el-icon-delete" size="mini" @click="handleClean"
-                   v-hasPermi="['monitor:logininfor:remove']">清空
+                   v-hasPermi="['monitor:logininfo:remove']">清空
         </el-button>
       </el-col>
     </el-row>
@@ -63,7 +63,7 @@
 import { list, delLogininfo, cleanLogininfo } from '@/api/monitor/logininfo'
 
 export default {
-  name: 'Logininfor',
+  name: 'Logininfo',
   data () {
     return {
       //表格高度 window.innerHeight窗口文档显示高度
