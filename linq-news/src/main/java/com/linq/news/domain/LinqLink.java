@@ -5,8 +5,10 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.linq.common.core.domain.model.BaseEntity;
+
 import java.io.Serializable;
 import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -17,15 +19,15 @@ import javax.validation.constraints.Size;
 /**
  * @Author: 林义清
  * @Date: 2020/8/28 8:16 下午
- * @Description: 
- * @Version: 1.0.0 
+ * @Description:
+ * @Version: 1.0.0
  */
-    
+
 /**
-    * 友情链接表
-    */
+ * 友情链接表
+ */
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper = true)
 @TableName(value = "linq_link")
 public class LinqLink extends BaseEntity implements Serializable {
     /**

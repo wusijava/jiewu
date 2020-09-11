@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.linq.common.core.domain.model.BaseEntity;
+
 import java.io.Serializable;
 
 import lombok.Data;
@@ -16,15 +17,15 @@ import javax.validation.constraints.Size;
 /**
  * @Author: 林义清
  * @Date: 2020/8/27 9:06 下午
- * @Description: 
- * @Version: 1.0.0 
+ * @Description:
+ * @Version: 1.0.0
  */
-    
+
 /**
-    * 参数配置表
-    */
+ * 参数配置表
+ */
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper = true)
 @TableName(value = "sys_config")
 public class SysConfig extends BaseEntity implements Serializable {
     /**

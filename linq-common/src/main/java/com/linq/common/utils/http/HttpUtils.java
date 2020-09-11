@@ -22,11 +22,8 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 
-
 /**
  * 通用http发送方法
- *
- * @author ruoyi
  */
 @Slf4j
 public class HttpUtils {

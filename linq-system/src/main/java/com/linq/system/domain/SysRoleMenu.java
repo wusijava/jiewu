@@ -4,19 +4,21 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
  * @Author: 林义清
  * @Date: 2020/8/24 8:08 下午
- * @Description: 
- * @Version: 1.0.0 
+ * @Description:
+ * @Version: 1.0.0
  */
-    
+
 /**
-    * 角色和菜单关联表
-    */
+ * 角色和菜单关联表
+ */
 @Data
 @TableName(value = "sys_role_menu")
 public class SysRoleMenu implements Serializable {
