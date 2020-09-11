@@ -99,7 +99,7 @@ public class SinaEntertainmentNewsProcessor implements PageProcessor {
     //fixedDelay每隔多久执行方法
     // @Scheduled(cron = "0 0/10 15,16,17 * * ?")
     // @Scheduled(cron = "0 0/2 8,9,10,11,12,13,14,15,16 * * ?")
-    @Scheduled(cron = "0 0/40 13,14,15 * * ?")
+    @Scheduled(cron = "0 0/50 13,14 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式

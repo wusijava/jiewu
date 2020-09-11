@@ -101,7 +101,7 @@ public class SinaPeNewsProcessor implements PageProcessor {
     // @Scheduled(cron = "0 0/20 8,9,10 * * ?")
     // @Scheduled(cron = "0 0/10 15,16,17 * * ?")
     // @Scheduled(cron = "0 0/10 13,14,15 * * ?")
-    @Scheduled(cron = "0 0/40 17,18,19 * * ?")
+    @Scheduled(cron = "0 0/50 17,18 * * ?")
     public void runSpiderProcess() {
         log.info("正在进行爬取中........");
         // 配置代理模式
