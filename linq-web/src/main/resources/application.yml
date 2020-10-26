@@ -56,7 +56,7 @@ spring:
   # 消息中间件 rabbitMQ
   rabbitmq:
     virtual-host: / # 配置虚拟机
-    host: 120.79.43.16 # ip
+    host: server.kaiyu.work # ip
     port: 5672 # 端口
     username: admin # 用户名
     password: 111222 # 密码

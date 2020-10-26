@@ -56,13 +56,7 @@ public class SysDeptController extends BaseController {
     @GetMapping("/list/exclude/{deptId}")
     public Result<List<SysDept>> excludeChild(@PathVariable(value = "deptId", required = false) Long deptId) {
         List<SysDept> depts = deptService.findDeptList(new SysDept());
-        Iterator<SysDept> it = depts.iterator();
-        while (it.hasNext()) {
-            SysDept d = (SysDept) it.next();
-            if (d.getDeptId().intValue() == deptId || ArrayUtils.contains(StringUtils.split(d.getAncestors(), ","), deptId + "")) {
-                it.remove();
-            }
-        }
+        depts.removeIf(d -> d.getDeptId().intValue() == deptId || ArrayUtils.contains(StringUtils.split(d.getAncestors(), ","), deptId + ""));
         return ResultUtils.success(depts);
     }
 

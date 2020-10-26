@@ -1,0 +1,1062 @@
+2020-09-25 09:38:09.033 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 4229 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-25 09:38:09.041 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-25 09:38:16.503 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-25 09:38:18.792 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:994 -{dataSource-1} inited
+2020-09-25 09:38:24.677 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 09:38:26.199 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-25 09:38:26.218 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-25 09:38:26.322 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-25 09:38:26.581 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-25 09:38:26.583 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-25 09:38:26.591 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-25 09:38:26.602 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-25 09:38:26.608 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-25 09:38:26.614 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-25 09:38:26.621 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-25 09:38:26.630 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-25 09:38:26.632 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-25 09:38:26.661 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-25 09:38:26.664 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-25 09:38:26.668 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-25 09:38:26.674 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-25 09:38:26.677 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-25 09:38:26.679 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-25 09:38:26.684 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-25 09:38:26.688 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-25 09:38:26.695 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-25 09:38:26.702 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-25 09:38:26.705 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-25 09:38:26.711 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-25 09:38:26.713 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-25 09:38:26.719 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-25 09:38:26.725 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-25 09:38:26.738 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-25 09:38:26.752 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-25 09:38:26.759 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-25 09:38:26.762 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-25 09:38:26.770 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-25 09:38:26.772 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-25 09:38:26.777 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-25 09:38:26.779 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-25 09:38:26.781 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-25 09:38:26.801 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-25 09:38:26.810 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-25 09:38:26.814 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-25 09:38:26.817 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-25 09:38:26.831 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-25 09:38:26.834 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-25 09:38:26.844 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-25 09:38:26.852 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-25 09:38:26.854 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-25 09:38:26.862 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-25 09:38:26.864 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-25 09:38:26.872 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-25 09:38:26.881 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-25 09:38:26.883 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-25 09:38:26.910 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-25 09:38:26.912 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-25 09:38:26.914 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-25 09:38:26.917 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-25 09:38:26.923 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-25 09:38:26.925 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-25 09:38:26.928 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-25 09:38:26.929 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-25 09:38:26.931 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-25 09:38:26.933 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-25 09:38:26.934 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-25 09:38:26.945 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-25 09:38:26.947 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-25 09:38:27.436 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 19.511 seconds (JVM running for 22.72)
+2020-09-25 09:38:28.505 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-25 09:38:28.510 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2029 -{dataSource-1} closing ...
+2020-09-25 09:38:28.519 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2101 -{dataSource-1} closed
+2020-09-25 09:38:51.233 INFO  [main]com.linq.web.TestDemos.logStarting:55 -Starting TestDemos on JaydeMacBook-Pro.local with PID 4244 (started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web)
+2020-09-25 09:38:51.236 INFO  [main]com.linq.web.TestDemos.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-25 09:38:55.751 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-25 09:38:57.959 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:994 -{dataSource-1} inited
+2020-09-25 09:39:05.739 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 09:39:07.237 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-09-25 09:39:07.252 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-09-25 09:39:07.318 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-09-25 09:39:07.542 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-09-25 09:39:07.545 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2020-09-25 09:39:07.553 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_1
+2020-09-25 09:39:07.563 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_1
+2020-09-25 09:39:07.569 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-09-25 09:39:07.574 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_2
+2020-09-25 09:39:07.580 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_2
+2020-09-25 09:39:07.588 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_2
+2020-09-25 09:39:07.590 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_1
+2020-09-25 09:39:07.613 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-09-25 09:39:07.615 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_3
+2020-09-25 09:39:07.619 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_3
+2020-09-25 09:39:07.623 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_3
+2020-09-25 09:39:07.627 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: optionSelectUsingGET_1
+2020-09-25 09:39:07.629 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_2
+2020-09-25 09:39:07.633 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_4
+2020-09-25 09:39:07.637 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_4
+2020-09-25 09:39:07.647 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_4
+2020-09-25 09:39:07.653 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_4
+2020-09-25 09:39:07.655 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_3
+2020-09-25 09:39:07.661 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_5
+2020-09-25 09:39:07.663 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_5
+2020-09-25 09:39:07.669 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_5
+2020-09-25 09:39:07.676 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_5
+2020-09-25 09:39:07.679 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_4
+2020-09-25 09:39:07.691 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_6
+2020-09-25 09:39:07.697 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_6
+2020-09-25 09:39:07.700 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_6
+2020-09-25 09:39:07.707 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_6
+2020-09-25 09:39:07.709 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_5
+2020-09-25 09:39:07.713 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_7
+2020-09-25 09:39:07.714 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: clearCacheUsingDELETE_1
+2020-09-25 09:39:07.716 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_7
+2020-09-25 09:39:07.720 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_7
+2020-09-25 09:39:07.727 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_7
+2020-09-25 09:39:07.730 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_6
+2020-09-25 09:39:07.732 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_8
+2020-09-25 09:39:07.741 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_8
+2020-09-25 09:39:07.742 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_8
+2020-09-25 09:39:07.751 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_9
+2020-09-25 09:39:07.763 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_8
+2020-09-25 09:39:07.765 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_7
+2020-09-25 09:39:07.775 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_9
+2020-09-25 09:39:07.777 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_9
+2020-09-25 09:39:07.785 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_10
+2020-09-25 09:39:07.794 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_9
+2020-09-25 09:39:07.797 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_8
+2020-09-25 09:39:07.822 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_10
+2020-09-25 09:39:07.827 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_1
+2020-09-25 09:39:07.832 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_10
+2020-09-25 09:39:07.837 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_11
+2020-09-25 09:39:07.849 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_10
+2020-09-25 09:39:07.851 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_9
+2020-09-25 09:39:07.856 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_11
+2020-09-25 09:39:07.859 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: changeStatusUsingPUT_2
+2020-09-25 09:39:07.863 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_11
+2020-09-25 09:39:07.867 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_12
+2020-09-25 09:39:07.869 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getInfoUsingGET_13
+2020-09-25 09:39:07.881 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: listUsingGET_11
+2020-09-25 09:39:07.884 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: removeUsingDELETE_10
+2020-09-25 09:39:08.421 INFO  [main]com.linq.web.TestDemos.logStarted:61 -Started TestDemos in 18.01 seconds (JVM running for 19.731)
+2020-09-25 09:39:59.298 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600997999298
+2020-09-25 09:39:59.649 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600997999649
+2020-09-25 09:39:59.992 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600997999992
+2020-09-25 09:40:00.307 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998000307
+2020-09-25 09:40:00.699 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998000699
+2020-09-25 09:40:01.005 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998001005
+2020-09-25 09:40:01.354 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998001354
+2020-09-25 09:40:01.730 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998001730
+2020-09-25 09:40:02.037 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998002037
+2020-09-25 09:40:02.372 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998002372
+2020-09-25 09:40:02.750 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998002750
+2020-09-25 09:40:03.034 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998003034
+2020-09-25 09:40:03.448 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998003448
+2020-09-25 09:40:03.684 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998003684
+2020-09-25 09:40:03.916 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998003916
+2020-09-25 09:40:04.361 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998004361
+2020-09-25 09:40:04.683 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998004683
+2020-09-25 09:40:04.853 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998004853
+2020-09-25 09:40:05.015 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005015
+2020-09-25 09:40:05.170 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005170
+2020-09-25 09:40:05.332 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005332
+2020-09-25 09:40:05.488 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005488
+2020-09-25 09:40:05.640 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005640
+2020-09-25 09:40:05.792 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005792
+2020-09-25 09:40:05.944 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998005944
+2020-09-25 09:40:06.104 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006104
+2020-09-25 09:40:06.266 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006266
+2020-09-25 09:40:06.419 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006419
+2020-09-25 09:40:06.583 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006583
+2020-09-25 09:40:06.750 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006750
+2020-09-25 09:40:06.910 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998006910
+2020-09-25 09:40:07.078 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007078
+2020-09-25 09:40:07.241 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007241
+2020-09-25 09:40:07.406 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007406
+2020-09-25 09:40:07.576 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007576
+2020-09-25 09:40:07.742 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007742
+2020-09-25 09:40:07.905 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998007905
+2020-09-25 09:40:08.063 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008063
+2020-09-25 09:40:08.223 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008223
+2020-09-25 09:40:08.388 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008388
+2020-09-25 09:40:08.547 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008547
+2020-09-25 09:40:08.700 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008700
+2020-09-25 09:40:08.868 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998008868
+2020-09-25 09:40:09.025 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009025
+2020-09-25 09:40:09.187 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009187
+2020-09-25 09:40:09.350 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009350
+2020-09-25 09:40:09.509 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009509
+2020-09-25 09:40:09.672 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009672
+2020-09-25 09:40:09.832 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009832
+2020-09-25 09:40:09.991 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998009991
+2020-09-25 09:40:10.150 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010150
+2020-09-25 09:40:10.308 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010308
+2020-09-25 09:40:10.458 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010458
+2020-09-25 09:40:10.615 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010615
+2020-09-25 09:40:10.775 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010775
+2020-09-25 09:40:10.937 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998010937
+2020-09-25 09:40:11.098 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011098
+2020-09-25 09:40:11.261 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011261
+2020-09-25 09:40:11.421 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011421
+2020-09-25 09:40:11.580 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011580
+2020-09-25 09:40:11.743 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011743
+2020-09-25 09:40:11.902 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998011902
+2020-09-25 09:40:12.066 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012066
+2020-09-25 09:40:12.226 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012226
+2020-09-25 09:40:12.388 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012388
+2020-09-25 09:40:12.549 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012549
+2020-09-25 09:40:12.710 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012710
+2020-09-25 09:40:12.867 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998012867
+2020-09-25 09:40:13.032 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013032
+2020-09-25 09:40:13.197 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013197
+2020-09-25 09:40:13.360 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013360
+2020-09-25 09:40:13.522 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013522
+2020-09-25 09:40:13.688 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013688
+2020-09-25 09:40:13.852 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998013852
+2020-09-25 09:40:14.011 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014011
+2020-09-25 09:40:14.175 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014175
+2020-09-25 09:40:14.339 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014339
+2020-09-25 09:40:14.500 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014500
+2020-09-25 09:40:14.666 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014666
+2020-09-25 09:40:14.822 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014822
+2020-09-25 09:40:14.986 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998014986
+2020-09-25 09:40:15.146 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015146
+2020-09-25 09:40:15.303 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015303
+2020-09-25 09:40:15.463 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015463
+2020-09-25 09:40:15.622 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015622
+2020-09-25 09:40:15.783 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015783
+2020-09-25 09:40:15.942 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998015942
+2020-09-25 09:40:16.100 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016100
+2020-09-25 09:40:16.257 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016257
+2020-09-25 09:40:16.418 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016418
+2020-09-25 09:40:16.577 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016577
+2020-09-25 09:40:16.737 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016737
+2020-09-25 09:40:16.898 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998016898
+2020-09-25 09:40:17.059 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017059
+2020-09-25 09:40:17.215 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017215
+2020-09-25 09:40:17.376 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017376
+2020-09-25 09:40:17.576 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017576
+2020-09-25 09:40:17.738 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017738
+2020-09-25 09:40:17.897 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998017897
+2020-09-25 09:40:18.059 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018059
+2020-09-25 09:40:18.218 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018218
+2020-09-25 09:40:18.378 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018378
+2020-09-25 09:40:18.537 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018537
+2020-09-25 09:40:18.696 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018696
+2020-09-25 09:40:18.851 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998018851
+2020-09-25 09:40:19.007 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019007
+2020-09-25 09:40:19.172 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019172
+2020-09-25 09:40:19.328 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019328
+2020-09-25 09:40:19.487 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019487
+2020-09-25 09:40:19.652 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019652
+2020-09-25 09:40:19.815 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019815
+2020-09-25 09:40:19.969 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998019969
+2020-09-25 09:40:20.121 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020121
+2020-09-25 09:40:20.279 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020279
+2020-09-25 09:40:20.443 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020443
+2020-09-25 09:40:20.598 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020598
+2020-09-25 09:40:20.752 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020752
+2020-09-25 09:40:20.903 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998020903
+2020-09-25 09:40:21.061 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021061
+2020-09-25 09:40:21.228 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021228
+2020-09-25 09:40:21.393 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021393
+2020-09-25 09:40:21.555 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021555
+2020-09-25 09:40:21.719 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021719
+2020-09-25 09:40:21.884 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998021884
+2020-09-25 09:40:22.046 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022046
+2020-09-25 09:40:22.209 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022209
+2020-09-25 09:40:22.371 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022371
+2020-09-25 09:40:22.529 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022529
+2020-09-25 09:40:22.685 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022685
+2020-09-25 09:40:22.841 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998022841
+2020-09-25 09:40:23.004 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023004
+2020-09-25 09:40:23.170 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023170
+2020-09-25 09:40:23.328 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023328
+2020-09-25 09:40:23.487 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023487
+2020-09-25 09:40:23.642 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023642
+2020-09-25 09:40:23.800 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023800
+2020-09-25 09:40:23.961 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998023961
+2020-09-25 09:40:24.118 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998024118
+2020-09-25 09:40:24.280 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998024280
+2020-09-25 09:40:24.736 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998024736
+2020-09-25 09:40:24.966 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998024966
+2020-09-25 09:40:25.137 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998025137
+2020-09-25 09:40:25.514 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998025514
+2020-09-25 09:40:26.070 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026070
+2020-09-25 09:40:26.257 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026257
+2020-09-25 09:40:26.420 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026420
+2020-09-25 09:40:26.581 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026581
+2020-09-25 09:40:26.742 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026742
+2020-09-25 09:40:26.900 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998026900
+2020-09-25 09:40:27.062 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027062
+2020-09-25 09:40:27.226 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027226
+2020-09-25 09:40:27.387 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027387
+2020-09-25 09:40:27.548 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027548
+2020-09-25 09:40:27.714 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027714
+2020-09-25 09:40:27.871 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998027871
+2020-09-25 09:40:28.031 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028031
+2020-09-25 09:40:28.194 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028194
+2020-09-25 09:40:28.353 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028353
+2020-09-25 09:40:28.510 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028509
+2020-09-25 09:40:28.673 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028673
+2020-09-25 09:40:28.832 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028832
+2020-09-25 09:40:28.989 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998028989
+2020-09-25 09:40:29.144 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029144
+2020-09-25 09:40:29.303 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029303
+2020-09-25 09:40:29.462 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029462
+2020-09-25 09:40:29.622 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029622
+2020-09-25 09:40:29.787 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029787
+2020-09-25 09:40:29.950 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998029950
+2020-09-25 09:40:30.108 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030108
+2020-09-25 09:40:30.269 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030269
+2020-09-25 09:40:30.423 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030423
+2020-09-25 09:40:30.586 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030586
+2020-09-25 09:40:30.743 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030743
+2020-09-25 09:40:30.898 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998030898
+2020-09-25 09:40:31.054 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031054
+2020-09-25 09:40:31.211 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031211
+2020-09-25 09:40:31.365 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031365
+2020-09-25 09:40:31.516 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031516
+2020-09-25 09:40:31.676 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031676
+2020-09-25 09:40:31.830 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031830
+2020-09-25 09:40:31.983 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998031983
+2020-09-25 09:40:32.136 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032136
+2020-09-25 09:40:32.290 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032290
+2020-09-25 09:40:32.446 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032446
+2020-09-25 09:40:32.603 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032603
+2020-09-25 09:40:32.762 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032762
+2020-09-25 09:40:32.925 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998032925
+2020-09-25 09:40:33.111 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033111
+2020-09-25 09:40:33.277 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033277
+2020-09-25 09:40:33.439 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033439
+2020-09-25 09:40:33.599 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033599
+2020-09-25 09:40:33.763 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033763
+2020-09-25 09:40:33.927 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998033927
+2020-09-25 09:40:34.090 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034090
+2020-09-25 09:40:34.249 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034249
+2020-09-25 09:40:34.410 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034410
+2020-09-25 09:40:34.571 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034571
+2020-09-25 09:40:34.730 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034730
+2020-09-25 09:40:34.890 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998034890
+2020-09-25 09:40:35.053 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035053
+2020-09-25 09:40:35.217 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035217
+2020-09-25 09:40:35.346 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]com.linq.news.task.listener.NewsConsumer.receiveNews:45 -接收到消息的时间----->>> 1600998035346
+消费tag->>> 1
+从消息队列中拿到数据----------->>>> {csdnNews=LinqNews(newsId=null, userId=1, newsTypeId=18, newsTitle=SpringCloud Fegin 负载均衡, newsContent=<div id="article_content" class="article_content clearfix"> 
+ <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-a405391f94.css"> 
+ <div id="content_views" class="htmledit_views"> 
+  <p id="main-toc"><strong>目录</strong></p> 
+  <p id="%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88-toc" style="margin-left:80px;"><a href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88">一、是什么</a></p> 
+  <p id="%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88-toc" style="margin-left:80px;"><a href="#%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88">二、能干什么</a></p> 
+  <p id="%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B-toc" style="margin-left:80px;"><a href="#%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B">三、案例</a></p> 
+  <p id="%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9-toc" style="margin-left:80px;"><a href="#%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9">四、请求压缩</a></p> 
+  <p id="%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE-toc" style="margin-left:80px;"><a href="#%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE">五、 日志配置</a></p> 
+  <p id="%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon-toc" style="margin-left:80px;"><a href="#%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon">六、总结</a></p> 
+  <blockquote> 
+   <p><span style="color:#3399ea;">Spring Cloud Ribbon</span> 和 <span style="color:#3399ea;">Spring Cloud Hystrix</span> 在微服务中实现了<span style="color:#7c79e5;">客户端负载均衡</span>的服务调用以及通过<span style="color:#7c79e5;">断路器</span>来保护微服务应用。这两者作为基础工具类框架广泛地应用在各个微服务的实现中，不仅包括我们自身的业务类微服务，也包括一些基础设置类微服务（比如网关）。在实践中，这两个框架的使用几乎是同时出现的。那么是否有更高层次的封装来整合这两个基础工具，有就是<span style="color:#f33b45;">Spring Cloud Fegin</span>。基于 Netflix Feign 实现，除了整合上面两个强大的功能之外，还提供了一种声明式的 Web 服务客户端定义方式。</p> 
+  </blockquote> 
+  <h3 id="%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><strong>一、是什么</strong></h3> 
+  <hr> 
+  <p>Fegin 是一个声明式 WebService客户端。使用 Fegin能让编写 Web Service 客户端更加简单，它的使用方法是<span style="color:#ff0000;">定义一个接口，然后在上面添加注解即可</span>，同时支持 JAX-RS标准的注解。Feign 也支持可拔插式的编码器和解码器。SpringCloud 对 Feign 进行了封装，使其支持了 Spring MVC 标准注解和 HttpMessageConverters（<span style="color:#ffbb66;">Http请求/响应与Java对象之间的转换</span>）。Feign 可以与 Eureka 和 Ribbon 组合使用以支持负载均衡。可参考官网：<a href="https://github.com/OpenFeign/feign">https://github.com/OpenFeign/feign</a></p> 
+  <blockquote> 
+   <p>大家目前都习惯面向接口编程，比如 WebService 接口，比如DAO接口，这个已经是规范。通过<span style="color:#f33b45;">接口+注解</span>获得调用服务应该是我们最喜欢的。所以就出现了Feign，它就可以满足上面的需求</p> 
+  </blockquote> 
+  <h3 id="%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88"><strong>二、能干什么</strong></h3> 
+  <hr> 
+  <p>Fegin 指在使编写 Java Http客户端变的容易。使用 Ribbon+RestTemplate 时，利用 RestTemplate对http 请求的封装处理，形成了一套模板化的调用方式。但实际开发中，由于对服务的依赖调用可能不止一处，<span style="color:#3399ea;">往往一个接口会被多出调用，所以通常会针对每个微服务自行封装一些客户端类来包装这些依赖服务的调用</span>。所以 Fegin 在此基础上做了进一步封装，由它来帮助我们定义和实现依赖服务接口的定义。在 Feign的实现下，<span style="color:#7c79e5;">我们只需要创建一个接口并使用注解的方式来配置它</span>（<span style="color:#ffbb66;">以前是Dao接口上面添加Mapper 注解，现在是一个微服务接口上面标注一个 Feign 注解</span>），即可完成服务提供方的接口绑定，简化使用 Spring Cloud Ribbon 时，自动封装服务调用客户的开发量。</p> 
+  <h3 id="%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B"><strong>三、案例</strong></h3> 
+  <hr> 
+  <p>【1】根据 microservicecloud-<span style="color:#7c79e5;">consumer</span>-dept-80（<span style="color:#ffbb66;">客户端</span>） 创建 microservicecloud-consumer-dept-feign 微服务；<br> 【2】修改 microservicecloud-consumer-dept-feign 模块的 pom.xml 文件中添加 feign；</p> 
+  <pre class="has"><code class="language-html">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-cloud-starter-feign&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre> 
+  <p>【3】修改 microservicecloud-api 工程（公共的工程，相当于common，其他的子系统也可以调用此接口）<br> &nbsp;&nbsp; ①、修改 pom.xml</p> 
+  <pre class="has"><code class="language-html">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-cloud-starter-feign&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre> 
+  <p>&nbsp;&nbsp; ②、在公共 microservicecloud-api 模块添加 DeptClientService 接口，并添加接口方法，这些方法与提供者的接口一模一样。同时在客户端添加&nbsp;<span style="color:#f33b45;"> @FeignClient </span>注解。value=服务提供者暴露的名称，fallbackFactory=</p> 
+  <pre class="has"><code class="language-java">@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+public interface DeptClientService
+{
+	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+	public Dept get(@PathVariable("id") long id);
+
+	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
+	public List&lt;Dept&gt; list();
+
+	@RequestMapping(value = "/dept/add", method = RequestMethod.POST)
+	public boolean add(Dept dept);
+}</code></pre> 
+  <p>&nbsp; ③、maven clear；<br> &nbsp; ④、maven install；</p> 
+  <p>【4】microservicecloud-consumer-dept-feign 工程修改 Controller，添加上一步新建的 DeptClientService 接口；</p> 
+  <pre class="has"><code class="language-java">@RestController
+public class DeptController_Consumer{
+	@Autowired
+	private DeptClientService service;
+
+	@RequestMapping(value = "/consumer/dept/get/{id}")
+	public Dept get(@PathVariable("id") Long id)
+	{
+		return this.service.get(id);
+	}
+
+	@RequestMapping(value = "/consumer/dept/list")
+	public List&lt;Dept&gt; list()
+	{
+		return this.service.list();
+	}
+
+	@RequestMapping(value = "/consumer/dept/add")
+	public Object add(Dept dept)
+	{
+		return this.service.add(dept);
+	}
+}</code></pre> 
+  <p>【5】microservicecloud-consumer-dept-feign 工程修改主配置类，通过 <span style="color:#f33b45;">@EnableFeignClients</span> 注解开启 Spring Cloud Feign 的支持功能。</p> 
+  <pre class="has"><code class="language-java">@EnableFeignClients(basePackages= {"com.zzx.springcloud"})
+public class DeptConsumer80_Feign_App
+{
+    <!-- --></code></pre> 
+  <h3 id="%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9"><strong>四、请求压缩</strong></h3> 
+  <hr> 
+  <p>Spring Cloud Feign 支持对请求和响应进行 GZIP 压缩，以减少通信过程中的性能损耗。我们只需两个参数设置，就能开启请求于响应的压缩功能：</p> 
+  <pre class="has"><code class="language-bash">feign.compression.request.enabled=true
+feign.compression.response.enabled=true</code></pre> 
+  <p>同时，我们还能对请求压缩做一些更细致的配置，比如压缩的请求数据类型，并设置请求压缩的大小下限，只有超过这个大小才会对其进行压缩：</p> 
+  <pre class="has"><code class="language-bash">feign.compression.request.enabled=true
+#下面两个其实也是它的默认值
+feign.compression.request.mime-type=text/xml,application/xml,application/json
+feign.compression.request.min-request.size=2048</code></pre> 
+  <h3 id="%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE"><strong>五、 日志配置</strong></h3> 
+  <hr> 
+  <p>Spring Cloud Feign 在构建被 @FeignClient 注解修饰的客户端时，会为每一个客户端都创建一个 feign.Logger 实例，我们可以利用该日志对象的 DEBUG 模式来帮组分析 Feign 的请求细节。可以在 application.yml 配置文件中使用 logging.level.&lt;FeignClient&gt; 的参数配置格式来开启指定 Feign 客户端的 DEBUG 日志，其中 &lt;FeignClient&gt; 为 Feign 客户端定义接口的完整路径，比如：</p> 
+  <pre class="has"><code class="language-bash">Logging.level.com.zzx.springcloud.DeptClientService=DEBUG</code></pre> 
+  <p>这样还不够，由于 Feign 客户端默认的 Logger.Level 对象定义为 NONE 级别，该级别不会记录任何 Feign 调用过程的信息，所以我们需要调整它的级别，针对全局的日志级别，可以在应用主类中直接加 Logger.Level 的 Bean 创建。也可以通过实现配置类来实现，然后在具体的 Feign 客户端来指定配置类以实现是否要调整不同的日志级别：：</p> 
+  <pre class="has"><code class="language-java">@configuration
+public class FullLogConfiguration{
+    @Bean
+    Logger.Level feignLoggerLevel(){
+        return Logger.Level.FULL;
+    }
+}
+
+@FeignClient(name="",configuration=FullLogConfiguration.class)
+public interface xxx{
+}</code></pre> 
+  <p><strong>对于 Feign 的 Logger 级别主要有下面4类，可根据实际需要进行调整使用：</strong><br> 【1】<strong>NONE：</strong>不记录任何信息；<br> 【2】<strong>BASIC：</strong>仅记录请求方法、URL 以及相应状态码和执行时间；<br> 【3】<strong>HEADERS：</strong>除了记录 BASIC 级别的信息之外，还会记录请求和响应的头信息；<br> 【4】<strong>FULL：</strong>记录所有请求于响应明细，包括头信息、请求体、元数据等；</p> 
+  <h3 id="%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon"><strong>六、总结</strong>：Feign 集成了 Ribbon</h3> 
+  <hr> 
+  <p>利用 Ribbon维护了 MicroServiceCloud-Dept 的服务列表信息，并且通过轮询实现了客户端的负载均衡。而与 Ribbon不同的是，通过 Feign 只需要定义服务绑定接口且以声明式的方法，优雅而简单的实现了服务调用。关于Feign 的熔断机制 fallback 在 Hystrix 中进行说明；<br> 【<strong>博客链接</strong>】：<a href="https://blog.csdn.net/zhengzhaoyang122/article/details/80220435">链接</a></p> 
+  <p><img alt="" height="239" src="https://img-blog.csdnimg.cn/20200530201928559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poZW5nemhhb3lhbmcxMjI=,size_16,color_FFFFFF,t_70" width="239"><br><em>&nbsp;----架构师资料，关注公众号获取</em><em>----</em></p> 
+ </div> 
+</div>, newsAttr=2, newsImage=https://profile.csdnimg.cn/6/5/E/3_zhengzhaoyang122, orderNum=null, isPublic=null, thumbs=1373, visits=107, comments=null, collects=1373, newsSource=https://me.csdn.net/zhengzhaoyang122, newsSourceAuthor=程序猿进阶, newsSourceTags=微服务【SpringCloud / Alibaba】,Feign, status=1, delFlag=null, createBy=null, createTime=null, updateBy=null, updateTime=null, remark=null, beginTime=null, endTime=null, params={}, newsType=null)}
+2020-09-25 09:40:35.346 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]com.linq.news.task.listener.NewsConsumer.receiveNews:50 -获取peNews--->>>null
+2020-09-25 09:40:35.346 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]com.linq.news.task.listener.NewsConsumer.receiveNews:51 -获取entertainmentNews--->>>null
+2020-09-25 09:40:35.347 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]com.linq.news.task.listener.NewsConsumer.receiveNews:52 -获取csdnNews--->>>LinqNews(newsId=null, userId=1, newsTypeId=18, newsTitle=SpringCloud Fegin 负载均衡, newsContent=<div id="article_content" class="article_content clearfix"> 
+ <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-a405391f94.css"> 
+ <div id="content_views" class="htmledit_views"> 
+  <p id="main-toc"><strong>目录</strong></p> 
+  <p id="%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88-toc" style="margin-left:80px;"><a href="#%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88">一、是什么</a></p> 
+  <p id="%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88-toc" style="margin-left:80px;"><a href="#%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88">二、能干什么</a></p> 
+  <p id="%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B-toc" style="margin-left:80px;"><a href="#%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B">三、案例</a></p> 
+  <p id="%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9-toc" style="margin-left:80px;"><a href="#%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9">四、请求压缩</a></p> 
+  <p id="%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE-toc" style="margin-left:80px;"><a href="#%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE">五、 日志配置</a></p> 
+  <p id="%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon-toc" style="margin-left:80px;"><a href="#%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon">六、总结</a></p> 
+  <blockquote> 
+   <p><span style="color:#3399ea;">Spring Cloud Ribbon</span> 和 <span style="color:#3399ea;">Spring Cloud Hystrix</span> 在微服务中实现了<span style="color:#7c79e5;">客户端负载均衡</span>的服务调用以及通过<span style="color:#7c79e5;">断路器</span>来保护微服务应用。这两者作为基础工具类框架广泛地应用在各个微服务的实现中，不仅包括我们自身的业务类微服务，也包括一些基础设置类微服务（比如网关）。在实践中，这两个框架的使用几乎是同时出现的。那么是否有更高层次的封装来整合这两个基础工具，有就是<span style="color:#f33b45;">Spring Cloud Fegin</span>。基于 Netflix Feign 实现，除了整合上面两个强大的功能之外，还提供了一种声明式的 Web 服务客户端定义方式。</p> 
+  </blockquote> 
+  <h3 id="%E4%B8%80%E3%80%81%E6%98%AF%E4%BB%80%E4%B9%88"><strong>一、是什么</strong></h3> 
+  <hr> 
+  <p>Fegin 是一个声明式 WebService客户端。使用 Fegin能让编写 Web Service 客户端更加简单，它的使用方法是<span style="color:#ff0000;">定义一个接口，然后在上面添加注解即可</span>，同时支持 JAX-RS标准的注解。Feign 也支持可拔插式的编码器和解码器。SpringCloud 对 Feign 进行了封装，使其支持了 Spring MVC 标准注解和 HttpMessageConverters（<span style="color:#ffbb66;">Http请求/响应与Java对象之间的转换</span>）。Feign 可以与 Eureka 和 Ribbon 组合使用以支持负载均衡。可参考官网：<a href="https://github.com/OpenFeign/feign">https://github.com/OpenFeign/feign</a></p> 
+  <blockquote> 
+   <p>大家目前都习惯面向接口编程，比如 WebService 接口，比如DAO接口，这个已经是规范。通过<span style="color:#f33b45;">接口+注解</span>获得调用服务应该是我们最喜欢的。所以就出现了Feign，它就可以满足上面的需求</p> 
+  </blockquote> 
+  <h3 id="%E4%BA%8C%E3%80%81%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88"><strong>二、能干什么</strong></h3> 
+  <hr> 
+  <p>Fegin 指在使编写 Java Http客户端变的容易。使用 Ribbon+RestTemplate 时，利用 RestTemplate对http 请求的封装处理，形成了一套模板化的调用方式。但实际开发中，由于对服务的依赖调用可能不止一处，<span style="color:#3399ea;">往往一个接口会被多出调用，所以通常会针对每个微服务自行封装一些客户端类来包装这些依赖服务的调用</span>。所以 Fegin 在此基础上做了进一步封装，由它来帮助我们定义和实现依赖服务接口的定义。在 Feign的实现下，<span style="color:#7c79e5;">我们只需要创建一个接口并使用注解的方式来配置它</span>（<span style="color:#ffbb66;">以前是Dao接口上面添加Mapper 注解，现在是一个微服务接口上面标注一个 Feign 注解</span>），即可完成服务提供方的接口绑定，简化使用 Spring Cloud Ribbon 时，自动封装服务调用客户的开发量。</p> 
+  <h3 id="%E4%B8%89%E3%80%81%E6%A1%88%E4%BE%8B"><strong>三、案例</strong></h3> 
+  <hr> 
+  <p>【1】根据 microservicecloud-<span style="color:#7c79e5;">consumer</span>-dept-80（<span style="color:#ffbb66;">客户端</span>） 创建 microservicecloud-consumer-dept-feign 微服务；<br> 【2】修改 microservicecloud-consumer-dept-feign 模块的 pom.xml 文件中添加 feign；</p> 
+  <pre class="has"><code class="language-html">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-cloud-starter-feign&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre> 
+  <p>【3】修改 microservicecloud-api 工程（公共的工程，相当于common，其他的子系统也可以调用此接口）<br> &nbsp;&nbsp; ①、修改 pom.xml</p> 
+  <pre class="has"><code class="language-html">&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-cloud-starter-feign&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre> 
+  <p>&nbsp;&nbsp; ②、在公共 microservicecloud-api 模块添加 DeptClientService 接口，并添加接口方法，这些方法与提供者的接口一模一样。同时在客户端添加&nbsp;<span style="color:#f33b45;"> @FeignClient </span>注解。value=服务提供者暴露的名称，fallbackFactory=</p> 
+  <pre class="has"><code class="language-java">@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+public interface DeptClientService
+{
+	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+	public Dept get(@PathVariable("id") long id);
+
+	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
+	public List&lt;Dept&gt; list();
+
+	@RequestMapping(value = "/dept/add", method = RequestMethod.POST)
+	public boolean add(Dept dept);
+}</code></pre> 
+  <p>&nbsp; ③、maven clear；<br> &nbsp; ④、maven install；</p> 
+  <p>【4】microservicecloud-consumer-dept-feign 工程修改 Controller，添加上一步新建的 DeptClientService 接口；</p> 
+  <pre class="has"><code class="language-java">@RestController
+public class DeptController_Consumer{
+	@Autowired
+	private DeptClientService service;
+
+	@RequestMapping(value = "/consumer/dept/get/{id}")
+	public Dept get(@PathVariable("id") Long id)
+	{
+		return this.service.get(id);
+	}
+
+	@RequestMapping(value = "/consumer/dept/list")
+	public List&lt;Dept&gt; list()
+	{
+		return this.service.list();
+	}
+
+	@RequestMapping(value = "/consumer/dept/add")
+	public Object add(Dept dept)
+	{
+		return this.service.add(dept);
+	}
+}</code></pre> 
+  <p>【5】microservicecloud-consumer-dept-feign 工程修改主配置类，通过 <span style="color:#f33b45;">@EnableFeignClients</span> 注解开启 Spring Cloud Feign 的支持功能。</p> 
+  <pre class="has"><code class="language-java">@EnableFeignClients(basePackages= {"com.zzx.springcloud"})
+public class DeptConsumer80_Feign_App
+{
+    <!-- --></code></pre> 
+  <h3 id="%E5%9B%9B%E3%80%81%E8%AF%B7%E6%B1%82%E5%8E%8B%E7%BC%A9"><strong>四、请求压缩</strong></h3> 
+  <hr> 
+  <p>Spring Cloud Feign 支持对请求和响应进行 GZIP 压缩，以减少通信过程中的性能损耗。我们只需两个参数设置，就能开启请求于响应的压缩功能：</p> 
+  <pre class="has"><code class="language-bash">feign.compression.request.enabled=true
+feign.compression.response.enabled=true</code></pre> 
+  <p>同时，我们还能对请求压缩做一些更细致的配置，比如压缩的请求数据类型，并设置请求压缩的大小下限，只有超过这个大小才会对其进行压缩：</p> 
+  <pre class="has"><code class="language-bash">feign.compression.request.enabled=true
+#下面两个其实也是它的默认值
+feign.compression.request.mime-type=text/xml,application/xml,application/json
+feign.compression.request.min-request.size=2048</code></pre> 
+  <h3 id="%E4%BA%94%E3%80%81%20%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE"><strong>五、 日志配置</strong></h3> 
+  <hr> 
+  <p>Spring Cloud Feign 在构建被 @FeignClient 注解修饰的客户端时，会为每一个客户端都创建一个 feign.Logger 实例，我们可以利用该日志对象的 DEBUG 模式来帮组分析 Feign 的请求细节。可以在 application.yml 配置文件中使用 logging.level.&lt;FeignClient&gt; 的参数配置格式来开启指定 Feign 客户端的 DEBUG 日志，其中 &lt;FeignClient&gt; 为 Feign 客户端定义接口的完整路径，比如：</p> 
+  <pre class="has"><code class="language-bash">Logging.level.com.zzx.springcloud.DeptClientService=DEBUG</code></pre> 
+  <p>这样还不够，由于 Feign 客户端默认的 Logger.Level 对象定义为 NONE 级别，该级别不会记录任何 Feign 调用过程的信息，所以我们需要调整它的级别，针对全局的日志级别，可以在应用主类中直接加 Logger.Level 的 Bean 创建。也可以通过实现配置类来实现，然后在具体的 Feign 客户端来指定配置类以实现是否要调整不同的日志级别：：</p> 
+  <pre class="has"><code class="language-java">@configuration
+public class FullLogConfiguration{
+    @Bean
+    Logger.Level feignLoggerLevel(){
+        return Logger.Level.FULL;
+    }
+}
+
+@FeignClient(name="",configuration=FullLogConfiguration.class)
+public interface xxx{
+}</code></pre> 
+  <p><strong>对于 Feign 的 Logger 级别主要有下面4类，可根据实际需要进行调整使用：</strong><br> 【1】<strong>NONE：</strong>不记录任何信息；<br> 【2】<strong>BASIC：</strong>仅记录请求方法、URL 以及相应状态码和执行时间；<br> 【3】<strong>HEADERS：</strong>除了记录 BASIC 级别的信息之外，还会记录请求和响应的头信息；<br> 【4】<strong>FULL：</strong>记录所有请求于响应明细，包括头信息、请求体、元数据等；</p> 
+  <h3 id="%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9AFeign%20%E9%9B%86%E6%88%90%E4%BA%86%20Ribbon"><strong>六、总结</strong>：Feign 集成了 Ribbon</h3> 
+  <hr> 
+  <p>利用 Ribbon维护了 MicroServiceCloud-Dept 的服务列表信息，并且通过轮询实现了客户端的负载均衡。而与 Ribbon不同的是，通过 Feign 只需要定义服务绑定接口且以声明式的方法，优雅而简单的实现了服务调用。关于Feign 的熔断机制 fallback 在 Hystrix 中进行说明；<br> 【<strong>博客链接</strong>】：<a href="https://blog.csdn.net/zhengzhaoyang122/article/details/80220435">链接</a></p> 
+  <p><img alt="" height="239" src="https://img-blog.csdnimg.cn/20200530201928559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poZW5nemhhb3lhbmcxMjI=,size_16,color_FFFFFF,t_70" width="239"><br><em>&nbsp;----架构师资料，关注公众号获取</em><em>----</em></p> 
+ </div> 
+</div>, newsAttr=2, newsImage=https://profile.csdnimg.cn/6/5/E/3_zhengzhaoyang122, orderNum=null, isPublic=null, thumbs=1373, visits=107, comments=null, collects=1373, newsSource=https://me.csdn.net/zhengzhaoyang122, newsSourceAuthor=程序猿进阶, newsSourceTags=微服务【SpringCloud / Alibaba】,Feign, status=1, delFlag=null, createBy=null, createTime=null, updateBy=null, updateTime=null, remark=null, beginTime=null, endTime=null, params={}, newsType=null)
+2020-09-25 09:40:35.377 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035377
+2020-09-25 09:40:35.538 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035538
+2020-09-25 09:40:35.701 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035701
+2020-09-25 09:40:35.857 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998035857
+2020-09-25 09:40:36.000 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036000
+2020-09-25 09:40:36.018 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036018
+2020-09-25 09:40:36.175 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036175
+2020-09-25 09:40:36.334 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036334
+2020-09-25 09:40:36.496 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036496
+2020-09-25 09:40:36.653 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036653
+2020-09-25 09:40:36.809 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036809
+2020-09-25 09:40:36.973 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998036973
+2020-09-25 09:40:37.137 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037137
+2020-09-25 09:40:37.301 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037301
+2020-09-25 09:40:37.467 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037467
+2020-09-25 09:40:37.629 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037629
+2020-09-25 09:40:37.792 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037792
+2020-09-25 09:40:37.956 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998037956
+2020-09-25 09:40:38.108 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038108
+2020-09-25 09:40:38.265 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038265
+2020-09-25 09:40:38.420 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038420
+2020-09-25 09:40:38.575 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038575
+2020-09-25 09:40:38.731 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038731
+2020-09-25 09:40:38.892 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998038892
+2020-09-25 09:40:39.054 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039054
+2020-09-25 09:40:39.220 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039220
+2020-09-25 09:40:39.381 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039381
+2020-09-25 09:40:39.541 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039541
+2020-09-25 09:40:39.697 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039697
+2020-09-25 09:40:39.859 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998039859
+2020-09-25 09:40:40.018 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040018
+2020-09-25 09:40:40.175 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040175
+2020-09-25 09:40:40.333 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040333
+2020-09-25 09:40:40.496 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040496
+2020-09-25 09:40:40.655 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040655
+2020-09-25 09:40:40.813 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040813
+2020-09-25 09:40:40.974 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998040974
+2020-09-25 09:40:41.129 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041129
+2020-09-25 09:40:41.291 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041291
+2020-09-25 09:40:41.442 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041442
+2020-09-25 09:40:41.602 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041602
+2020-09-25 09:40:41.759 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041759
+2020-09-25 09:40:41.918 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998041918
+2020-09-25 09:40:42.076 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042076
+2020-09-25 09:40:42.235 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042235
+2020-09-25 09:40:42.395 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042395
+2020-09-25 09:40:42.552 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042552
+2020-09-25 09:40:42.711 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042711
+2020-09-25 09:40:42.881 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998042881
+2020-09-25 09:40:43.038 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043038
+2020-09-25 09:40:43.192 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043192
+2020-09-25 09:40:43.355 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043355
+2020-09-25 09:40:43.521 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043521
+2020-09-25 09:40:43.681 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043681
+2020-09-25 09:40:43.842 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998043842
+2020-09-25 09:40:44.003 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044003
+2020-09-25 09:40:44.164 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044164
+2020-09-25 09:40:44.322 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044322
+2020-09-25 09:40:44.478 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044478
+2020-09-25 09:40:44.638 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044638
+2020-09-25 09:40:44.797 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044797
+2020-09-25 09:40:44.958 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998044958
+2020-09-25 09:40:45.115 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045115
+2020-09-25 09:40:45.274 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045274
+2020-09-25 09:40:45.441 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045441
+2020-09-25 09:40:45.602 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045602
+2020-09-25 09:40:45.761 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045761
+2020-09-25 09:40:45.917 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998045917
+2020-09-25 09:40:46.080 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046080
+2020-09-25 09:40:46.241 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046241
+2020-09-25 09:40:46.401 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046401
+2020-09-25 09:40:46.563 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046563
+2020-09-25 09:40:46.724 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046724
+2020-09-25 09:40:46.884 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998046884
+2020-09-25 09:40:47.041 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047041
+2020-09-25 09:40:47.197 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047197
+2020-09-25 09:40:47.349 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047349
+2020-09-25 09:40:47.517 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047517
+2020-09-25 09:40:47.684 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047684
+2020-09-25 09:40:47.834 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047834
+2020-09-25 09:40:47.986 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998047986
+2020-09-25 09:40:48.138 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048138
+2020-09-25 09:40:48.300 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048300
+2020-09-25 09:40:48.458 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048458
+2020-09-25 09:40:48.613 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048613
+2020-09-25 09:40:48.772 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048772
+2020-09-25 09:40:48.930 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998048930
+2020-09-25 09:40:49.085 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049085
+2020-09-25 09:40:49.243 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049243
+2020-09-25 09:40:49.400 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049400
+2020-09-25 09:40:49.559 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049559
+2020-09-25 09:40:49.718 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049718
+2020-09-25 09:40:49.876 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998049876
+2020-09-25 09:40:50.044 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050044
+2020-09-25 09:40:50.201 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050201
+2020-09-25 09:40:50.355 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050355
+2020-09-25 09:40:50.516 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050516
+2020-09-25 09:40:50.676 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050676
+2020-09-25 09:40:50.838 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050838
+2020-09-25 09:40:50.994 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998050994
+2020-09-25 09:40:51.156 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051156
+2020-09-25 09:40:51.310 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051310
+2020-09-25 09:40:51.468 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051468
+2020-09-25 09:40:51.625 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051625
+2020-09-25 09:40:51.781 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051781
+2020-09-25 09:40:51.939 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998051939
+2020-09-25 09:40:52.096 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052096
+2020-09-25 09:40:52.252 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052252
+2020-09-25 09:40:52.411 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052411
+2020-09-25 09:40:52.570 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052570
+2020-09-25 09:40:52.728 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052728
+2020-09-25 09:40:52.885 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998052885
+2020-09-25 09:40:53.045 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053045
+2020-09-25 09:40:53.200 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053200
+2020-09-25 09:40:53.360 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053360
+2020-09-25 09:40:53.517 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053517
+2020-09-25 09:40:53.678 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053678
+2020-09-25 09:40:53.837 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053837
+2020-09-25 09:40:53.998 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998053998
+2020-09-25 09:40:54.154 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054154
+2020-09-25 09:40:54.311 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054311
+2020-09-25 09:40:54.476 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054476
+2020-09-25 09:40:54.633 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054633
+2020-09-25 09:40:54.784 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054784
+2020-09-25 09:40:54.946 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998054946
+2020-09-25 09:40:55.098 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055098
+2020-09-25 09:40:55.252 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055252
+2020-09-25 09:40:55.404 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055404
+2020-09-25 09:40:55.568 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055568
+2020-09-25 09:40:55.729 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055729
+2020-09-25 09:40:55.890 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998055890
+2020-09-25 09:40:56.048 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056048
+2020-09-25 09:40:56.209 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056209
+2020-09-25 09:40:56.366 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056366
+2020-09-25 09:40:56.521 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056521
+2020-09-25 09:40:56.681 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056681
+2020-09-25 09:40:56.842 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998056842
+2020-09-25 09:40:57.011 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057011
+2020-09-25 09:40:57.172 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057172
+2020-09-25 09:40:57.328 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057328
+2020-09-25 09:40:57.482 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057482
+2020-09-25 09:40:57.634 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057634
+2020-09-25 09:40:57.791 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057791
+2020-09-25 09:40:57.949 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998057949
+2020-09-25 09:40:58.107 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998058107
+2020-09-25 09:40:58.265 INFO  [main]com.linq.news.service.impl.NewsDocumentServiceImpl.convertLinqNewsToNewsDocument:112 -
+正在转换LinqNews------>NewsDocument---->当前时间: 1600998058265
+2020-09-25 09:41:08.427 INFO  [SpringContextShutdownHook]com.linq.framework.manager.ShutdownManager.shutdownAsyncManager:25 -====关闭后台任务任务线程池====
+2020-09-25 09:41:08.430 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2029 -{dataSource-1} closing ...
+2020-09-25 09:41:08.438 INFO  [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2101 -{dataSource-1} closed

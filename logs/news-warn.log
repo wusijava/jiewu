@@ -1,0 +1,1 @@
+2020-10-09 13:42:01.386 WARN  [restartedMain]org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 -Skipping MapperFactoryBean with name 'newsDocumentDao' and 'com.linq.news.mapper.NewsDocumentDao' mapperInterface. Bean already defined with the same name!

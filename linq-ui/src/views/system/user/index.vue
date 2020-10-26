@@ -16,6 +16,7 @@
 
       <!--查询条件-->
       <el-col :span="20" :xs="24">
+
         <el-form :model="queryParams" ref="queryForm" :inline="true" label-width="68px">
           <el-form-item label="用户名称" prop="username">
             <el-input v-model="queryParams.username" placeholder="请输入用户名称" clearable size="small" style="width: 240px"
@@ -120,6 +121,7 @@
           v-show="total>0" :total="total" :page.sync="pageNum" :limit.sync="pageSize" @pagination="getList"/>
       </el-col>
     </el-row>
+
     <!-- 添加或修改参数配置对话框 -->
     <el-dialog :title="title" :visible.sync="open" width="600px" append-to-body>
       <el-form ref="form" :model="form" :rules="rules" label-width="80px">

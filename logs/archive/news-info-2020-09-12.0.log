@@ -1,0 +1,9 @@
+2020-09-12 13:25:17.161 INFO  [restartedMain]com.linq.AppRun.logStarting:55 -Starting AppRun on JaydeMacBook-Pro.local with PID 4435 (/Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq/linq-web/target/classes started by jay in /Users/jay/Desktop/Vue项目集合/新闻发布管理系统/linq)
+2020-09-12 13:25:17.169 INFO  [restartedMain]com.linq.AppRun.logStartupProfileInfo:655 -The following profiles are active: druid,linq
+2020-09-12 13:25:20.288 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9000"]
+2020-09-12 13:25:20.289 INFO  [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-12 13:25:20.290 INFO  [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-12 13:25:20.361 INFO  [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-12 13:25:21.430 INFO  [restartedMain]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-12 13:25:23.293 INFO  [restartedMain]com.alibaba.druid.pool.DruidDataSource.init:994 -{dataSource-1} inited
+2020-09-12 13:25:27.564 INFO  [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]

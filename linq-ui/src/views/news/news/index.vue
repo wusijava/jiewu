@@ -168,7 +168,8 @@
       </el-card>
       <!--文章标签-->
       <el-card shadow="hover" v-if="form.newsSourceTags!==''">
-       <span class="read-top-div">文章标签:</span> <el-tag v-for="tag in newsSourceTags" :key="tag" type="primary" style="margin-left: 10px">{{ tag }}</el-tag>
+        <span class="read-top-div">文章标签:</span>
+        <el-tag v-for="tag in newsSourceTags" :key="tag" type="primary" style="margin-left: 10px">{{ tag }}</el-tag>
       </el-card>
       <el-card shadow="hover">
         <div v-html="form.newsContent"/>
@@ -222,7 +223,7 @@ export default {
   components: {
     Tinymce
   },
-  data() {
+  data () {
     return {
       // 控制阅读弹窗显示
       open: false,
@@ -310,26 +311,26 @@ export default {
       }
     }
   },
-  mounted() {
+  mounted () {
     //后面的50：根据需求空出的高度，自行调整
     this.$nextTick(() => {
       this.tableHeight = window.innerHeight - 340
     })
   },
-  created() {
+  created () {
     this.getList()
     this.getOptionSelect()
   },
   methods: {
     /** 查询新闻类型列表 */
-    getOptionSelect() {
+    getOptionSelect () {
       optionSelect().then(response => {
         // console.log(response)
         this.newsTypeOptions = response.data
       })
     },
     /** 查询新闻列表 */
-    getList() {
+    getList () {
       this.loading = true
       listNews(this.pageNum, this.pageSize, this.addDateRange(this.queryParams, this.dateRange)).then(response => {
         this.newsList = response.rows
@@ -338,23 +339,23 @@ export default {
       })
     },
     /** 搜索按钮操作 */
-    handleQuery() {
+    handleQuery () {
       this.queryParams.pageNum = 1
       this.getList()
     },
     /** 重置按钮操作 */
-    resetQuery() {
+    resetQuery () {
       this.resetForm('queryForm')
       this.handleQuery()
     },
     // 多选框选中数据
-    handleSelectionChange(selection) {
+    handleSelectionChange (selection) {
       this.ids = selection.map(item => item.newsId)
       this.single = selection.length !== 1
       this.multiple = !selection.length
     },
     // 表单重置
-    reset() {
+    reset () {
       this.form = {
         newsId: undefined,
         status: '0'
@@ -362,7 +363,7 @@ export default {
       this.resetForm('form')
     },
     /** 审核新闻 **/
-    handleInspect(row) {
+    handleInspect (row) {
       // 重置表单
       this.reset()
       // 标识为1审核新闻
@@ -378,12 +379,12 @@ export default {
       })
     },
     // 关闭审核弹框
-    close() {
+    close () {
       this.dialogFlag = undefined
       this.open = false
     },
     /** 审核表单提交 **/
-    handelConfirm() {
+    handelConfirm () {
       changeNewsStatus(this.form).then(res => {
         if (res.flag) {
           this.msgNoticeSuccess('审核成功')
@@ -394,30 +395,30 @@ export default {
       })
     },
     /** 设置公开私有 **/
-    handleIsPublicChange(row) {
+    handleIsPublicChange (row) {
       // console.log(row)
       let text = row.isPublic === '0' ? '公开' : '私有'
       this.$confirm('确认要"' + text + '""' + row.newsTitle + '"新闻吗?', '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).then(function() {
+      }).then(function () {
         // 调用设置公开私有
         return changeNewsIsPublic(row.newsId, row.isPublic)
       }).then(() => {
         this.msgNoticeSuccess(text + '成功')
         //this.msgSuccess(text + '成功')
-      }).catch(function() {
+      }).catch(function () {
         row.isPublic = row.isPublic === '0' ? '1' : '0'
       })
     },
     /** 新增按钮操作 */
-    handleAdd() {
+    handleAdd () {
       // 跳转到便捷新闻页面
       this.$router.push({ name: 'Add' })
     },
     /** 浏览新闻信息 **/
-    handleRead(row) {
+    handleRead (row) {
       this.title = `查看新闻内容`
       getNews(row.newsId).then(res => {
         if (res.flag) {
@@ -429,7 +430,7 @@ export default {
       })
     },
     /** 修改按钮操作 */
-    handleUpdate(row) {
+    handleUpdate (row) {
       console.log(row.newsId)
       const newsId = row.newsId || this.ids
       // 跳转到编辑新闻页面
@@ -441,18 +442,18 @@ export default {
       })
     },
     /** 删除按钮操作 */
-    handleDelete(row) {
+    handleDelete (row) {
       const newsIds = row.newsId || this.ids
       this.$confirm('是否确认删除新闻编号为"' + newsIds + '"的数据项?', '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).then(function() {
+      }).then(function () {
         return delNews(newsIds)
       }).then(() => {
         this.getList()
         this.msgNoticeSuccess('删除成功')
-      }).catch(function() {
+      }).catch(function () {
       })
     }
   }

@@ -111,7 +111,7 @@ public class CsdnNewsProcessor implements PageProcessor {
     public Site getSite() {
         return Site.me()
                 .setCharset("utf8") //设置编码
-                .setSleepTime(20 * 1000) // 间隔时间
+                .setSleepTime(200 * 1000) // 间隔时间
                 .setTimeOut(10 * 1000) //设置超时时间
                 .setRetrySleepTime(3000) //设置重试的间隔时间
                 .setRetryTimes(3); //设置重试的次数;;
@@ -137,7 +137,7 @@ public class CsdnNewsProcessor implements PageProcessor {
                 //.setDownloader(httpClientDownloader) //设置代理
                 .addUrl(CsdnNewsProperties.getInitUrlList().toArray(new String[0])) // 爬取地址
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(100000)))
-                .thread(4)
+                .thread(2)
                 .addPipeline(pipeline)
                 .run();
     }

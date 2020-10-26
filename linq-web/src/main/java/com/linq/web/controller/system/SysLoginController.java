@@ -33,7 +33,8 @@ import java.util.Set;
  */
 @Api(tags = "登录验证管理")
 @RestController
-public class SysLoginController {
+public class
+SysLoginController {
     @Autowired
     private SysLoginService loginService;
     @Autowired
