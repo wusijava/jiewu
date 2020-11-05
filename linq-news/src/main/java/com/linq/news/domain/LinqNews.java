@@ -2,6 +2,7 @@ package com.linq.news.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.core.domain.model.BaseEntity;
 
 import java.io.Serializable;
@@ -84,6 +85,18 @@ public class LinqNews implements Serializable {
      */
     @TableField(value = "is_public")
     private String isPublic;
+
+    /**
+     * 新闻是否推荐（0.推荐 1.非推荐）
+     */
+    @TableField(value = "is_recommend")
+    private String isRecommend;
+
+    /**
+     * 草稿状态（0.草稿 1.非草稿）
+     */
+    @TableField(value = "is_draft")
+    private String isDraft;
 
     /**
      * 新闻点赞数
@@ -202,6 +215,16 @@ public class LinqNews implements Serializable {
 
     @TableField(exist = false)
     private LinqNewsType newsType;
+
+    /////////////////////////////////// 附加  ///////////////////////////////////
+
+
+    @TableField(exist = false)
+    private String authorName;//作者名称
+
+    @TableField(exist = false)
+    private SysUser sysUser;
+
 
     /////////////////////////////////// 附加  ///////////////////////////////////
 }

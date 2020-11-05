@@ -52,6 +52,15 @@ public class SysUser extends BaseEntity implements Serializable {
     @TableField(value = "username")
     private String username;
 
+
+    /**
+     * 用户真实姓名（新增属性）
+     */
+    @NotBlank(message = "用户真实姓名不能为空")
+    @Size(min = 0, max = 20, message = "用户账号长度不能超过20个字符")
+    @TableField(value = "true_name")
+    private String trueName;
+
     /**
      * 用户昵称
      */

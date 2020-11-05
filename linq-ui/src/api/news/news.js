@@ -32,6 +32,19 @@ export function changeNewsIsPublic(newsId, isPublic) {
   })
 }
 
+// 设置新闻是否推荐
+export function changeNewsIsRecommend(newsId, isRecommend) {
+  const data = {
+    newsId,
+    isRecommend
+  }
+  return request({
+    url: `${BASE_URI}/change/isRecommend`,
+    method: 'put',
+    data: data
+  })
+}
+
 // 查询新闻列表
 export function listNews(page, size, query) {
   return request({

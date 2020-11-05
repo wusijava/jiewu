@@ -18,8 +18,8 @@
       <el-col :span="20" :xs="24">
 
         <el-form :model="queryParams" ref="queryForm" :inline="true" label-width="68px">
-          <el-form-item label="用户名称" prop="username">
-            <el-input v-model="queryParams.username" placeholder="请输入用户名称" clearable size="small" style="width: 240px"
+          <el-form-item label="用户名称" prop="trueName">
+            <el-input v-model="queryParams.trueName" placeholder="请输入用户名称" clearable size="small" style="width: 240px"
                       @keyup.enter.native="handleQuery"/>
           </el-form-item>
           <el-form-item label="手机号码" prop="phone">
@@ -69,7 +69,7 @@
                   :height="tableHeight">
           <el-table-column type="selection" width="50" align="center"/>
           <el-table-column label="用户编号" align="center" prop="userId"/>
-          <el-table-column label="用户名称" align="center" prop="username" :show-overflow-tooltip="true"/>
+          <el-table-column label="用户名称" align="center" prop="trueName" :show-overflow-tooltip="true"/>
           <el-table-column label="头像" align="center" prop="avatar" width="60px">
             <template slot-scope="scope">
               <span v-if="scope.row.avatar===''">无</span>
@@ -153,8 +153,8 @@
         </el-row>
         <el-row>
           <el-col :span="12">
-            <el-form-item v-if="form.userId === undefined" label="用户名称" prop="username">
-              <el-input v-model="form.username" placeholder="请输入用户名称"/>
+            <el-form-item v-if="form.userId === undefined" label="用户名称" prop="trueName">
+              <el-input v-model="form.trueName" placeholder="请输入用户名称"/>
             </el-form-item>
           </el-col>
           <el-col :span="12">
@@ -301,14 +301,14 @@ export default {
       },
       // 查询参数
       queryParams: {
-        username: undefined,
+        trueName: undefined,
         phone: undefined,
         status: undefined,
         deptId: undefined
       },
       // 表单校验
       rules: {
-        username: [
+        trueName: [
           { required: true, message: '用户名称不能为空', trigger: 'blur' }
         ],
         nickName: [
@@ -352,13 +352,16 @@ export default {
     })
   },
   created() {
+	  alert("123");
     this.getList()
     this.getTreeSelect()
     // 获取数据字典
     this.getDicts('sys_normal_disable').then(response => {
+		alert("状态"+JSON.stringify(response));
       this.statusOptions = response.data
     })
     this.getDicts('sys_user_sex').then(response => {
+		alert("性别"+JSON.stringify(response));
       this.sexOptions = response.data
     })
     this.getConfigKey('sys.user.initPassword').then(response => {
@@ -400,7 +403,7 @@ export default {
     // 用户状态修改
     handleStatusChange(row) {
       let text = row.status === '0' ? '启用' : '停用'
-      this.$confirm('确认要"' + text + '""' + row.username + '"用户吗?', '警告', {
+      this.$confirm('确认要"' + text + '""' + row.trueName + '"用户吗?', '警告', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
@@ -422,7 +425,7 @@ export default {
       this.form = {
         userId: undefined,
         deptId: undefined,
-        username: undefined,
+        trueName: undefined,
         nickName: undefined,
         password: undefined,
         phone: undefined,
@@ -484,7 +487,7 @@ export default {
     },
     /** 重置密码按钮操作 */
     handleResetPwd(row) {
-      this.$prompt('请输入"' + row.username + '"的新密码', '提示', {
+      this.$prompt('请输入"' + row.trueName + '"的新密码', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消'
       }).then(({ value }) => {

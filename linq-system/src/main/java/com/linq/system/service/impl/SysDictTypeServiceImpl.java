@@ -1,5 +1,6 @@
 package com.linq.system.service.impl;
 
+import cn.hutool.core.collection.CollectionUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -18,6 +19,7 @@ import com.linq.system.service.SysDictTypeService;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 
@@ -30,7 +32,7 @@ import java.util.Objects;
 
 @Service
 public class SysDictTypeServiceImpl extends ServiceImpl<SysDictTypeMapper, SysDictType> implements SysDictTypeService {
-    @Autowired
+    @Resource
     private SysDictDataMapper dictDataMapper;
 
 
@@ -76,7 +78,7 @@ public class SysDictTypeServiceImpl extends ServiceImpl<SysDictTypeMapper, SysDi
         //  从redis中拿出当前字典类型下的字典数据
         List<SysDictData> dictDatas = DictUtils.getDictCache(dictType);
         // 判断有没有数据 有就返回
-        if (StringUtils.isNotNull(dictDatas)) {
+        if (CollectionUtil.isNotEmpty(dictDatas)) {
             return dictDatas;
         }
         dictDatas = dictDataMapper.selectList(new LambdaQueryWrapper<SysDictData>().eq(SysDictData::getStatus, UserConstants.NORMAL)
@@ -84,7 +86,7 @@ public class SysDictTypeServiceImpl extends ServiceImpl<SysDictTypeMapper, SysDi
                                                       .orderByAsc(SysDictData::getDictSort)
         );
         // 如果没有就从数据库中查出来 重新存放
-        if (StringUtils.isNotNull(dictDatas)) {
+        if (CollectionUtil.isNotEmpty(dictDatas)) {
             DictUtils.setDictCache(dictType, dictDatas);
             return dictDatas;
         }

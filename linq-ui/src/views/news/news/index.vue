@@ -11,6 +11,10 @@
         <el-input v-model="queryParams.newsTitle" placeholder="请输入新闻标题" clearable size="small"
                   @keyup.enter.native="handleQuery"/>
       </el-form-item>
+	  <el-form-item label="新闻作者" prop="authorName">
+	    <el-input v-model="queryParams.authorName" placeholder="请输入新闻作者" clearable size="small"
+	              @keyup.enter.native="authorName"/>
+	  </el-form-item>
       <el-form-item label="新闻属性" prop="newsAttr">
         <el-select v-model="queryParams.newsAttr" placeholder="请选择新闻属性" clearable size="mini">
           <el-option label="头条区新闻" :value="0"/>
@@ -24,6 +28,18 @@
           <el-option label="私有" :value="1"/>
         </el-select>
       </el-form-item>
+	  <el-form-item label="新闻是否推荐" prop="isRecommend">
+	    <el-select v-model="queryParams.isRecommend" placeholder="请选择新闻是否推荐" clearable size="mini">
+	      <el-option label="推荐" :value="0"/>
+	      <el-option label="非推荐" :value="1"/>
+	    </el-select>
+	  </el-form-item>
+	  <el-form-item label="是否草稿" prop="isDraft">
+	    <el-select v-model="queryParams.isDraft" placeholder="请选择新闻是否为草稿" clearable size="mini">
+	      <el-option label="草稿" :value="0"/>
+	      <el-option label="非草稿" :value="1"/>
+	    </el-select>
+	  </el-form-item>
       <el-form-item label="审核状态" prop="status">
         <el-select v-model="queryParams.status" placeholder="请选择审核状态" clearable size="mini">
           <el-option label="审核中" :value="0"/>
@@ -76,6 +92,12 @@
           <span style="font-weight: bolder">{{ scope.row.newsTitle }}</span>
         </template>
       </el-table-column>
+	  <el-table-column label="新闻作者" align="center" prop="sysUser.nickName" width="150">
+	    <template slot-scope="scope">
+	      <span style="font-weight: bolder">{{ scope.row.sysUser.nickName }}</span>
+		  <span style="font-weight: bolder">{{ scope.row.sysUser.dept.deptName }}</span>
+	    </template>
+	  </el-table-column>
       <el-table-column label="新闻属性" align="center" prop="newsAttr" width="120">
         <template slot-scope="scope">
           <span v-if="scope.row.newsAttr === '0'" style="color: #fb9601;font-weight: bolder">头条区新闻</span>
@@ -95,6 +117,18 @@
                      @change="handleIsPublicChange(scope.row)"/>
         </template>
       </el-table-column>
+	  <el-table-column label="是否推荐" align="center" prop="isRecommend">
+	    <template slot-scope="scope">
+	      <el-switch v-model="scope.row.isRecommend" active-value="0" inactive-value="1"
+	                 @change="handleIsRecommendChange(scope.row)"/>
+	    </template>
+	  </el-table-column>
+	  <el-table-column label="是否草稿" align="center" prop="isDraft" >
+	    <template slot-scope="scope">
+	      <span v-if="scope.row.isDraft === '0'" style="color: #5e585b;font-weight: bolder">草稿</span>
+	      <span v-else-if="scope.row.isDraft === '1' " style="color: #5e585b;font-weight: bolder">否</span>
+	    </template>
+	  </el-table-column>
       <el-table-column label="新闻来源" align="center" prop="newsSource" width="180">
         <template slot-scope="scope">
           <a v-if="scope.row.newsSource !== ''" class="link-url" :href="scope.row.newsSource"
@@ -213,7 +247,7 @@
 </template>
 
 <script>
-import { listNews, getNews, delNews, changeNewsIsPublic, changeNewsStatus } from '@/api/news/news'
+import { listNews, getNews, delNews, changeNewsIsPublic, changeNewsIsRecommend, changeNewsStatus } from '@/api/news/news'
 import { optionSelect } from '@/api/news/type'
 import Tinymce from '@/components/Tinymce/index'
 import { getToken } from '@/utils/auth'
@@ -286,6 +320,28 @@ export default {
           'value': '1'
         }
       ],
+	  // 是否推荐选择
+	  isRecommendOptions: [
+	    {
+	      'label': '推荐',
+	      'value': '0'
+	    },
+	    {
+	      'label': '非推荐',
+	      'value': '1'
+	    }
+	  ],
+	  // 是否草稿选择
+	  isDraftOptions: [
+	    {
+	      'label': '草稿',
+	      'value': '0'
+	    },
+	    {
+	      'label': '非草稿',
+	      'value': '1'
+	    }
+	  ],
       // 新闻属性
       newsAttrOptions: [
         {
@@ -305,8 +361,11 @@ export default {
       queryParams: {
         newsTypeId: undefined,
         newsTitle: undefined,
+		authorName : undefined,
         newsAttr: undefined,
         isPublic: undefined,
+		isRecommend : undefined,
+		isDraft : undefined,
         status: undefined
       }
     }
@@ -412,6 +471,24 @@ export default {
         row.isPublic = row.isPublic === '0' ? '1' : '0'
       })
     },
+	/** 设置是否推荐 **/
+	handleIsRecommendChange (row) {		
+	  // console.log(row)
+	  let text = row.isRecommend === '0' ? '设置为推荐' : '设置为非推荐'
+	  this.$confirm('确认要将"' + row.newsTitle + '"新闻' + text +  '吗?', '警告', {
+	    confirmButtonText: '确定',
+	    cancelButtonText: '取消',
+	    type: 'warning'
+	  }).then(function () {
+	    // 调用设置推荐非推荐
+	    return changeNewsIsRecommend(row.newsId, row.isRecommend)
+	  }).then(() => {
+	    this.msgNoticeSuccess(text + '成功')
+	    //this.msgSuccess(text + '成功')
+	  }).catch(function () {
+	    row.isRecommend = row.isRecommend === '0' ? '1' : '0'
+	  })
+	},
     /** 新增按钮操作 */
     handleAdd () {
       // 跳转到便捷新闻页面

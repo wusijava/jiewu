@@ -13,6 +13,8 @@
         <result column="news_image" jdbcType="VARCHAR" property="newsImage"/>
         <result column="order_num" jdbcType="INTEGER" property="orderNum"/>
         <result column="is_public" jdbcType="CHAR" property="isPublic"/>
+        <result column="is_recommend" jdbcType="CHAR" property="isRecommend"/>
+        <result column="is_draft" jdbcType="CHAR" property="isDraft"/>
         <result column="thumbs" jdbcType="BIGINT" property="thumbs"/>
         <result column="visits" jdbcType="BIGINT" property="visits"/>
         <result column="comments" jdbcType="BIGINT" property="comments"/>
@@ -29,6 +31,8 @@
         <result column="remark" jdbcType="VARCHAR" property="remark"/>
         <association property="newsType" javaType="com.linq.news.domain.LinqNewsType" column="news_type_id"
                      resultMap="newTypeResult"/>
+        <association property="sysUser" javaType="com.linq.common.core.domain.entity.SysUser" column="user_id"
+                     resultMap="sysUserResult"/>
     </resultMap>
 
     <!--新闻类型结果集合-->
@@ -38,10 +42,56 @@
         <result column="status" jdbcType="CHAR" property="status"/>
     </resultMap>
 
+    <!--新闻作者-->
+    <resultMap id="sysUserResult" type="com.linq.common.core.domain.entity.SysUser">
+        <id column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="dept_id" jdbcType="BIGINT" property="deptId"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="true_name" jdbcType="VARCHAR" property="trueName"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="user_type" jdbcType="VARCHAR" property="userType"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="sex" jdbcType="CHAR" property="sex"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="status" jdbcType="CHAR" property="status"/>
+        <result column="del_flag" jdbcType="CHAR" property="delFlag"/>
+        <result column="login_ip" jdbcType="VARCHAR" property="loginIp"/>
+        <result column="login_date" jdbcType="TIMESTAMP" property="loginDate"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <association property="dept" javaType="com.linq.common.core.domain.entity.SysDept" column="dept_id"
+                     resultMap="sysDeptResult"/>
+    </resultMap>
+
+    <!--部门-->
+    <resultMap id="sysDeptResult" type="com.linq.common.core.domain.entity.SysDept">
+        <id column="dept_id" jdbcType="BIGINT" property="deptId"/>
+        <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
+        <result column="ancestors" jdbcType="VARCHAR" property="ancestors"/>
+        <result column="dept_name" jdbcType="VARCHAR" property="deptName"/>
+        <result column="order_num" jdbcType="INTEGER" property="orderNum"/>
+        <result column="leader" jdbcType="VARCHAR" property="leader"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="status" jdbcType="CHAR" property="status"/>
+        <result column="del_flag" jdbcType="CHAR" property="delFlag"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+    </resultMap>
+
+
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         news_id,user_id,news_type_id, news_title, news_content, news_attr, news_image, order_num,
-        is_public, thumbs, visits, comments, collects, news_source,news_source_author,news_source_tags,`status`, del_flag, create_by, create_time,
+        is_public, is_recommend, is_draft, thumbs, visits, comments, collects, news_source,news_source_author,news_source_tags,`status`, del_flag, create_by, create_time,
         update_by, update_time, remark
     </sql>
     <sql id="findNewsVo">
@@ -54,6 +104,8 @@
                n.news_image,
                n.order_num,
                n.is_public,
+               n.is_recommend,
+               n.is_draft,
                n.thumbs,
                n.visits,
                n.comments,
@@ -69,9 +121,40 @@
                n.update_time,
                n.remark,
                nt.news_type_name,
-               nt.status
+               nt.status,
+               u.user_id,
+               u.dept_id,
+               u.username,
+               u.true_name,
+               u.nick_name,
+               u.email,
+               u.avatar,
+               u.phone,
+               u.password,
+               u.sex,
+               u.status,
+               u.del_flag,
+               u.login_ip,
+               u.login_date,
+               u.create_by,
+               u.create_time,
+               u.remark,
+               d.dept_id,
+               d.parent_id,
+               d.ancestors,
+               d.dept_name,
+               d.order_num,
+               d.leader,
+               d.phone,
+               d.email,
+               d.status,
+               d.del_flag,
+               d.create_by,
+               d.create_time
         from linq_news n
                      left join linq_news_type nt on n.news_type_id = nt.news_type_id
+                     left join sys_user u on n.user_id = u.user_id
+                     left join sys_dept d on u.dept_id = d.dept_id
     </sql>
     <!--
         /**
@@ -92,11 +175,27 @@
         <if test="news.newsTitle != null  and news.newsTitle != ''">
             and n.news_title like '%${news.newsTitle}%'
         </if>
+        <if test="news.authorName != null  and news.authorName != ''">
+            and EXISTS (
+            SELECT
+            1
+            FROM
+            sys_user su
+            WHERE
+            ( su.nick_name LIKE '%${news.authorName}%' )
+            AND n.user_id = su.user_id)
+        </if>
         <if test="news.newsAttr != null  and news.newsAttr != ''">
             and n.news_attr = #{news.newsAttr}
         </if>
         <if test="news.isPublic != null  and news.isPublic != ''">
             and n.is_public = #{news.isPublic}
+        </if>
+        <if test="news.isRecommend != null  and news.isRecommend != ''">
+            and n.is_recommend = #{news.isRecommend}
+        </if>
+        <if test="news.isDraft != null  and news.isDraft != ''">
+            and n.is_draft = #{news.isDraft}
         </if>
         <if test="news.status != null  and news.status != ''">
             and n.status = #{news.status}
@@ -137,6 +236,12 @@
         </if>
         <if test="news.isPublic != null  and news.isPublic != ''">
             and n.is_public = #{news.isPublic}
+        </if>
+        <if test="news.isRecommend != null  and news.isRecommend != ''">
+            and n.is_recommend = #{news.isRecommend}
+        </if>
+        <if test="news.isDraft != null  and news.isDraft != ''">
+            and n.is_draft = #{news.isDraft}
         </if>
         <if test="news.status != null  and news.status != ''">
             and n.status = #{news.status}
