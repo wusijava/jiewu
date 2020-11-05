@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //Spring boot方式
 @EnableTransactionManagement
 @Configuration
-@MapperScan({"com.linq.system.mapper","com.linq.news.mapper"})
+@MapperScan({"com.linq.system.mapper","com.linq.news.mapper","com.linq.file.assistant.mapper"})
 public class MybatisPlusConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {

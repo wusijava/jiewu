@@ -3,6 +3,10 @@ package com.linq.common.core.controller;
 import com.linq.common.result.Result;
 import com.linq.common.result.ResultUtils;
 import com.linq.common.utils.string.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @Author: 林义清
@@ -11,11 +15,11 @@ import com.linq.common.utils.string.StringUtils;
  * @Version: 1.0.0
  */
 public class BaseController {
+
     /**
      * 响应返回结果
      *
      * @param flag 操作成功 true 否则 false
-     *
      * @return 操作结果
      */
     protected <T> Result<T> toResult(boolean flag) {

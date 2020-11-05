@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linq.file.assistant.mapper.UserFileMapper">
+    <resultMap id="BaseResultMap" type="com.linq.file.assistant.domain.UserFile">
+        <!--@Table user_file-->
+        <id column="file_id" jdbcType="BIGINT" property="fileId"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="file_type_id" jdbcType="BIGINT" property="fileTypeId"/>
+        <result column="file_name" jdbcType="VARCHAR" property="fileName"/>
+        <result column="file_url" jdbcType="VARCHAR" property="fileUrl"/>
+        <result column="file_size" jdbcType="BIGINT" property="fileSize"/>
+        <result column="parent_file_id" jdbcType="BIGINT" property="parentFileId"/>
+        <result column="upload_time" jdbcType="TIMESTAMP" property="uploadTime"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="source" jdbcType="VARCHAR" property="source"/>
+        <association property="newsType" javaType="com.linq.file.assistant.domain.FileType" column="file_type_id"
+                     resultMap="fileTypeResult"/>
+    </resultMap>
+
+    <!--新闻类型结果集合-->
+    <resultMap id="fileTypeResult" type="com.linq.file.assistant.domain.FileType">
+        <id column="file_type_id" jdbcType="BIGINT" property="fileTypeId"/>
+        <result column="file_type_name" jdbcType="VARCHAR" property="fileTypeName"/>
+        <result column="file_type_icon" jdbcType="VARCHAR" property="fileTypeIcon"/>
+        <result column="file_type_suffix" jdbcType="VARCHAR" property="fileTypeSuffix"/>
+    </resultMap>
+
+    <sql id="findFilesVo">
+        select n.file_id,
+               n.user_id,
+               n.file_type_id,
+               n.file_name,
+               n.file_url,
+               n.file_size,
+               n.parent_file_id,
+               n.upload_time,
+               n.status,
+               n.source,
+               nt.file_type_name,
+               nt.file_type_icon,
+               nt.file_type_suffix
+        FROM
+          user_file n
+          LEFT JOIN file_type nt
+            ON n.file_type_id = nt.file_type_id
+    </sql>
+
+    <!--
+        /**
+         * 根据用户id查询文档列表
+         *
+         * @param news 文档
+         *
+         * @return 文档集合
+         */
+        IPage<LinqNews> findPageByUserId(Page<LinqNews> linqNewsPage, @Param("news") LinqNews news);
+    -->
+    <select id="findPageByUserId" resultMap="BaseResultMap">
+        <include refid="findFilesVo"/>
+            where n.user_id = #{userId}
+        <if test="file.fileName != null  and file.fileName != ''">
+            and n.file_name like '%${file.fileName}%'
+        </if>
+        <if test="file.status != null  and file.status != ''">
+            and n.status = #{news.status}
+        </if>
+        <if test="file.uploadTime != null and file.uploadTime != ''">
+            <!-- 开始时间检索 -->
+            AND date_format(n.upload_time, '%y%m%d') &gt;= date_format(#{file.uploadTime}, '%y%m%d')
+        </if>
+        order by n.uploadTime desc
+    </select>
+</mapper>
