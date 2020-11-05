@@ -56,8 +56,13 @@ public class LinkNewsController extends BaseController {
         if (user.isAdmin()) {
             iPage = newsService.findPageAll(new Page<LinqNews>(page, size), news);
         } else {
-            // 如果不是就根据用户id查询出来
-            iPage = newsService.findPageByUserId(new Page<LinqNews>(page, size), news, user.getUserId());
+            // 如果不是就根据用户id查询出来(废弃)
+            //iPage = newsService.findPageByUserId(new Page<LinqNews>(page, size), news, user.getUserId());
+
+            //如果不是管理员就只查不是草稿的，非私有的
+            news.setIsDraft("1");
+            news.setIsPublic("0");
+            iPage = newsService.findPageAll(new Page<LinqNews>(page, size), news);
         }
         return ResultUtils.success(iPage.getCurrent(), iPage.getSize(), iPage.getTotal(), iPage.getRecords());
     }
@@ -121,6 +126,18 @@ public class LinkNewsController extends BaseController {
     public Result<String> changeIsPublic(@RequestBody LinqNews news) {
         System.err.println("公开私有修改LinqNews->" + news);
         return toResult(newsService.changeIsPublic(news));
+    }
+
+    /**
+     * 是否推荐修改
+     */
+    @ApiOperation(value = "是否推荐修改", notes = "是否推荐修改详情")
+    @PreAuthorize("@ss.hasPermi('news:news:edit')")
+    @Log(title = "新闻管理", businessType = BusinessType.UPDATE)
+    @PutMapping("/change/isRecommend")
+    public Result<String> changeIsRecommend(@RequestBody LinqNews news) {
+        System.err.println("是否推荐修改LinqNews->" + news);
+        return toResult(newsService.updateLinqNews(news));
     }
 
     /**
