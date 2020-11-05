@@ -1,6 +1,0 @@
-
-
-java:S1130"vRemove the declaration of thrown exception 'java.net.UnknownHostException', as it cannot be thrown from method's body.(‘δ‹
-t
-java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(ΉΗόÿÿÿÿ
-[	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Òιώ‚

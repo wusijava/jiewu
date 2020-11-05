@@ -1,18 +1,0 @@
-
-g
-java:S1301½"KReplace this "switch" statement by "if" statements to increase readability.(ÔÇÛçÿÿÿÿÿ
-T
-java:S1128"9Remove this unused import 'cn.hutool.core.date.DateTime'.(»õ‰úÿÿÿÿ
-L
-java:S1128"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—
-U
-java:S1128
-"?Remove this unused import 'com.linq.common.result.ResultUtils'.(æ”¦»
-=	java:S131ß""Add a default case to this switch.(‰Æ¨şÿÿÿÿ
-T
-java:S1128">Remove this unused import 'com.linq.news.domain.LinqNewsType'.(«®ïÇ
-f
-java:S1128"QRemove this unused import 'org.springframework.security.core.token.TokenService'.(ã†L
-=	java:S131½""Add a default case to this switch.(ÔÇÛçÿÿÿÿÿ
-W
-java:S1128"ARemove this unused import 'com.linq.news.mapper.NewsDocumentDao'.(”ñÍ

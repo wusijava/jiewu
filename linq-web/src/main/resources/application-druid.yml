@@ -3,9 +3,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
 #      url: jdbc:mysql://39.108.57.4:53306/linq?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
-      url: jdbc:mysql://127.0.0.1:3306/linq?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+      url: jdbc:mysql://123.57.250.120:3306/linq?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
       username: root
-      password: lyq@qq.com
+      password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
       # 连接池配置
       # 初始化连接池的连接数量 大小，最小，最大
