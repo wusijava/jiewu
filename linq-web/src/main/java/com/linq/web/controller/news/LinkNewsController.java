@@ -69,6 +69,20 @@ public class LinkNewsController extends BaseController {
 
 
     /**
+     * 查询我的新闻列表
+     */
+    @ApiOperation(value = "条件分页查询我的新闻列表", notes = "条件分页查询我的新闻列表详情")
+    @PreAuthorize("@ss.hasPermi('news:news:myList')")
+    @GetMapping("/myList/{page}/{size}")
+    public PageResult<List<LinqNews>> myList(@PathVariable("page") int page, @PathVariable("size") int size, LinqNews news) {
+        LoginUser loginUser = tokenService.getLoginUser(ServletUtils.getRequest());
+        SysUser user = loginUser.getUser();
+        // 根据用户id查询出来
+        IPage<LinqNews> iPage = newsService.findPageByUserId(new Page<LinqNews>(page, size), news, user.getUserId());
+        return ResultUtils.success(iPage.getCurrent(), iPage.getSize(), iPage.getTotal(), iPage.getRecords());
+    }
+
+    /**
      * 获取新闻详细信息
      */
     @ApiOperation(value = "获取新闻详细信息", notes = "获取新闻详细信息详情")
