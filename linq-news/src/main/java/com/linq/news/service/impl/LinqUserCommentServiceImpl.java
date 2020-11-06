@@ -17,4 +17,8 @@ import com.linq.news.service.LinqUserCommentService;
 @Service
 public class LinqUserCommentServiceImpl extends ServiceImpl<LinqUserCommentMapper, LinqUserComment> implements LinqUserCommentService{
 
+    @Override
+    public boolean insertLinqUserComment(LinqUserComment linqUserComment) {
+        return saveOrUpdate(linqUserComment);
+    }
 }

@@ -15,6 +15,8 @@
         <result column="update_time" jdbcType="DATE" property="updateTime"/>
         <result column="remark" jdbcType="VARCHAR" property="remark"/>
         <association property="news" resultMap="newsResult" column="news_id" javaType="com.linq.news.domain.LinqNews"/>
+        <association property="sysUser" javaType="com.linq.common.core.domain.entity.SysUser" column="user_id"
+                     resultMap="sysUserResult"/>
     </resultMap>
 
     <!--新闻结果集合-->
@@ -36,6 +38,29 @@
         <result column="news_source_author" jdbcType="VARCHAR" property="newsSourceAuthor"/>
         <result column="news_source_tags" jdbcType="VARCHAR" property="newsSourceTags"/>
         <result column="status" jdbcType="CHAR" property="status"/>
+    </resultMap>
+    <!--评论人-->
+    <resultMap id="sysUserResult" type="com.linq.common.core.domain.entity.SysUser">
+        <id column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="dept_id" jdbcType="BIGINT" property="deptId"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="true_name" jdbcType="VARCHAR" property="trueName"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="user_type" jdbcType="VARCHAR" property="userType"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="sex" jdbcType="CHAR" property="sex"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="status" jdbcType="CHAR" property="status"/>
+        <result column="del_flag" jdbcType="CHAR" property="delFlag"/>
+        <result column="login_ip" jdbcType="VARCHAR" property="loginIp"/>
+        <result column="login_date" jdbcType="TIMESTAMP" property="loginDate"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -74,9 +99,28 @@
                n.create_time,
                n.update_by,
                n.update_time,
-               n.remark
+               n.remark,
+               u.user_id,
+               u.dept_id,
+               u.username,
+               u.true_name,
+               u.nick_name,
+               u.email,
+               u.avatar,
+               u.phone,
+               u.password,
+               u.sex,
+               u.status,
+               u.del_flag,
+               u.login_ip,
+               u.login_date,
+               u.create_by,
+               u.create_time,
+               u.remark
         from linq_comment c
                      left join linq_news n on c.news_id = n.news_id
+                     left join linq_user_comment luc on luc.comment_id = c.comment_id
+                     left join sys_user u on u.user_id = luc.user_id
     </sql>
     <!--
         /**

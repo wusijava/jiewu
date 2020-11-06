@@ -1,6 +1,7 @@
 package com.linq.news.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.core.domain.model.BaseEntity;
 
 import java.io.Serializable;
@@ -58,5 +59,7 @@ public class LinqComment extends BaseEntity implements Serializable {
     @TableField(exist = false)
     private LinqNews news;
 
+    @TableField(exist = false)
+    private SysUser sysUser;
     /////////////////////////////////// 附加  ///////////////////////////////////
 }

@@ -11,5 +11,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
     
 public interface LinqUserCommentService extends IService<LinqUserComment>{
 
+    /**
+     * 新增新闻与用户关系
+     * @param linqUserComment
+     * @return
+     */
+    boolean insertLinqUserComment(LinqUserComment linqUserComment);
 
 }

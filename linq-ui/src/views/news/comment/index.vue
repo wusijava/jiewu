@@ -46,7 +46,7 @@
         </template>
       </el-table-column>
       <el-table-column label="点赞数" align="center" prop="thumbs"/>
-      <el-table-column label="创建者" align="center" prop="createBy"/>
+      <el-table-column label="创建者" align="center" prop="sysUser.nickName"/>
       <el-table-column label="创建时间" align="center" prop="createTime" width="180">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.createTime) }}</span>
@@ -268,6 +268,8 @@ export default {
               }
             })
           } else {
+						alert("123");
+						alert(this.form);
             addComment(this.form).then(response => {
               if (response.code === 200) {
                 this.msgNoticeSuccess('新增成功')

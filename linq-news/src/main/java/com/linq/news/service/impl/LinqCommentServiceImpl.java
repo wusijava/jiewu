@@ -1,10 +1,18 @@
 package com.linq.news.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.metadata.TableInfo;
+import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.linq.common.constant.UserConstants;
+import com.linq.common.core.domain.entity.SysUser;
+import com.linq.common.utils.SecurityUtils;
+import com.linq.news.domain.LinqUserComment;
+import com.linq.news.service.LinqUserCommentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -21,6 +29,10 @@ import com.linq.news.service.LinqCommentService;
 
 @Service
 public class LinqCommentServiceImpl extends ServiceImpl<LinqCommentMapper, LinqComment> implements LinqCommentService {
+
+    @Resource
+    private LinqUserCommentService linqUserCommentService;
+
     /**
      * 条件分页查询新闻评论列表
      *
@@ -54,7 +66,21 @@ public class LinqCommentServiceImpl extends ServiceImpl<LinqCommentMapper, LinqC
      */
     @Override
     public boolean insertLinqComment(LinqComment linqComment) {
-        return saveOrUpdate(linqComment);
+        // 设置创建人
+        linqComment.setCreateBy(SecurityUtils.getLoginUser().getUser().getNickName());
+        // 设置创建时间 和 更新时间
+        linqComment.setCreateTime(new Date());
+        //新增评论
+        boolean b = saveOrUpdate(linqComment);
+        if(b){
+            //新增评论与用户关系
+            LinqUserComment linqUserComment = new LinqUserComment();
+            linqUserComment.setCommentId(linqComment.getCommentId());
+            linqUserComment.setUserId(SecurityUtils.getLoginUser().getUser().getUserId());
+            return linqUserCommentService.insertLinqUserComment(linqUserComment);
+        }else{
+            return false;
+        }
     }
 
     /**

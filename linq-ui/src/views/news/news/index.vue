@@ -95,7 +95,12 @@
 	  <el-table-column label="新闻作者" align="center" prop="sysUser.nickName" width="150">
 	    <template slot-scope="scope">
 	      <span style="font-weight: bolder">{{ scope.row.sysUser.nickName }}</span>
-		  <span style="font-weight: bolder">{{ scope.row.sysUser.dept.deptName }}</span>
+		  
+	    </template>
+	  </el-table-column>
+	  <el-table-column label="作者所属部门" align="center" prop="sysUser.dept.deptName" width="150">
+	    <template slot-scope="scope">
+	      <span style="font-weight: bolder">{{ scope.row.sysUser.dept.deptName }}</span>
 	    </template>
 	  </el-table-column>
       <el-table-column label="新闻属性" align="center" prop="newsAttr" width="120">
