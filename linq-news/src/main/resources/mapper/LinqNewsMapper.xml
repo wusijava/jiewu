@@ -255,4 +255,16 @@
         </if>
         order by n.order_num,n.news_id desc
     </select>
+
+<!-- 变更新闻浏览数、评论数、点赞数，收藏数   -->
+    <update id="changeCountById" parameterType="java.util.Map">
+        UPDATE
+        linq_news
+
+        <if test="params.changeType == 1">
+            <!-- 结束时间检索 -->
+            SET comments = comments+1
+        </if>
+        WHERE news_id = #{params.newsId}
+    </update>
 </mapper>

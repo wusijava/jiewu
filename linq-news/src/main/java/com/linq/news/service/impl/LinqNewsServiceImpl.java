@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -233,6 +234,16 @@ public class LinqNewsServiceImpl extends ServiceImpl<LinqNewsMapper, LinqNews> i
                 break;
         }
         return saveOrUpdate(news);
+    }
+
+    /**
+     * 变更新闻浏览数、评论数、点赞数，收藏数
+     * @param params
+     * @return
+     */
+    @Override
+    public boolean changeCountById(Map params) {
+        return baseMapper.changeCountById(params);
     }
 
 

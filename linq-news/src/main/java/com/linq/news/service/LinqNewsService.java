@@ -6,6 +6,7 @@ import com.linq.news.domain.LinqNews;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: 林义清
@@ -97,5 +98,10 @@ public interface LinqNewsService extends IService<LinqNews> {
      */
     boolean changeStatus(LinqNews news);
 
-
+    /**
+     * 变更新闻浏览数、评论数、点赞数，收藏数
+     * @param params
+     * @return
+     */
+    boolean changeCountById(Map params);
 }

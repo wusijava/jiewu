@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.linq.news.domain.LinqNews;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Map;
+
 /**
  * @Author: 林义清
  * @Date: 2020/8/29 12:36 下午
@@ -32,4 +34,11 @@ public interface LinqNewsMapper extends BaseMapper<LinqNews> {
      * @return 新闻集合
      */
     IPage<LinqNews> findPageByUserId(Page<LinqNews> linqNewsPage, @Param("news") LinqNews news, @Param("userId") Long userId);
+
+    /**
+     * 变更新闻浏览数、评论数、点赞数，收藏数
+     * @param params
+     * @return
+     */
+    boolean changeCountById(@Param("params")Map params);
 }

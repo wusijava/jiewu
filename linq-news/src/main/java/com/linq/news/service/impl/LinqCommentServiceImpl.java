@@ -8,12 +8,15 @@ import com.linq.common.constant.UserConstants;
 import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.utils.SecurityUtils;
 import com.linq.news.domain.LinqUserComment;
+import com.linq.news.service.LinqNewsService;
 import com.linq.news.service.LinqUserCommentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.linq.news.mapper.LinqCommentMapper;
@@ -32,6 +35,10 @@ public class LinqCommentServiceImpl extends ServiceImpl<LinqCommentMapper, LinqC
 
     @Resource
     private LinqUserCommentService linqUserCommentService;
+
+
+    @Resource
+    private LinqNewsService linqNewsService;
 
     /**
      * 条件分页查询新闻评论列表
@@ -72,6 +79,10 @@ public class LinqCommentServiceImpl extends ServiceImpl<LinqCommentMapper, LinqC
         linqComment.setCreateTime(new Date());
         //新增评论
         boolean b = saveOrUpdate(linqComment);
+        //新闻评论数 +1
+        Map params = new HashMap();
+        params.put("newsId","13886");
+        linqNewsService.changeCountById(params);
         if(b){
             //新增评论与用户关系
             LinqUserComment linqUserComment = new LinqUserComment();
