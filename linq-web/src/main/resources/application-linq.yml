@@ -62,7 +62,7 @@ swagger:
 logging:
   level:
     com.linq: debug
-    org.springframework: warn
+    org.springframework: debug
 
 ## 爬虫地址
 #spider:

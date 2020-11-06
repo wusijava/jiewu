@@ -124,7 +124,7 @@ public class LinkNewsController extends BaseController {
     @ApiOperation(value = "删除新闻", notes = "删除新闻详情")
     @PreAuthorize("@ss.hasPermi('news:news:remove')")
     @Log(title = "新闻", businessType = BusinessType.DELETE)
-    @DeleteMapping("/{newsIds}")
+    @GetMapping("/{newsIds}")
     public Result<String> remove(@PathVariable List<Long> newsIds) {
         return toResult(newsService.deleteLinqNewsByIds(newsIds));
     }
