@@ -173,4 +173,23 @@ public class SysUser extends BaseEntity implements Serializable {
 
     /////////////////////////////////// 附加  ///////////////////////////////////
     private static final long serialVersionUID = 1L;
+
+
+    /**
+     * 发布文章数量
+     */
+    @TableField(exist = false)
+    private Long countNews;
+
+    /**
+     * 获得评论数量
+     */
+    @TableField(exist = false)
+    private Long countComments;
+
+    /**
+     * 获得点赞数量
+     */
+    @TableField(exist = false)
+    private Long countThumbs;
 }

@@ -24,6 +24,9 @@
         <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
         <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="countNews" jdbcType="BIGINT" property="countNews"/>
+        <result column="countComments" jdbcType="BIGINT" property="countComments"/>
+        <result column="countThumbs" jdbcType="BIGINT" property="countThumbs"/>
         <association property="dept" column="dept_id" javaType="com.linq.common.core.domain.entity.SysDept" resultMap="deptResult"/>
         <collection property="roles" javaType="java.util.List" resultMap="RoleResult"/>
     </resultMap>
@@ -82,7 +85,10 @@
                r.role_key,
                r.role_sort,
                r.data_scope,
-               r.status as role_status
+               r.status as role_status,
+			   countData.countNews,
+			   countData.countComments,
+			   countData.countThumbs
         from sys_user u
                      left join sys_dept d on u.dept_id = d.dept_id
                      left join sys_user_role ur on u.user_id = ur.user_id
@@ -156,6 +162,27 @@
     -->
     <select id="findByUserId" resultMap="BaseResultMap">
         <include refid="findUserVo"/>
+        left join
+        (SELECT
+        u.user_id,
+        COUNT(n.news_id) as countNews,
+        CASE
+        WHEN SUM(n.thumbs) IS NULL THEN
+        '0'
+        ELSE
+        SUM(n.thumbs)
+        END as countThumbs,
+        CASE
+        WHEN SUM(n.comments) IS NULL THEN
+        '0'
+        ELSE
+        SUM(n.comments)
+        END as countComments
+        FROM
+        sys_user u
+        LEFT JOIN linq_news n ON u.user_id = n.user_id AND n.is_draft = '1'
+        WHERE u.user_id = #{userId}) countData on countData.user_id = u.user_id
+
         where u.user_id = #{userId}
     </select>
 </mapper>
