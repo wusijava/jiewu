@@ -1,33 +1,26 @@
 package com.linq.news.domain;
 
+
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
-import lombok.Data;
-
 /**
- * @Author: 林义清
- * @Date: 2020/8/28 8:16 下午
- * @Description:
- * @Version: 1.0.0
- */
-
-/**
- * 新闻收藏表
+ * 新闻点赞表
  */
 @Data
-@TableName(value = "linq_collect")
-public class LinqCollect implements Serializable {
+@TableName(value = "linq_thumb")
+public class LinqThumb implements Serializable {
     /**
-     * 收藏id
+     * 点赞id
      */
-    @TableId(value = "collection_id", type = IdType.AUTO)
-    private Long collectionId;
+    @TableId(value = "thumb_id", type = IdType.AUTO)
+    private Long thumbId;
 
     /**
      * 新闻id
@@ -42,10 +35,10 @@ public class LinqCollect implements Serializable {
     private Long userId;
 
     /**
-     * 收藏时间
+     * 点赞时间
      */
-    @TableField(value = "collect_time")
-    private Date collectTime;
+    @TableField(value = "thumb_time")
+    private Date thumbTime;
 
     private static final long serialVersionUID = 1L;
 

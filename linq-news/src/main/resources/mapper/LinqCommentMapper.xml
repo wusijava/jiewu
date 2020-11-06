@@ -79,6 +79,7 @@
                c.update_by,
                c.update_time,
                c.remark,
+               n.news_id,
                n.user_id,
                n.news_type_id,
                n.news_title,
