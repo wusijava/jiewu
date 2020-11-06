@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.linq.common.constant.UserConstants;
 import com.linq.common.core.controller.BaseController;
+import com.linq.common.core.domain.LoginUser;
 import com.linq.common.core.domain.entity.SysRole;
 import com.linq.common.lang.annotation.Log;
 import com.linq.common.lang.enums.BusinessType;
@@ -12,7 +13,9 @@ import com.linq.common.result.Result;
 import com.linq.common.result.ResultUtils;
 import com.linq.common.core.domain.entity.SysUser;
 import com.linq.common.utils.SecurityUtils;
+import com.linq.common.utils.ServletUtils;
 import com.linq.common.utils.string.StringUtils;
+import com.linq.framework.security.service.TokenService;
 import com.linq.system.service.SysRoleService;
 import com.linq.system.service.SysUserService;
 import io.swagger.annotations.Api;
@@ -40,6 +43,8 @@ public class SysUserController extends BaseController {
     private SysUserService userService;
     @Autowired
     private SysRoleService roleService;
+    @Autowired
+    private TokenService tokenService;
 
     /**
      * 条件分页获取用户列表
@@ -63,6 +68,36 @@ public class SysUserController extends BaseController {
     @GetMapping(value = {"/", "/{userId}"})
     public Result<HashMap<String, Object>> getInfo(@PathVariable(value = "userId", required = false) Long userId) {
         System.err.println("需要修改的用户id->" + userId);
+        List<SysRole> roles = roleService.findRoleAll();
+        if (StringUtils.isNotNull(userId)) {
+            return ResultUtils.success(new HashMap<String, Object>() {
+                {
+                    put("userInfo", userService.findByUserId(userId));
+                    put("roles", SysUser.isAdmin(userId) ? roles : roles.stream().filter(r -> !r.isAdmin()).collect(Collectors.toList()));
+                    put("roleIds", roleService.findRoleListByUserId(userId));
+                }
+            });
+        } else {
+            return ResultUtils.success(new HashMap<String, Object>() {
+                {
+                    put("roles", roles.stream().filter(r -> !r.isAdmin()).collect(Collectors.toList()));
+                }
+            });
+        }
+
+    }
+
+
+    /**
+     * 获取我的详细信息
+     */
+    @ApiOperation(value = "获取我的详细信息",notes = "获取我的详细信息详情")
+    @PreAuthorize("@ss.hasPermi('system:user:me')")
+    @GetMapping("/me")
+    public Result<HashMap<String, Object>> getMineInfo() {
+        LoginUser loginUser = tokenService.getLoginUser(ServletUtils.getRequest());
+        SysUser user = loginUser.getUser();
+        Long userId = user.getUserId();
         List<SysRole> roles = roleService.findRoleAll();
         if (StringUtils.isNotNull(userId)) {
             return ResultUtils.success(new HashMap<String, Object>() {
