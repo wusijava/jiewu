@@ -54,17 +54,17 @@ public class SysLoginService {
         String captcha = redisService.getCacheObject(verifyKey);
         // 清除验证码
         redisService.deleteObject(verifyKey);
-        if (StringUtils.isBlank(captcha)) {
-            // 记录登录日志
-            AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_FAIL, MessageUtils.message("user.jcaptcha.expire")));
-            throw new CaptchaExpireException();
-        }
-        // 验证码错误
-        if (!code.equalsIgnoreCase(captcha)) {
-            // 记录登录日志
-            AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_FAIL, MessageUtils.message("user.jcaptcha.error")));
-            throw new CaptchaException();
-        }
+//        if (StringUtils.isBlank(captcha)) {
+//            // 记录登录日志
+//           AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_FAIL, MessageUtils.message("user.jcaptcha.expire")));
+//            throw new CaptchaExpireException();
+//        }
+//        // 验证码错误
+//        if (!code.equalsIgnoreCase(captcha)) {
+//            // 记录登录日志
+//            AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_FAIL, MessageUtils.message("user.jcaptcha.error")));
+//            throw new CaptchaException();
+//        }
         // 用户验证
         Authentication authentication = null;
         try {

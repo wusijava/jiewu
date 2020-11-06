@@ -77,7 +77,7 @@ public class SysUserOnlineController {
      */
     @PreAuthorize("@ss.hasPermi('monitor:online:forceLogout')")
     @Log(title = "在线用户", businessType = BusinessType.DELETE)
-    @DeleteMapping("/{tokenId}")
+    @GetMapping("/{tokenId}")
     public Result<Object> forceLogout(@PathVariable String tokenId) {
         redisService.deleteObject(Constants.LOGIN_TOKEN_KEY + tokenId);
         return ResultUtils.success();
