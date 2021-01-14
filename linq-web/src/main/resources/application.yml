@@ -37,9 +37,9 @@ spring:
   redis:
     expire: 60000 # 过期时间
     database: 0 # Redis使用的库
-    host: 127.0.0.1
+    host: 49.233.192.222
     port: 6379 #端口号
-    password:  #redis密码
+    password:  13545630179qq.
     timeout: 10000        #  连接超时时间（毫秒）
     cache:
       type: redis           #使用redis做缓存
